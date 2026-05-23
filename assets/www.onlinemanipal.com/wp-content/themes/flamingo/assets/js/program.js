@@ -1,0 +1,1041 @@
+
+jQuery(document).ready(function ($) {
+  // Code for subnavigation start
+  const baseURL = `${window.location.protocol}//${window.location.host}/`;
+  var arrowImg =
+    baseURL + "wp-content/themes/flamingo/assets/images/icons/arrow-white.svg";
+  var closeImg =
+    baseURL + "wp-content/themes/flamingo/assets/images/icons/close-white.svg";
+
+  var headerHeight = 120;
+  var $subnav = $(".program-subnav");
+  var $subnavBtn = $(".subnav-btn");
+  var $specialization = $("#specilisation");
+  var $banner = $(".banner");
+  var $footer = $("footer");
+  var $sections = $(".subnav a");
+
+  // Initially hide sub-nav
+  $subnav.hide();
+
+  function toggleSubNav() {
+    var scrollPos = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    var footerOffset = $footer.offset().top;
+    var specializationTop = $specialization.length
+      ? $specialization.offset().top - ($(window).height() - 100)
+      : 0;
+    var bannerBottom = $banner.length
+      ? $banner.offset().top + $banner.outerHeight()
+      : 0;
+
+    // Show subnav when reached to Specialization and hide before footer
+    if (
+      scrollPos > specializationTop &&
+      scrollPos + windowHeight < footerOffset
+    ) {
+      if (!$subnav.is(":visible")) {
+        $subnav.fadeIn(300);
+      }
+    } else {
+      if ($subnav.is(":visible")) {
+        $subnav.fadeOut(300);
+      }
+    }
+  }
+
+  function updateActiveSection() {
+    var scrollPos = $(window).scrollTop() + headerHeight + 50;
+    var activeSection = "";
+
+    $sections.each(function () {
+      var sectionID = $(this).attr("href");
+      var $section = $(sectionID);
+
+      if ($section.length) {
+        //var sectionTop = $section.offset().top - ($(window).height() - 100);
+        //var sectionBottom = sectionTop + $section.outerHeight();
+
+        var sectionTop = $section.offset().top - ($(window).height() - 250);
+        if ($(window).width() <= 992) {
+          sectionTop =
+            $section.offset().top -
+            ($(window).height() - $(window).height() / 2);
+        }
+
+        var sectionBottom =
+          $section.offset().top -
+          ($(window).height() - 250) +
+          $section.outerHeight();
+
+        if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+          activeSection = $(this).text();
+          $(".subnav li").removeClass("active");
+          $(this).parent().addClass("active");
+          return false;
+        }
+      }
+    });
+
+    if (activeSection !== "" && $subnavBtn.text() !== activeSection) {
+      $subnavBtn.text(activeSection);
+    }
+  }
+
+  // Smooth scrolling on clicking section link
+  $(".subnav a").on("click", function (e) {
+    e.preventDefault();
+    var target = $(this).attr("href");
+
+    if ($(target).length) {
+      $("html, body").animate(
+        {
+          scrollTop: $(target).offset().top - headerHeight - 20,
+        },
+        600
+      );
+    }
+  });
+
+  let semContShow = 0;
+  // Run functions on scroll
+  $(window).on("scroll", function () {
+    toggleSubNav();
+    updateActiveSection();
+    if ($(window).width() < 770) {
+      const $skill = $("section#skill");
+      const $header = $("header");
+
+      if ($skill.length) {
+        // only run if skill section exists
+        const scPos = $(window).scrollTop();
+        const skillTopPos =
+          $skill.offset().top - ($header.length ? $header.height() : 0);
+
+        // if (scPos > skillTopPos && semContShow == 0) {
+        if (semContShow == 0) {
+          setTimeout(() => {
+            $("#curriculum .content .accordion-container .accordion")
+              .eq(0)
+              .find(".acc-header")
+              .click();
+          }, 50);
+          semContShow = 1;
+        }
+      }
+    }
+  });
+
+  // Run once on page load
+  toggleSubNav();
+  updateActiveSection();
+
+  $(".subnav-btn-wrapper").hover(
+    function () {
+      $(".subnav-link-wrapper").stop(true, true).fadeIn(200);
+      $(this).find("img").attr("src", closeImg);
+    },
+    function () {
+      $(".subnav-link-wrapper").stop(true, true).fadeOut(200);
+      $(this).find("img").attr("src", arrowImg);
+    }
+  );
+
+  $(".subnav-btn-wrapper").on("click", function (event) {
+    event.stopPropagation();
+    $(".subnav-link-wrapper").stop(true, true).fadeToggle(200);
+    var currentSrc = $(this).find("img").attr("src");
+    $(this)
+      .find("img")
+      .attr("src", currentSrc === arrowImg ? closeImg : arrowImg);
+  });
+
+  // Sub navigation code end
+
+  // Code for global page view detail fee link
+  $(".view-detail-fee a").on("click", function (e) {
+    e.preventDefault();
+    var target = $(this).attr("href");
+
+    if ($(target).length) {
+      let offsetValue = 20; // default (desktop)
+
+      // If countryBar is visible
+      if ($(".countryBar").hasClass("showCountryBar")) {
+        if (window.innerWidth <= 768) {
+          offsetValue = 540;
+        } else {
+          offsetValue = 60;
+        }
+      } else {
+        if (window.innerWidth <= 768) {
+          offsetValue = 145;
+        } else {
+          offsetValue = 20;
+        }
+      }
+
+      $("html, body").animate(
+        {
+          scrollTop: $(target).offset().top - headerHeight - offsetValue,
+        },
+        600
+      );
+    }
+  });
+
+  // Course overview read more and less
+  $(document).on("click", ".course-read-more", function () {
+    var screenWidth = $(window).width();
+    const page_url = window.location.href;
+    let max_screen_width = "1280";
+    if (
+      page_url.includes("/online-ba-degree-smu-v2") || page_url.includes("/online-bca-degree-muj-v2") || page_url.includes("/online-mba-manipal-university-jaipur-v2")
+    ) {
+      //added this condition for CRO changes
+      max_screen_width = "1366";
+    }
+
+    if ($(".desktop-des").is(":visible")) {
+      $(".desktop-des").hide();
+
+      if (screenWidth >= 768 && screenWidth <= max_screen_width) {
+        $(".tablet-des").show(); // Show 300 characters for tablets
+      } else {
+        $(".mobile-des").show(); // Show 170 characters for mobile
+      }
+
+      $(".desktop-des .course-read-more").remove();
+    } else {
+      // Show full description when clicking "Read More"
+      $(".mobile-des, .tablet-des").hide();
+      $(".desktop-des").show();
+      $(".desktop-des").append(
+        '<span class="course-read-more"> <span>Read less</span></span>'
+      );
+    }
+  });
+
+  $(document).on('click', '.read-more-btn', function () {
+    const wrapper = $(this).closest('.faculty-desc');
+    wrapper.find('.description-wrap').hide();
+    wrapper.find('.full-description').show();
+  });
+
+  $(document).on('click', '.read-less-btn', function () {
+    const wrapper = $(this).closest('.faculty-desc');
+    wrapper.find('.full-description').hide();
+    wrapper.find('.description-wrap').show();
+  });
+
+  // jsSocials for program page
+  if ($("#share").length) {
+    $("#share").jsSocials({
+      showLabel: false,
+      showCount: false,
+      shares: ["facebook", "twitter", "linkedin", "whatsapp"],
+    });
+  }
+  $(".share-btn").click(function () {
+    $(".share-block").toggleClass("hidden");
+  });
+  // Whats app fix
+  setTimeout(function () {
+    if ($(".share-block #share .jssocials-share-whatsapp").length) {
+      var whatsupp_url = $(".share-block #share .jssocials-share-whatsapp a")
+        .eq(0)
+        .attr("href")
+        .replace("whatsapp://", "https://api.whatsapp.com/");
+      $(".share-block #share .jssocials-share-whatsapp a")
+        .eq(0)
+        .attr("href", whatsupp_url);
+      $(".share-block #share .jssocials-share-whatsapp a")
+        .eq(0)
+        .attr("target", "blank");
+    }
+  }, 2000);
+
+  //Specialization offered
+  $(".ele-close-icon").click(function () {
+    var redirectURL = $(this).attr("data-url");
+    window.location.href = redirectURL;
+  });
+  //End Specialization offered
+
+  // open brochure form --------------
+  const params = new URLSearchParams(window.location.search);
+  if (params.has("utm_brochure") && params.get("utm_brochure") == "yes") {
+    $(".brochure-btn").eq(0).click();
+  }
+  // ---------------------------------
+});
+$(document).on('click', function (event) {
+  if (!$(event.target).closest('.share-program').length && !$('.share-block').hasClass("hidden")) {
+    $('.share-block').addClass("hidden");
+  }
+});
+
+// Marquee text functionality for LDA
+const text = $('.marquee-content').html();
+const space = "&nbsp;&nbsp;";
+let newText = "";
+for (let i = 0; i < 4; i++) {
+  newText += text;
+}
+$('.marquee-content').remove();
+$('.marquee-container').prepend('<div class="marquee-text-parent"><div class="marquee-text">' + newText + '</div></div>');
+
+// Download brochure popup start
+const modal = document.getElementById("downloadModal");
+const button = document.getElementById("downloadButton");
+const closeBtn = document.querySelector(".close-btn");
+if (button) {
+  button.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+}
+if (closeBtn) {
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+}
+
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+// Download brochure popup end
+
+//   Course Curriculum sect and foundation courses
+$(document).on("click", ".course-enhance-skills .tablinks, .course-curriculum-sect .tablinks", function () {
+  var $this = $(this);  
+  var tabItem = $this.data("tabitem");
+  var $parentContent = $this.parents(".content");
+
+  $parentContent.find(".tabcontent, .tablinks").removeClass("active");
+  $("#" + tabItem).addClass("active");
+  
+
+  // toggle text
+  var $container = $this.closest(".bloombergsec");
+  var url = $this.data("url"); // from button
+  var bloombaseURL = window.location.origin;
+
+    // switch tabs
+  $container.find(".tablinks").removeClass("active");
+  $container.find(".tabcontent").removeClass("active").hide();
+
+  var $target = $container.find("#" + tabItem);
+  if ($target.length) {
+    $target.addClass("active").css("display", "flex");
+  }
+
+  if (tabItem === "business-visual-analytics") {
+    $container.find(".bva-text").show();
+    $container.find(".sub-heading").hide();
+  } else {
+    $container.find(".bva-text").hide();
+    $container.find(".sub-heading").show();
+  }
+  $this.addClass("active");
+
+  // update Know More link
+  if (url) {
+    $container.find(".know-more-link").attr("href", bloombaseURL + url);
+  }
+});
+
+const accordionHeader = document.querySelectorAll(".acc-header");
+
+accordionHeader.forEach((menuBtn) => {
+  menuBtn.addEventListener("click", function () {
+    const activeAccordion = document.querySelector(".acc-header.open");
+    if (activeAccordion && activeAccordion !== this) {
+      activeAccordion.nextElementSibling.style.height = 0;
+      activeAccordion.nextElementSibling.classList.remove("active");
+      activeAccordion.classList.remove("open");
+    }
+    this.classList.toggle("open");
+    const content = this.nextElementSibling;
+    if (this.classList.contains("open")) {
+      if (this.classList.contains("pinkbg")) {
+        var MobscrollHeight = content.scrollHeight + 35;
+      } else {
+        var MobscrollHeight = content.scrollHeight + 25;
+      }
+      content.style.height = MobscrollHeight + "px";
+      content.classList.add("active");
+    } else {
+      content.style.height = 0;
+      content.classList.remove("active");
+    }
+  });
+});
+// Course curriculum sect end
+
+// Observe each section
+sections.forEach((section) => observer.observe(section));
+
+$(".program-benefits-sec .acc-header").click(function () {
+  var content = $(this).next(".content-benefits");
+
+  if (content.hasClass("open")) {
+    content.removeClass("open").css("height", "0px");
+    $(this).removeClass("active");
+  } else {
+    $(".content-benefits").removeClass("open").css("height", "0px"); // Close others
+    $(".acc-header").removeClass("active");
+
+    content.addClass("open").css("height", "auto !important");
+    $(this).addClass("active");
+  }
+});
+
+// Advance learning system js
+function openTab(evt, tabName) {
+  var i, tabContent, tabButtons;
+
+  tabContent = document.getElementsByClassName("tab-pane");
+  tabButtons = document.getElementsByClassName("advance-tab-btn");
+
+  // Remove "active" class from all content & buttons
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].classList.remove("active");
+  }
+  for (i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove("active");
+  }
+
+  document.getElementById(tabName).classList.add("active");
+  evt.currentTarget.classList.add("active");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const tab1 = document.getElementById('tab1');
+  if (tab1) {
+    document.getElementById("tab1").classList.add("active");
+  }
+});
+
+// Accordion Functionality for Mobile
+document.addEventListener("DOMContentLoaded", function () {
+  const accordions = document.querySelectorAll(".accordion");
+
+  if (accordions.length > 0) {
+    const firstAccordion = accordions[0];
+    const firstButton = firstAccordion.querySelector(".accordion-btn");
+    const firstPanel = firstAccordion.querySelector(".accordion-panel");
+
+    if (firstButton && firstPanel) {
+      firstButton.classList.add("active");
+      firstPanel.style.display = "block";
+      firstButton.style.background = "#F7F6F6";
+    }
+  }
+
+  document.querySelectorAll(".accordion-btn").forEach(button => {
+    button.addEventListener("click", function () {
+      let panel = this.nextElementSibling;
+
+      if (!panel) return;
+
+      let isActive = this.classList.contains("active");
+
+      document.querySelectorAll(".accordion-btn").forEach(b => {
+        b.classList.remove("active");
+        b.style.background = "";
+      });
+
+      document.querySelectorAll(".accordion-panel").forEach(p => {
+        p.style.display = "none";
+      });
+
+      if (!isActive) {
+        this.classList.add("active");
+        this.style.background = "#F6E6C5";
+        panel.style.display = "block";
+      }
+    });
+  });
+});
+// Advance learning system js end
+
+
+// Code for all program curriculum elective dropdown excluding MUJ MBA
+let firstChangeDone = false;
+$(document).ready(function () {
+
+  const SEMESTER_PAIRS = {
+    2: "3", // Semester 2 is paired with Semester 3
+    4: "5", // Semester 4 is paired with Semester 5
+    6: "7", // Semester 6 is paired with Semester 7
+    8: "9", // SMU-MBA don't use for other courses 8 and 9
+  };
+
+  // Function to hide all elective content
+  function hideAllElectiveContent() {
+    //$(".wrapper_tabcontent .tabcontent.active .elective-tabcontent").hide();
+    if ($(window).width() < 992) {
+      $(".elective-tabcontent").hide();
+    } else {
+      $(".wrapper_tabcontent .tabcontent.active .elective-tabcontent").hide();
+    }
+  }
+
+  // Function to show the selected elective content
+  function showSelectedElectiveContent(selectedValue) {
+    if (selectedValue) {
+      $("#" + selectedValue).show();
+    }
+  }
+
+  // Generic function to sync dropdowns and show content
+  function syncDropdownsAndShowContent(changedSemester, selectedValue) {
+    // Find the counterpart semester
+    const counterpartSemester = SEMESTER_PAIRS[changedSemester] ||
+      Object.keys(SEMESTER_PAIRS).find(key => SEMESTER_PAIRS[key] === changedSemester);
+    if (!counterpartSemester) return;
+
+    // Create counterpart value by replacing the semester number
+    const counterpartValue = selectedValue.replace(`-${changedSemester}`, `-${counterpartSemester}`);
+    // Update counterpart dropdown
+    $(`#electives-subject${counterpartSemester}`)
+      .val(counterpartValue)
+      .trigger("change.select2");
+
+    // Show content for both semesters
+    showSelectedElectiveContent(selectedValue);
+    showSelectedElectiveContent(counterpartValue);
+  }
+
+
+  // Initialize all dropdowns with their first option
+  function initializeDropdowns() {
+    Object.keys(SEMESTER_PAIRS).forEach(semester => {
+
+      const firstOption = $(`#electives-subject${semester} option:eq(1)`).val();
+      if (firstOption !== 'elec-marketing-8') {
+        $(`#electives-subject${semester}`).val(firstOption).trigger("change.select2");
+        showSelectedElectiveContent(firstOption);
+      }
+
+      // Also initialize the counterpart semester
+      const counterpartSemester = SEMESTER_PAIRS[semester];
+      const counterpartOption = $(`#electives-subject${counterpartSemester} option:eq(1)`).val();
+      if (counterpartOption !== 'elec-marketing-9') {
+        $(`#electives-subject${counterpartSemester}`).val(counterpartOption).trigger("change.select2");
+        showSelectedElectiveContent(counterpartOption);
+      }
+    });
+    $('.specialization-sub').hide() // SMU-MBA
+  }
+
+  //SMU- MBA clone option
+  let removedOption = null;
+  let removedOption7 = null;
+  $('#electives-subject6 , #electives-subject7').on('focus', function () {
+    removedOption = $('#electives-subject6 option:selected').clone();
+    removedOption7 = $('#electives-subject7 option:selected').clone();
+  });
+  let removedOption2 = null;
+  let removedOption9 = null;
+  $('#electives-subject8 , #electives-subject9').on('focus', function () {
+    removedOption2 = $('#electives-subject8 option:selected').clone();
+    removedOption9 = $('#electives-subject9 option:selected').clone();
+  });
+
+  // Set up change handlers for all semester dropdowns
+  function setupChangeHandlers() {
+    // Add handlers for all semesters in our pairs (both keys and values)
+    [...Object.keys(SEMESTER_PAIRS), ...Object.values(SEMESTER_PAIRS)].forEach(semester => {
+      $(`#electives-subject${semester}`).change(function () {
+        const selectedValue = $(this).val();
+        const semesterPairs = { 2: 3, 3: 2, 4: 5, 5: 4, 6: 7, 7: 6, 8: 9 };
+        const semesterPairKey = semesterPairs[semester];
+        const currentPath = window.location.pathname;
+        const targetPaths = [
+          "/ae/online-mba-degree-dual-specialization-smu",
+          "/online-mba-degree-dual-specialization-smu",
+          "/np/online-mba-degree-dual-specialization-smu",
+          "/global/online-mba-degree-dual-specialization-smu",
+          "/sl/online-mba-degree-dual-specialization-smu",
+          "/af/online-mba-degree-dual-specialization-smu",
+          "/us-ca/online-mba-degree-dual-specialization-smu"
+        ];
+
+        if (targetPaths.includes(currentPath)) {
+          if (selectedValue.endsWith('6') || selectedValue.endsWith('7')) {
+            let stringOnly = selectedValue.replace(/\d+$/, '');
+
+            if (!firstChangeDone) {
+              let val = 'Marketing';
+              let text = 'Marketing';
+              let optionString = val.replace(/\d+$/, '');
+              optionVal8 = 'elec-marketing-8';
+              optionVal9 = 'elec-marketing-9';
+              //elec-marketing-6
+              if ($('#electives-subject8 option[value="' + optionVal8 + '"]').length === 0) {
+                $('#electives-subject8').append(new Option(text, optionVal8, false, false)); // Properly add option
+                $('#electives-subject8').trigger('change.select2'); // Refresh Select2
+              }
+
+              if ($('#electives-subject9 option[value="' + optionVal9 + '"]').length === 0) {
+                $('#electives-subject9').append(new Option(text, optionVal9, false, false));
+                $('#electives-subject9').trigger('change.select2');
+              }
+
+            }
+            $('option[value="Select Elective"]').remove();
+            $('option[value="Select Elective"]').remove();
+
+            if (removedOption) {
+              let val = removedOption.val();
+              let text = removedOption.text();
+              let optionString = val.replace(/\d+$/, '');
+              optionVal8 = optionString + '8';
+              optionVal9 = optionString + '9';
+              if ($('#electives-subject8 option[value="' + optionVal8 + '"]').length === 0) {
+                $('#electives-subject8').append(new Option(text, optionVal8, false, false)); // Properly add option
+                $('#electives-subject8').trigger('change.select2'); // Refresh Select2
+              }
+
+              if ($('#electives-subject9 option[value="' + optionVal9 + '"]').length === 0) {
+                $('#electives-subject9').append(new Option(text, optionVal9, false, false));
+                $('#electives-subject9').trigger('change.select2');
+              }
+            }
+            if (removedOption7) {
+
+              let val = removedOption7.val();
+              let text = removedOption7.text();
+              let optionString = val.replace(/\d+$/, '');
+              optionVal8 = optionString + '8';
+              optionVal9 = optionString + '9';
+              if ($('#electives-subject8 option[value="' + optionVal8 + '"]').length === 0) {
+                $('#electives-subject8').append(new Option(text, optionVal8, false, false)); // Properly add option
+                $('#electives-subject8').trigger('change.select2'); // Refresh Select2
+              }
+
+              if ($('#electives-subject9 option[value="' + optionVal9 + '"]').length === 0) {
+                $('#electives-subject9').append(new Option(text, optionVal9, false, false));
+                $('#electives-subject9').trigger('change.select2');
+              }
+            }
+            // Update stored removedOption for next change
+            removedOption = $('#electives-subject6 option:selected').clone();
+            removedOption7 = $('#electives-subject7 option:selected').clone();
+
+
+            $('option[value="' + stringOnly + '8"]').remove();
+            $('option[value="' + stringOnly + '9"]').remove();
+          }
+
+          if (selectedValue.endsWith('8') || selectedValue.endsWith('9')) {
+
+            let stringOnly = selectedValue.replace(/\d+$/, '');
+
+
+            if (removedOption2) {
+              let val = removedOption2.val();
+              let text = removedOption2.text();
+              let optionString = val.replace(/\d+$/, '');
+              optionVal6 = optionString + '6';
+              optionVal7 = optionString + '7';
+              if ($('#electives-subject6 option[value="' + optionVal6 + '"]').length === 0) {
+                $('#electives-subject6').append(new Option(text, optionVal6, false, false)); // Properly add option
+                $('#electives-subject6').trigger('change.select2'); // Refresh Select2
+              }
+
+              if ($('#electives-subject7 option[value="' + optionVal7 + '"]').length === 0) {
+                $('#electives-subject7').append(new Option(text, optionVal7, false, false));
+                $('#electives-subject7').trigger('change.select2');
+              }
+            }
+
+            if (removedOption9) {
+              let val = removedOption9.val();
+              let text = removedOption9.text();
+              let optionString = val.replace(/\d+$/, '');
+              optionVal6 = optionString + '6';
+              optionVal7 = optionString + '7';
+              if ($('#electives-subject6 option[value="' + optionVal6 + '"]').length === 0) {
+                $('#electives-subject6').append(new Option(text, optionVal6, false, false)); // Properly add option
+                $('#electives-subject6').trigger('change.select2'); // Refresh Select2
+              }
+
+              if ($('#electives-subject7 option[value="' + optionVal7 + '"]').length === 0) {
+                $('#electives-subject7').append(new Option(text, optionVal7, false, false));
+                $('#electives-subject7').trigger('change.select2');
+              }
+            }
+
+            // Update stored removedOption for next change
+            removedOption2 = $('#electives-subject8 option:selected').clone();
+            removedOption9 = $('#electives-subject9 option:selected').clone();
+
+            $('option[value="' + stringOnly + '6"]').remove();
+            $('option[value="' + stringOnly + '7"]').remove();
+            $('option[value="7"]').remove();
+            $('option[value="6"]').remove();
+
+
+            $(`#electives-subject${semester}`).parents('.content').eq(0).find(".specialization-sub").hide();
+            $(`#electives-subject${semesterPairKey}`).parents('.content').eq(0).find(".specialization-sub").hide();
+          }
+        }
+
+        if (!selectedValue.endsWith('8') && !selectedValue.endsWith('9')) { //SMU-MBA \
+          if ($(window).width() > 992) {
+            hideAllElectiveContent();
+          } else {
+            $(`#electives-subject${semester}`).parents('.content').eq(0).find(".elective-tabcontent").hide();
+            $(`#electives-subject${semesterPairKey}`).parents('.content').eq(0).find(".elective-tabcontent").hide();
+          }
+        } else {
+          //SMU MBA
+          if ($(window).width() < 992) {
+            setTimeout(function () {
+              $('.accordion-container .accordion .content.active').attr('style', 'height: 560px');
+            }, 200);
+          }
+        }
+        if (selectedValue) {
+          syncDropdownsAndShowContent(semester, selectedValue);
+        }
+      });
+    });
+  }
+
+  $(`.course-curriculum-sect .tablinks`).click(function () {
+    let tabItem = $(this).data('tabitem');
+    if (tabItem == 'yr1') {
+      $('.smu-mba-note').show();
+    } else {
+      $('.smu-mba-note').hide();
+    }
+  });
+
+  $(`.course-curriculum-sect .accordion `).click(function () {
+    let index = $('.accordion').index(this);
+
+    if (index === 2 || index === 3) { // 3rd or 4th accordion clicked
+      $('.smu-mba-note').show();
+    } else {
+      $('.smu-mba-note').hide();
+    }
+  });
+  $('.smu-mba-note').hide();
+  // Handle pre-selected electives from .electiveSelectorNew
+  function handlePreselectedElectives() {
+    if ($(".electiveSelectorNew").length) {
+      const selectorName = $(".electiveSelectorNew").text().trim();
+      if (selectorName) {
+        // Find which semester this selector is for
+        const semesterMatch = selectorName.match(/-(\d+)$/);
+        if (semesterMatch) {
+          const semester = semesterMatch[1];
+          const counterpartSemester = SEMESTER_PAIRS[semester] ||
+            Object.keys(SEMESTER_PAIRS).find(key => SEMESTER_PAIRS[key] === semester);
+
+          if (counterpartSemester) {
+            $(`#electives-subject${semester}`).val(selectorName).trigger("change.select2");
+            const counterpartValue = selectorName.replace(`-${semester}`, `-${counterpartSemester}`);
+            $(`#electives-subject${counterpartSemester}`).val(counterpartValue).trigger("change.select2");
+
+            showSelectedElectiveContent(selectorName);
+            showSelectedElectiveContent(counterpartValue);
+          }
+        }
+      }
+    }
+  }
+
+  // Main initialization
+  hideAllElectiveContent();
+  initializeDropdowns();
+  setupChangeHandlers();
+  handlePreselectedElectives();
+  electiveDropdown();
+
+
+  function electiveDropdown() {
+    $('option[value="elec-marketing-8"]').remove();
+    $('option[value="elec-marketing-9"]').remove();
+    const electiveData = 'Select Elective';
+    const electiveText = 'Select Elective';
+    let alreadyAdded = false;
+    if (!alreadyAdded && $('#electives-subject9 option[value="Select elective"]').length === 0) {
+      const electiveSelect = new Option(electiveText, electiveData, false, false);
+      $('#electives-subject9 option:eq(0)').after(electiveSelect);
+      alreadyAdded = true;
+    }
+    if (!alreadyAdded && $('#electives-subject8 option[value="Select elective"]').length === 0) {
+      const electiveSelect = new Option(electiveText, electiveData, false, false);
+      $('#electives-subject8 option:eq(0)').after(electiveSelect);
+      alreadyAdded = true;
+    }
+  }
+
+  // Mobile widget hide in courseoverview section
+  function checkBannerVisibility() {
+    if ($(window).width() > 992) {
+      return;
+    }
+    const progbanner = $(".course-overview");
+    const footerprogenrollButton = $(".mobileWidgetBottom");
+    if (footerprogenrollButton.length === 0) {
+      return;
+    }
+    if (progbanner.length === 0) {
+      footerprogenrollButton.show();
+      return;
+    }
+    const progbannerBottom = progbanner[0].getBoundingClientRect().bottom;
+    footerprogenrollButton.toggle(progbannerBottom <= 0);
+  }
+  // Run on page load and scroll
+  const path_name = window.location.pathname;
+  if (path_name !== "/online-bba-v2") {
+    $(document).ready(checkBannerVisibility);
+    $(document).on("scroll", checkBannerVisibility);
+  }
+});
+
+
+function fetchSemester(semesterPdf) {
+  var semesterPdf = $(".download-url").text(semesterPdf);
+  $('#downloadForm .form-details-block .lead-submit').text('Get Started');
+  $('#downloadForm .form-details-block h5').text('Interested in our courses? Share your details');
+  $('#downloadForm form').eq(0).trigger("reset");
+}
+
+function countDownTimer(date) {
+  var elem = $('#countDown, .countDown');
+  var futureTime = new Date(date).getTime();
+  const myTimer = setInterval(function () {
+    var timeLeft = Math.floor((futureTime - new Date().getTime()) / 1000);
+    var days = Math.floor(timeLeft / 86400);
+    timeLeft -= days * 86400;
+    var hours = Math.floor(timeLeft / 3600) % 24;
+    timeLeft -= hours * 3600;
+    var min = Math.floor(timeLeft / 60) % 60;
+    timeLeft -= min * 60;
+    var sec = timeLeft % 60;
+    if (window.location.href.endsWith("/remarketing-v3") === true) {
+      var timeString = "<span class='days'>" + days + "d " + "</span>" +
+        "<span class='hours'>" + hours + "h " + "</span>" +
+        "<span class='minutes'>" + min + "m " + "</span>" +
+        "<span class='seconds'>" + sec + "s " + "</span>";
+    } else {
+      var timeString = "<span class='days'>" + days + "d " + "</span>" +
+        "<span class='hours'>" + hours + "h " + "</span>" +
+        "<span class='minutes'>" + min + "m " + "</span>";
+
+    }
+    elem.html(timeString);
+    if (days < "0") {
+      $("#countDown, .countDown").hide();
+      $(".close_in").text("Application has been closed.");
+    }
+  }, 1000);
+}
+const lastDate = $('#last_date_of_admission').text();
+lastDate && countDownTimer(lastDate);
+
+$('.accordion-header').click(function () {
+  const content = $(this).next('.accordion-content');
+  const icon = $(this).find('.toggle-icon');
+
+  // Close all other accordions (optional)
+  $('.accordion-content').not(content).slideUp();
+  $('.toggle-icon').not(icon).attr('src', '/wp-content/themes/flamingo/images/Plus.svg');
+
+  // Toggle current
+  content.slideToggle();
+  const isOpen = icon.attr('src').includes('Minus');
+  icon.attr('src', isOpen
+    ? '/wp-content/themes/flamingo/images/Plus.svg'
+    : '/wp-content/themes/flamingo/images/Minus.svg');
+});
+
+if (window.innerWidth <= 768) {
+  const firstHeader = $('.accordion-header').first();
+  const firstContent = firstHeader.next('.accordion-content');
+  const firstIcon = firstHeader.find('.toggle-icon');
+
+  // firstContent.slideDown(); // show
+  firstIcon.attr('src', '/wp-content/themes/flamingo/images/Plus.svg');
+
+  $('.accordion-header').click(function () {
+    setTimeout(function () {
+      var pinkbg_height = $(".content.active .sem-details").height();
+      $(".content.active").css("height", pinkbg_height + 20 + "px");
+    }, 500);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth < 1024) return;
+  const url = window.location.href;
+  const widthRules = {
+    "online-bcom-ecommerce-muj": "99%",
+    "online-bcom-economics-muj": "100%"
+  };
+  const slugs = [
+    "online-bcom-banking-and-fintech-muj",
+    "online-bcom-accounting-with-ai-muj",
+    "online-bcom-in-business-analytics-muj",
+    "online-bcom-ecommerce-muj",
+    "online-bcom-economics-muj",
+    "online-bcom-financial-analytics-muj",
+    "online-bcom-digital-marketing-with-ai-muj"
+  ];
+  if (slugs.some(slug => url.includes(slug))) {
+    const el = document.querySelector(".admission-process-sect .admission-wrapper .section-title");
+    if (!el) return;
+    let width = "90%";
+    for (let slug in widthRules) {
+      if (url.includes(slug)) {
+        width = widthRules[slug];
+        break;
+      }
+    }
+    el.style.maxWidth = width;
+  }
+});
+
+// Curriculum accordian for PGCP and other programs
+document.addEventListener("DOMContentLoaded", function () {
+  initAllAccordions();
+
+  //  MAIN INIT
+  function initAllAccordions(scope = document) {
+    const containers = scope.querySelectorAll(".subject-accordion-container");
+
+    containers.forEach((container) => {
+      if (!container.dataset.initDone) {
+        container.dataset.initDone = "true";
+        setupContainer(container);
+      }
+
+      refreshHeights(container);
+    });
+  }
+
+  // SETUP EACH CONTAINER
+  function setupContainer(container) {
+    const accordions = container.querySelectorAll(".subject-accordion");
+    if (!accordions.length) return;
+
+    // backend active OR first
+    let active = container.querySelector(".subject-accordion.active");
+    if (!active) active = accordions[0];
+
+    openAccordion(active);
+
+    container.addEventListener("click", function (e) {
+      const header = e.target.closest(".subject-acc-header");
+      if (!header) return;
+
+      const accordion = header.closest(".subject-accordion");
+
+      if (accordion.classList.contains("active")) {
+        closeAccordion(accordion);
+      } else {
+        accordions.forEach(closeAccordion);
+        openAccordion(accordion);
+      }
+    });
+  }
+
+  // OPEN / CLOSE
+  function openAccordion(accordion) {
+    if (!accordion) return;
+
+    accordion.classList.add("active");
+
+    const header = accordion.querySelector(".subject-acc-header");
+    const content = accordion.querySelector(".subject-content");
+
+    header?.classList.add("active");
+
+    if (content) {
+      requestAnimationFrame(() => {
+        content.style.maxHeight = content.scrollHeight + "px";
+      });
+    }
+  }
+
+  function closeAccordion(accordion) {
+    accordion.classList.remove("active");
+
+    const header = accordion.querySelector(".subject-acc-header");
+    const content = accordion.querySelector(".subject-content");
+
+    header?.classList.remove("active");
+    if (content) content.style.maxHeight = null;
+  }
+
+  // REFRESH HEIGHT WHEN VISIBLE
+  function refreshHeights(container) {
+    const active = container.querySelector(".subject-accordion.active");
+    if (!active) return;
+
+    const content = active.querySelector(".subject-content");
+    if (!content) return;
+
+    if (isVisible(content)) {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  }
+
+  function isVisible(el) {
+    return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+  }
+
+
+  // WATCH DOM CHANGES (Select2, tabs)
+  const observer = new MutationObserver(() => {
+    initAllAccordions();
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+  });
+});
+
+// Toggle floating widget call buttons 
+const toggleCallBtn = () => {
+  const form = document.querySelector("#programLeadForm");
+  const secondFoldShow = document.querySelector(".floating-Widget .call-block");
+
+  if (!secondFoldShow) return;
+  const scrollY = window.scrollY;
+  const firstFold = window.innerHeight;
+
+  if (scrollY >= firstFold) {
+    secondFoldShow.classList.remove("hidden");
+  } else {
+    secondFoldShow.classList.add("hidden");
+  }
+}
+const page_url = window.location.href;
+if (page_url.includes("/online-ba-degree-smu-v2") || page_url.includes("/online-bca-degree-muj-v2")) {
+  const share_button = document.querySelector(".share-button .share-btn");
+  const banner_call_btn = document.querySelector(".banner-call-btn");
+  $(share_button).on("click", function (e) {
+    $(banner_call_btn).toggleClass("position-change");
+  });
+  $(document).on('click', function (e) {
+    if (!$(e.target).closest('.share-button').length) {
+      $(banner_call_btn).removeClass('position-change');
+    }
+  });
+  window.addEventListener("load", toggleCallBtn);
+  window.addEventListener("scroll", toggleCallBtn);
+  window.addEventListener("resize", toggleCallBtn);
+}

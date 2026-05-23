@@ -1,0 +1,42 @@
+CREATE TABLE IF NOT EXISTS admins (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(191) NOT NULL UNIQUE,
+  password_hash VARCHAR(255) NOT NULL,
+  role VARCHAR(40) NOT NULL DEFAULT 'admin',
+  created_at DATETIME NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS blogs (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  slug VARCHAR(255) NOT NULL UNIQUE,
+  title VARCHAR(255) NOT NULL,
+  excerpt VARCHAR(250) NOT NULL,
+  meta_title VARCHAR(60) NOT NULL,
+  meta_description VARCHAR(255) NOT NULL,
+  focus_keyword VARCHAR(191) NOT NULL,
+  primary_keyword VARCHAR(191) NOT NULL,
+  content_html LONGTEXT NOT NULL,
+  toc_json LONGTEXT NOT NULL,
+  categories_json TEXT NOT NULL,
+  tags_json TEXT NOT NULL,
+  status ENUM('draft','pending','published','scheduled') NOT NULL DEFAULT 'draft',
+  publish_at DATETIME NULL,
+  published_at DATETIME NULL,
+  feature_image_url VARCHAR(800) NOT NULL,
+  feature_image_alt VARCHAR(255) NOT NULL,
+  feature_image_title VARCHAR(255) NULL,
+  author_name VARCHAR(191) NOT NULL,
+  author_bio TEXT NULL,
+  author_page VARCHAR(800) NULL,
+  author_image_url VARCHAR(800) NULL,
+  lead_headline VARCHAR(255) NOT NULL,
+  lead_button_text VARCHAR(120) NOT NULL,
+  faq_json LONGTEXT NOT NULL,
+  image_blocks_json LONGTEXT NOT NULL,
+  search_text TEXT NOT NULL,
+  created_at DATETIME NOT NULL,
+  updated_at DATETIME NOT NULL,
+  last_updated_at DATETIME NOT NULL,
+  INDEX idx_blogs_status_publish (status, publish_at),
+  INDEX idx_blogs_updated (updated_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

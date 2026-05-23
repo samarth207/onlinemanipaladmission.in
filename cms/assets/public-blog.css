@@ -1,0 +1,238 @@
+.om-blog-page {
+  background: #fff;
+}
+
+.om-blog-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(247, 246, 246, 0.96);
+  border-bottom: 1px solid rgba(21, 20, 25, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.om-blog-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 72px;
+}
+
+.om-logo img {
+  width: 174px;
+  height: auto;
+}
+
+.om-blog-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.om-blog-header-nav a {
+  font-size: 16px;
+  color: #151419;
+  font-weight: 500;
+}
+
+.om-blog-header-nav a.active {
+  color: #f26722;
+  font-weight: 700;
+}
+
+.om-blog-page .pageTopSpace {
+  padding-top: 32px;
+}
+
+.blog-details .pageTopSpace {
+  padding-top: 38px;
+}
+
+.om-blog-page .featured-blog-banner .featured-title {
+  max-width: 980px;
+  margin-bottom: 24px;
+}
+
+.om-empty-featured {
+  justify-content: center !important;
+  gap: 18px;
+  text-align: left;
+}
+
+.om-empty-featured p {
+  color: #f7f6f6;
+  margin-bottom: 0;
+}
+
+.om-empty-featured .primaryBtn {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.om-card-link {
+  display: block;
+  height: 100%;
+  color: inherit;
+}
+
+.om-card-link:hover {
+  color: inherit;
+}
+
+.blog-listing-sec .read-blog-section .blog-wrapper .blog-container .blog-listing-sec .blog-item .read-blog-wrapper {
+  padding: 0 8px 52px;
+}
+
+.blog-listing-sec .read-blog-section .blog-wrapper .blog-container .blog-listing-sec .blog-item .read-blog-wrapper .blog-deatil {
+  padding-bottom: 18px;
+}
+
+.blog-listing-sec .read-blog-section .blog-wrapper .blog-container .blog-listing-sec .blog-item .read-blog-wrapper .blog-deatil .blog-name {
+  margin-bottom: 0;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  min-height: 72px;
+}
+
+.blog-listing-sec .read-blog-section .blog-wrapper .blog-container .blog-listing-sec .blog-item .author-details {
+  display: flex;
+  align-items: center;
+}
+
+.blog-listing-sec .read-blog-section .blog-wrapper .blog-container .blog-listing-sec .blog-item .author-details img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.noReuslt {
+  margin: 24px 0 8px;
+  text-align: center;
+  color: #151419;
+  font-size: 20px;
+}
+
+.om-no-blog-card {
+  border: 1px solid rgba(21, 20, 25, 0.12);
+  border-radius: 20px;
+  padding: 24px;
+  background: #f7f6f6;
+}
+
+.om-no-blog-card h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.om-no-blog-card p {
+  margin-bottom: 0;
+}
+
+.blog-details .main-wrapper {
+  align-items: flex-start;
+}
+
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .right .programLeadForm .section-title {
+  font-size: 28px;
+}
+
+.blog-details #ez-toc-container .ez-toc-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.blog-details #ez-toc-container .ez-toc-list li {
+  list-style: none;
+}
+
+.blog-details .content-area .blogContent figure {
+  margin: 0 0 20px;
+}
+
+.blog-details .content-area .blogContent figure figcaption {
+  color: #575757;
+  font-size: 14px;
+}
+
+.blog-details .tags ul {
+  padding-left: 0;
+}
+
+.blog-details .suggested_article .article:last-child {
+  border-bottom: 0;
+}
+
+.pagination {
+  margin: 30px 0 10px;
+}
+
+.pagination .ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  color: #575757;
+}
+
+@media (max-width: 991.98px) {
+  .om-blog-header-inner {
+    min-height: 64px;
+  }
+
+  .om-logo img {
+    width: 138px;
+  }
+
+  .om-blog-header-nav {
+    gap: 12px;
+  }
+
+  .om-blog-header-nav a {
+    font-size: 14px;
+  }
+
+  .blog-listing-sec .read-blog-section .blog-wrapper .blog-container .blog-listing-sec .blog-item .read-blog-wrapper .blog-deatil .blog-name {
+    min-height: 58px;
+  }
+
+  .blog-details .main-wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .blog-details .left,
+  .blog-details .right,
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .left,
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .right {
+    width: 100% !important;
+  }
+
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .blog-details .right .sticky-container {
+    position: static;
+    top: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .om-blog-header-nav a:last-child {
+    display: none;
+  }
+
+  .blog-listing-sec .read-blog-section .blog-wrapper .serach-wrapper .search-container .search-bar {
+    width: 100%;
+  }
+
+  .om-no-blog-card h2 {
+    font-size: 26px;
+  }
+}

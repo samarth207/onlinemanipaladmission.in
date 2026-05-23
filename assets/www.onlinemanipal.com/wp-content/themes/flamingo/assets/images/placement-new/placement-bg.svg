@@ -1,0 +1,19 @@
+<svg width="558" height="457" viewBox="0 0 558 457" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0_3480_14991)">
+<rect x="0.5" y="0.941406" width="557" height="456" rx="20" fill="url(#pattern0_3480_14991)" fill-opacity="0.1"/>
+<rect x="0.5" y="0.941406" width="557" height="257" fill="url(#paint0_linear_3480_14991)"/>
+</g>
+<defs>
+<pattern id="pattern0_3480_14991" patternContentUnits="objectBoundingBox" width="0.0143627" height="0.0175439">
+<use xlink:href="#image0_3480_14991" transform="scale(0.00179533 0.00219298)"/>
+</pattern>
+<linearGradient id="paint0_linear_3480_14991" x1="356.5" y1="468.441" x2="378.384" y2="48.9048" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F7F6F6" stop-opacity="0"/>
+<stop offset="1" stop-color="#F7F6F6"/>
+</linearGradient>
+<clipPath id="clip0_3480_14991">
+<rect x="0.5" y="0.941406" width="557" height="456" rx="20" fill="white"/>
+</clipPath>
+<image id="image0_3480_14991" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAABdJREFUGBljYGBg+A/FQAoTMGEKDUcRAATwAgFGIXEOAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>

@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){$(document).on("click",".help-center .tab-btn",function(){var target=$(this).data("tab");$(".help-center .tab-btn").removeClass("active");$(".help-center .tab-panel").removeClass("active").hide();$(this).addClass("active");$(".help-center #"+target).addClass("active").fadeIn()})})

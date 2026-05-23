@@ -1,0 +1,3416 @@
+iframe {
+  max-width: 100%;
+}
+
+.blogContent iframe {
+  width: 100%;
+  border-radius: 20px;
+}
+.blogContent img {
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.slick-dots li button {
+  height: 20px !important;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0 !important;
+}
+
+.table-grey {
+  background: #dddddd;
+}
+
+.table-white {
+  background: #ffffff;
+}
+
+.wp-block-image figure img {
+  margin-bottom: 0px !important;
+}
+.wp-block-image figure figcaption {
+  font-size: 14px !important;
+  margin-bottom: 20px !important;
+}
+
+.single .mobileWidgetBottom {
+  display: none !important;
+}
+
+.programLeadForm .title-section .student-enroll {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  background: #A9D8FF;
+  padding: 4px 12px;
+  border-radius: 24px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.programLeadForm .title-section .student-enroll img {
+  width: 28px;
+}
+.programLeadForm .title-section .student-enroll p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: #151419;
+}
+.programLeadForm label {
+  font-size: 16px;
+}
+.programLeadForm input,
+.programLeadForm textarea {
+  font-size: 16px;
+  padding: 12px 10px;
+}
+.programLeadForm .terms-condition input {
+  padding: 6px 6px !important;
+}
+.programLeadForm .form-group {
+  margin-bottom: 18px;
+}
+.programLeadForm .iti.iti--separate-dial-code {
+  height: unset;
+}
+.programLeadForm .select2-container {
+  font-size: 16px;
+}
+.programLeadForm .select2-selection {
+  height: 48px !important;
+}
+.programLeadForm .iti__selected-dial-code {
+  font-size: 0.8rem;
+}
+
+.blogd-banner-wrapper.formBlock .terms-condition label {
+  font-size: 12px;
+}
+
+.blog-details .blog-detail-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(177.1deg, #F6E6C5 -19.84%, #fff 97.59%);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.blog-details .blog-detail-banner .doodle {
+  z-index: 0;
+  top: 37%;
+}
+.blog-details .blog-detail-banner .container {
+  position: relative;
+  z-index: 1;
+}
+.blog-details .blog-detail-banner .main-wrapper {
+  margin-bottom: 0;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper {
+  position: relative;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .star2 {
+  position: absolute;
+  top: -30px;
+  right: 10.417vw;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-title {
+  position: relative;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper {
+  border-radius: 20px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .left {
+  width: 82%;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .left .blog-container {
+  margin-right: 80px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .left .top-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .left .top-wrapper .duration-cat {
+  display: flex;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .left .current-blog {
+  position: relative;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .left .category-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 16px;
+  padding: 8px 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #151419;
+  gap: 10px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .left .category-wrapper .blog-category {
+  background: #BDCD36;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #151419;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .right {
+  width: 30%;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .right .programLeadForm {
+  background: #fff;
+  border: 1px solid rgba(21, 20, 25, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .right .programLeadForm .lead-submit {
+  padding: 10px 40px;
+  font-weight: bold;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .right .enroll-now-form .section-title {
+  text-align: center;
+  margin-bottom: -12px;
+  font-size: 30px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .section-title {
+  margin-bottom: 12px;
+  text-align: left;
+  font-size: 48px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .dot-blog {
+  width: 5px;
+  height: 5px;
+  background-color: #575757;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 12px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .brief-info {
+  font-size: 20px;
+  color: #575757;
+  margin-bottom: 24px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .card {
+  padding: 22px 16px;
+  border-radius: 20px;
+  height: 350px;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #fff;
+  width: 95%;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 16px;
+  padding: 8px 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #151419;
+  gap: 10px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper img {
+  border-radius: 10px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper .blog-category {
+  background: #BDCD36;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 5px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #151419;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration {
+  display: flex;
+  align-items: center;
+  padding: 0 0 24px;
+  color: #575757;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-time {
+  display: flex;
+  font-family: "HelveticaNowDisplay";
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: inherit;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-time img {
+  margin-right: 8px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-time span {
+  font-size: inherit;
+  letter-spacing: 1.2px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-date {
+  display: flex;
+  font-family: "HelveticaNowDisplay";
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: inherit;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-date img {
+  margin-right: 8px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-date span {
+  letter-spacing: 1.4px;
+  font-size: inherit;
+  letter-spacing: 1.2px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .author-name {
+  font-size: 20px;
+  color: #575757;
+  display: flex;
+  align-items: center;
+  margin-bottom: 34px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .author-name a {
+  color: #151419;
+  font-size: inherit;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .author-name a:first-child {
+  padding-left: 12px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .author-name .dot {
+  width: 5px;
+  height: 5px;
+  background-color: #575757;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 12px;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-autor-social-block {
+  display: block;
+  margin-bottom: 24px;
+}
+.blog-details .share-block {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-top: 1px solid rgba(21, 20, 25, 0.1);
+  border-bottom: 1px solid rgba(21, 20, 25, 0.1);
+  padding: 24px 0;
+}
+.blog-details .share-block .share-text {
+  font-size: 16px;
+  color: #151419;
+  padding-bottom: 0;
+  margin: auto 5px auto 0;
+}
+.blog-details .share-block .jssocials-shares {
+  display: flex;
+  gap: 10px;
+}
+.blog-details .share-block .jssocials-shares i.jssocials-share-logo {
+  color: #231F20;
+  background: #F7F6F6;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  padding: 0;
+}
+.blog-details .share-block .jssocials-shares .x-twitter-icon:before {
+  content: "";
+  background-image: url('../images/icons/x-twitter.svg');
+  background-size: cover;
+  width: 17px;
+  height: 15px;
+  display: inline-block;
+}
+.blog-details .share-block .jssocials-shares .instagram-icon:before {
+  content: "";
+  background-image: url('../images/icons/instagram.svg');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-top: 12px;
+}
+.blog-details .formBlock .terms-condition label {
+  color: #151419;
+  font-weight: unset;
+  font-size: 14px;
+}
+.blog-details .listen-to-blog {
+  border-top: 1px solid rgba(21, 20, 25, 0.1);
+  border-bottom: 1px solid rgba(21, 20, 25, 0.1);
+  padding: 16px 0;
+}
+.blog-details .listen-to-blog .title {
+  font-size: 22px;
+  color: #151419;
+}
+.blog-details .listen-to-blog .audio-player {
+  display: flex;
+  align-items: center;
+  background: none;
+  color: #000;
+  padding: 10px;
+  border-radius: 50px;
+  max-width: 585px;
+  font-family: Arial, sans-serif;
+}
+.blog-details .listen-to-blog .play-button {
+  width: 48px;
+  height: 48px;
+  background: #0045C0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.blog-details .listen-to-blog .progress-bar {
+  flex: 1;
+  height: 5px;
+  background: rgba(21, 20, 25, 0.2);
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.blog-details .listen-to-blog .progress {
+  height: 100%;
+  width: 0%;
+  background: #151419;
+  border-radius: 5px;
+}
+.blog-details .listen-to-blog .time {
+  font-size: 16px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.blog-details .listen-to-blog .controls {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.blog-details .listen-to-blog .controls button {
+  padding: 0;
+  background: none;
+  border: none;
+  color: #575757;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.blog-details .main-wrapper {
+  display: flex;
+  gap: 40px;
+}
+.blog-details .left {
+  width: 82%;
+}
+.blog-details .right {
+  width: 30%;
+}
+.blog-details .right ::-webkit-scrollbar {
+  width: 7px;
+}
+.blog-details .right ::-webkit-scrollbar-track {
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+.blog-details .right ::-webkit-scrollbar-thumb {
+  background: rgba(87, 87, 87, 0.1);
+  border-radius: 10px;
+}
+.blog-details .right ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.blog-details .right .sticky-container {
+  top: 145px;
+  position: sticky;
+}
+.blog-details .right #sticky-toc-wrapper {
+  max-height: 500px;
+  overflow-y: auto;
+}
+.blog-details .right #ez-toc-container {
+  width: 100%;
+  will-change: max-height, opacity;
+}
+.blog-details .right {
+  /* TOC list smooth transition */
+}
+.blog-details .right #ez-toc-container nav,
+.blog-details .right #ez-toc-container .ez-toc-list {
+  overflow: hidden;
+  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease, transform 0.25s ease;
+}
+.blog-details .right {
+  /* Collapsed state */
+}
+.blog-details .right #ez-toc-container.ez-toc-collapsed nav,
+.blog-details .right #ez-toc-container.ez-toc-collapsed .ez-toc-list {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-6px);
+}
+.blog-details .right {
+  /* Expanded state */
+}
+.blog-details .right #ez-toc-container:not(.ez-toc-collapsed) nav,
+.blog-details .right #ez-toc-container:not(.ez-toc-collapsed) .ez-toc-list {
+  max-height: 1200px;
+  opacity: 1;
+  transform: translateY(0);
+}
+.blog-details .right {
+  /* Hide sub lists initially */
+}
+.blog-details .right #ez-toc-container {
+  background: #F7F6F6;
+  border: none;
+  padding: 0 24px 14px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+.blog-details .right #ez-toc-container .ez-toc-title {
+  color: #101010;
+  font-size: 24px !important;
+  font-family: "Queens";
+  font-weight: normal !important;
+}
+.blog-details .right #ez-toc-container .ez-toc-title-container {
+  padding-bottom: 0;
+}
+.blog-details .right #ez-toc-container .ez-toc-icon-toggle-span {
+  height: 20px;
+}
+.blog-details .right #ez-toc-container li > ul {
+  display: none;
+  margin-top: 10px;
+  margin-left: 0;
+}
+.blog-details .right #ez-toc-container li > ul li {
+  background: #fff;
+  border-radius: 12px;
+  padding: 8px 12px !important;
+  margin-bottom: 10px;
+  border-top: none;
+}
+.blog-details .right #ez-toc-container li > ul li a {
+  color: #707070;
+  text-decoration: none;
+}
+.blog-details .right #ez-toc-container li > ul li a:hover {
+  text-decoration: none;
+}
+.blog-details .right #ez-toc-container li > ul li a:visited {
+  color: #707070;
+}
+.blog-details .right #ez-toc-container .ez-toc-title-toggle a {
+  padding-right: 10px;
+}
+.blog-details .right #ez-toc-container li.toc-open > ul {
+  display: block;
+}
+.blog-details .right #ez-toc-container li.toc-open > ul li a {
+  padding-right: 0;
+}
+.blog-details .right #ez-toc-container ul li {
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.blog-details .right #ez-toc-container ul li:first-child {
+  border-top: 0;
+}
+.blog-details .right #ez-toc-container ul li:last-child {
+  padding-bottom: 0;
+}
+.blog-details .right #ez-toc-container li {
+  position: relative;
+}
+.blog-details .right #ez-toc-container li a,
+.blog-details .right #ez-toc-container li a:visited {
+  color: #010101;
+  text-decoration: none;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 1.4;
+}
+.blog-details .right #ez-toc-container li a:hover {
+  text-decoration: none;
+}
+.blog-details .right #ez-toc-container a {
+  padding-right: 24px;
+  display: inline-block;
+}
+.blog-details .right .ez-toc-counter nav ul li a::before {
+  content: none;
+}
+.blog-details .right {
+  /* Arrow button */
+}
+.blog-details .right .toc-arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 36px;
+  content: "";
+  width: 11px;
+  height: 6px;
+  background: url('../images/icons/chevron-down-arrow.svg') center/cover no-repeat;
+  display: inline-block;
+  cursor: pointer;
+}
+.blog-details .right {
+  /* Rotate arrow when open */
+}
+.blog-details .right li.toc-open > .toc-arrow {
+  transform: rotate(180deg);
+}
+.blog-details .right .suggested_article {
+  background: #EFEFD0;
+  border: none;
+  padding: 14px 24px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+.blog-details .right .suggested_article .suggested-title {
+  color: #101010;
+  font-size: 24px !important;
+  font-family: "Queens";
+  font-weight: normal !important;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.blog-details .right .suggested_article .category {
+  letter-spacing: 2.64px;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: black;
+}
+.blog-details .right .suggested_article .article {
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+.blog-details .right .suggested_article .article .details .pub-date .blog-date-icon {
+  margin: 0 6px 0 0;
+  background: #fff;
+}
+.blog-details .right .suggested_article .article .details .pub-date .dateValue {
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+  color: black;
+}
+.blog-details .right .suggested_article .article .details .title-text {
+  text-decoration: none;
+  cursor: pointer;
+}
+.blog-details .right .suggested_article .article .details .title {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px 0;
+  gap: 10px;
+  align-items: stretch;
+}
+.blog-details .right .suggested_article .article .details .title .aticle-img-related {
+  overflow: hidden;
+  border-radius: 5px;
+  flex: 0 0 auto;
+}
+.blog-details .right .suggested_article .article .details .title .blog-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.blog-details .right .suggested_article .article .details .title .post-title {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  line-height: 20px;
+  color: black;
+  font-size: 16px;
+}
+.blog-details .right .suggested_article .article .details .title:hover .aticle-img-related {
+  background-color: #000;
+}
+.blog-details .right .suggested_article .article .details .title .post-thumb {
+  margin: 0 12px 0 0;
+  border-radius: 2px;
+  width: 90px;
+  min-width: 90px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-details .right .suggested_article .article .details .title .blog-date-icon {
+  margin: 0 6px 0 0;
+}
+.blog-details .right .suggested_article .article .details .title .postDate {
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: black;
+}
+.blog-details .right .suggested_article .article .details .title .title-text {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0.16px;
+  color: black;
+}
+.blog-details .right .suggested_article .article .details .title .title-text strong {
+  font-weight: bold;
+}
+.blog-details .right .suggested_article .article .details .title .title-text strong:hover {
+  color: #F26722;
+}
+.blog-details .right .suggested_article .article .details .title .title-text:hover {
+  color: #F26722;
+}
+.blog-details .right .suggested_article .article .details .title .views .details {
+  align-items: center;
+  justify-content: flex-end;
+}
+.blog-details .right .suggested_article .article .details .title .views .details img {
+  margin: 0 4px 0 0;
+}
+.blog-details .right .suggested_article .article .details .title .views .details img:hover {
+  color: #1c1c1c;
+}
+.blog-details .right .suggested_article .article .details .title .views .details .number {
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #4A5373;
+}
+.blog-details .right .suggested_article .article .details .title .views .details .number:hover {
+  color: #1c1c1c;
+}
+.blog-details .right .suggested_article .article .details .views .view-details {
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+.blog-details .right .suggested_article .article .details .views .view-details svg {
+  margin-right: 5px;
+}
+.blog-details .right .suggested_article .article .details .views .view-details .number {
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+  color: #000;
+}
+.blog-details .right .suggested_article .article .details .views .view-details .number:hover {
+  color: #1c1c1c;
+}
+.blog-details .right .suggested_article .article .details .views .view-details:hover svg path {
+  fill: #1c1c1c;
+}
+.blog-details .right .suggested_article .article:last-child {
+  border-bottom: none;
+}
+.blog-details .content-area #ez-toc-container {
+  display: none;
+}
+.blog-details .content-area .blogContent {
+  font-size: 24px;
+  color: #151419;
+}
+.blog-details .content-area .blogContent p,
+.blog-details .content-area .blogContent ul,
+.blog-details .content-area .blogContent li,
+.blog-details .content-area .blogContent a,
+.blog-details .content-area .blogContent strong {
+  font-size: 18px;
+  color: inherit;
+}
+.blog-details .content-area .blogContent a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.blog-details .content-area .blogContent a.primaryBtn,
+.blog-details .content-area .blogContent a.know-more {
+  text-decoration: none;
+}
+.blog-details .content-area .blogContent h1 strong,
+.blog-details .content-area .blogContent h2 strong,
+.blog-details .content-area .blogContent h3 strong,
+.blog-details .content-area .blogContent h4 strong,
+.blog-details .content-area .blogContent h5 strong,
+.blog-details .content-area .blogContent h6 strong {
+  font-weight: normal;
+}
+.blog-details .content-area .blogContent h2 {
+  font-size: 42px;
+}
+.blog-details .content-area .blogContent h3 {
+  font-size: 40px;
+}
+.blog-details .content-area .blogContent h4 {
+  font-size: 32px;
+}
+.blog-details .content-area .blogContent p,
+.blog-details .content-area .blogContent ul,
+.blog-details .content-area .blogContent ol {
+  margin-bottom: 20px;
+}
+.blog-details .content-area .blogContent ol {
+  padding-left: 26px;
+}
+.blog-details .content-area .blogContent blockquote {
+  background-color: #F6E6C5;
+  padding: 40px;
+  font-size: 32px;
+  font-family: "Queens";
+  font-weight: normal;
+  color: #151419;
+  border-radius: 16px;
+  border: 1px solid rgba(21, 20, 25, 0.5);
+  width: 100%;
+  position: relative;
+  margin: 80px 0;
+}
+.blog-details .content-area .blogContent blockquote::after {
+  content: "";
+  background: url('../images/icons/quote-white.svg');
+  background-repeat: no-repeat;
+  width: 77px;
+  height: 52px;
+  z-index: 2;
+  display: block;
+  position: absolute;
+  right: 35px;
+  top: -40px;
+}
+.blog-details .content-area .blogContent p {
+  line-height: 1.4;
+}
+.blog-details .content-area table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.blog-details .content-area table th,
+.blog-details .content-area table td {
+  padding: 12px 16px;
+  border: 1px solid #393939;
+}
+.blog-details .content-area .bandLayout {
+  background: #EFEFD0;
+  padding: 70px 32px;
+  border-radius: 20px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin: 80px 0px;
+  z-index: 3;
+  position: relative;
+  overflow: hidden;
+}
+.blog-details .content-area .bandLayout .text {
+  font-size: 42px;
+  color: #101010;
+  font-family: "Queens";
+  margin-bottom: 0;
+}
+.blog-details .content-area .bandLayout .know-more,
+.blog-details .content-area .bandLayout .know-more:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.blog-details .content-area .bandLayout .doodle {
+  top: 73%;
+  left: 66%;
+  z-index: -1;
+  width: 149%;
+}
+.blog-details .content-area .author-wrapper .author {
+  max-width: 68%;
+  margin-right: 56px;
+  padding: 10px 6px;
+}
+.blog-details .content-area .author-wrapper .author .author-bio {
+  width: 40%;
+}
+.blog-details .content-area .author-wrapper .author .author-desc {
+  width: 70%;
+}
+.blog-details .content-area .author-wrapper .author .author-desc .blogs-wrritten {
+  display: flex;
+}
+.blog-details .content-area .author-wrapper .author .author-desc .blogs-wrritten .left {
+  width: 20%;
+  justify-content: center;
+  padding-left: 0;
+}
+.blog-details .content-area .author-wrapper .author .author-desc .blogs-wrritten .right {
+  padding-left: 16px;
+  border-left: 1px solid rgba(21, 20, 25, 0.1019607843);
+  width: 30%;
+}
+.blog-details .content-area .author-wrapper .author .author-desc .blogs-wrritten .left,
+.blog-details .content-area .author-wrapper .author .author-desc .blogs-wrritten .right {
+  display: flex;
+  flex-direction: column;
+}
+.blog-details .content-area .author-wrapper .author .author-desc .blogs-wrritten .left .count,
+.blog-details .content-area .author-wrapper .author .author-desc .blogs-wrritten .right .count {
+  font-size: 16px;
+  color: #151419;
+  font-weight: 700;
+}
+.blog-details .content-area .author-wrapper .author .author-desc .blogs-wrritten .left .text,
+.blog-details .content-area .author-wrapper .author .author-desc .blogs-wrritten .right .text {
+  font-size: 14px;
+  color: #151419;
+}
+.blog-details .content-area .author-wrapper .author .author-img-wrap {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 18px;
+}
+.blog-details .content-area .author-wrapper .author .author-img-wrap .author-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-details .content-area .author-wrapper .author .author-img-wrap .linkedin {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+.blog-details .content-area .author-wrapper .author .author-name {
+  font-size: 24px;
+  font-family: "Queens";
+  color: #151419;
+  margin-bottom: 0;
+  text-align: center;
+}
+.blog-details .content-area .author-wrapper .author .designation {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  color: #151419;
+  text-align: center;
+  margin-bottom: 0;
+}
+.blog-details .content-area .tags ul {
+  margin: 0;
+  padding: 0;
+}
+.blog-details .content-area .tags .tagName {
+  display: inline-block;
+  background: #F7F6F6;
+  border-radius: 42px;
+  border: 1px solid rgba(21, 20, 25, 0.1);
+  padding: 8px 16px;
+  margin: 10px 16px 10px 0;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #575757;
+}
+.blog-details .right #ez-toc-container .ez-toc-title-container {
+  position: sticky;
+  top: 0;
+  background: #F7F6F6;
+  z-index: 2;
+  padding-bottom: 10px;
+  padding-top: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.blog-details .testimonial {
+  padding-top: 80px;
+}
+.blog-details .testimonial .testimonial-section .slick-slide {
+  padding: 32px;
+}
+.blog-details .testimonial .testimonial-section .testi-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.blog-details .testimonial .testimonial-section .testi-wrap .testimonial-img {
+  width: auto;
+  max-width: 400px;
+  height: 340px;
+  min-height: 340px !important;
+  max-height: 340px;
+}
+.blog-details .testimonial .testimonial-section .testi-wrap .content-wrap {
+  padding: 0 !important;
+  display: flex;
+  gap: 20px;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .testimonial-desc {
+  max-width: 740px;
+  font-size: 24px;
+}
+.blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .category-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 16px;
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #151419;
+  gap: 10px;
+}
+.blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .category-wrapper img {
+  border-radius: 10px;
+}
+.blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .category-wrapper .blog-category {
+  background: #BDCD36;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 5px 12px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #151419;
+}
+.blog-details .testimonial .testimonial-section .testi-wrap .name-course .course {
+  display: flex;
+  align-items: center;
+}
+.blog-details .testimonial .testimonial-section .testi-wrap .name-course .course .bullet {
+  display: inline-block;
+  margin: 0 8px;
+}
+.blog-details .testimonial .testimonial-section .testi-wrap .name-course .course .rating {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2px 8px;
+  border-radius: 16px;
+  gap: 4px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid rgba(21, 20, 25, 0.1);
+}
+.blog-details .testimonial .testimonial-section .testi-wrap .name-course .course .rating .rating-number {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #151419;
+}
+.blog-details .testimonial .testimonial-section .testi-wrap .name-course .course .rating img {
+  max-width: 14px;
+}
+.blog-details .testimonial .testimonial-section .testi-wrap.video-testi .video-img {
+  min-height: unset !important;
+  max-height: 340px;
+}
+.blog-details .testimonial.section-mb {
+  margin-bottom: 80px;
+}
+.blog-details .read-blog-section {
+  overflow: hidden;
+}
+.blog-details .read-blog-section .blog-wrapper .section-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog-details .read-blog-section .blog-wrapper .section-top .view-button {
+  padding: 20px 24px;
+  font-weight: 700;
+  font-family: "HelveticaNowDisplay";
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid;
+  border-color: #575757;
+  color: #000;
+  font-size: 20px;
+  border-radius: 40px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item {
+  padding: 12px;
+  border: 1px solid rgba(21, 20, 25, 0.1);
+  border-radius: 12px;
+  margin-right: 20px;
+  background: #F7F6F6;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-img img {
+  width: 100%;
+  height: 285px;
+  border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-course-enroll {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 16px;
+  padding: 8px 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #151419;
+  position: absolute;
+  gap: 8px;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-course-enroll img {
+  border-radius: 10px;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-course-enroll .blog-top-ranked {
+  background: #BDCD36;
+  border-radius: 16px;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #151419;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-course-enroll .blog-course-ranked {
+  background: #BDCD36;
+  border-radius: 16px;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #151419;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-wrapper .blog-deatil {
+  display: flex;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-wrapper .blog-deatil .blog-name {
+  font-family: "Queens";
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #151419;
+  margin-right: 20px;
+  min-height: 67px;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-wrapper .blog-deatil .rating {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 6px 12px;
+  border-radius: 18px;
+  gap: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-wrapper .blog-deatil .rating .rating-number {
+  margin-bottom: 0;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-wrapper .blog-deatil .rating img {
+  max-width: 14px;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration {
+  display: flex;
+  align-items: center;
+  padding: 16px 0px 12px 0px;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-time {
+  display: flex;
+  font-family: "HelveticaNowDisplay";
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #151419;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-time img {
+  margin-right: 8px;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-time span {
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .dot-blog {
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 16px;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-date {
+  display: flex;
+  font-family: "HelveticaNowDisplay";
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #151419;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-date img {
+  margin-right: 8px;
+}
+.blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-date span {
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+.blog-details .read-blog-section .blog-wrapper .slick-list {
+  overflow: visible;
+}
+.blog-details .top-online-course {
+  overflow: hidden;
+}
+.blog-details .top-online-course .top-online-course-section {
+  margin-bottom: 4vw;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-section .section-title {
+  margin-bottom: 4px;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-section .view-all-btn {
+  font-size: 20px;
+  color: #151419;
+  border: 2px solid rgba(21, 20, 25, 0.1);
+  border-radius: 50px;
+  padding: 14px 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course a:hover {
+  color: unset;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .slick-track {
+  margin-left: unset;
+  margin-right: unset;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .slick-list {
+  margin-left: -10px;
+  margin-right: -10px;
+  overflow: visible;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item {
+  padding: 16px;
+  border: 2px solid rgba(21, 20, 25, 0.1);
+  border-radius: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background: #F7F6F6;
+  position: relative;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -50px;
+  z-index: 1;
+  position: absolute;
+  padding: 6px;
+  width: 92%;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .top-ranked {
+  background: #FDD900;
+  border-radius: 16px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.313rem;
+  font-weight: 700;
+  color: #151419;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(21, 20, 25, 0.6);
+  border-radius: 16px;
+  padding: 6px 12px;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll .enroll-text {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1rem;
+  color: #fff;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .course-img:hover .student-enroll {
+  background: rgba(21, 20, 25, 0.8);
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-img img {
+  border-radius: 12px;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid rgba(21, 20, 25, 0.1);
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .institute-name {
+  margin-left: -16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 16px;
+  border-radius: 0 12px 12px 0;
+  font-weight: 700;
+  margin-top: -18px;
+  z-index: 1;
+  position: absolute;
+  font-size: 16px;
+  line-height: 1.313;
+  color: #575757;
+  left: 15px;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .muj-bg {
+  background: #CCC1FF;
+  border: 1px solid #ada4d8;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .smu-bg {
+  background: #BEFFFE;
+  border: 1px solid #94d7d6;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .mahe-bg {
+  background: #A9D8FF;
+  border: 1px solid #9ac5e8;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper {
+  padding-top: 28px;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil {
+  display: flex;
+  padding-bottom: 24px;
+  justify-content: space-between;
+  min-height: 75px;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .course-name {
+  font-size: 24px;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #151419;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 6px 12px;
+  border-radius: 18px;
+  gap: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid rgba(21, 20, 25, 0.1);
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating .rating-number {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #151419;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating img {
+  max-width: 14px;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .duration {
+  display: flex;
+  align-items: center;
+  color: #151419;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .duration span {
+  font-size: 14px;
+  line-height: 1.25;
+  margin-top: 2px;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .duration img {
+  width: 20px;
+  margin-right: 8px;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #151419;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 16px;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .pricing {
+  display: flex;
+  align-items: center;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .pricing img {
+  width: 20px;
+  margin-right: 8px;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .pricing span {
+  font-size: 14px;
+  line-height: 1.25;
+  color: #151419;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-muj .shortName,
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-smu .shortName,
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-mahe .shortName {
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  background: #434343;
+  color: #fff !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px 0 12px 12px;
+  padding: 4px 16px;
+  font-size: inherit;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-muj:hover {
+  border: 2px solid #CCC1FF;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-muj:hover .shortName {
+  background: #CCC1FF;
+  border: 1px solid #6254A4;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-muj:hover .student-enroll {
+  background: rgba(21, 20, 25, 0.8);
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-smu:hover {
+  border: 2px solid #94d7d6;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-smu:hover .shortName {
+  background: #BEFFFE;
+  border: 1px solid #27BDBB;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-smu:hover .student-enroll {
+  background: rgba(21, 20, 25, 0.8);
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-mahe:hover {
+  border: 2px solid #A9D8FF;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-mahe:hover .shortName {
+  background: #A9D8FF;
+  border: 1px solid #2F7EBF;
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-mahe:hover .student-enroll {
+  background: rgba(21, 20, 25, 0.8);
+}
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-mahe:hover .border-muj:hover .shortName,
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-mahe:hover .border-smu:hover .shortName,
+.blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-mahe:hover .border-mahe:hover .shortName {
+  color: #575757 !important;
+}
+
+div#ez-toc-container ul li,
+div#ez-toc-container ul li a {
+  font-size: 95%;
+}
+
+.wp-block-image {
+  margin-bottom: 20px !important;
+}
+.wp-block-image img {
+  margin-bottom: 0px !important;
+}
+.wp-block-image .wp-element-caption {
+  font-size: 14px;
+}
+
+.fea-image {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+@media (min-width: 1920px) {
+  div#ez-toc-container ul li,
+  div#ez-toc-container ul li a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1919.98px) {
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-wrapper .blog-deatil .blog-name {
+    min-height: 67px;
+  }
+}
+@media (max-width: 1599.98px) {
+  .blog-details .left {
+    width: 70%;
+  }
+  .blog-details .blog-detail-banner .doodle {
+    z-index: 0;
+    top: 32%;
+    left: 57%;
+  }
+  .blog-details .blog-detail-banner .container {
+    position: relative;
+    z-index: 1;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper {
+    position: relative;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .star2 {
+    width: 25px;
+    top: -30px;
+    right: 10.417vw;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-title {
+    position: relative;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper {
+    border-radius: 20px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .left {
+    width: 70%;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .left .blog-container {
+    margin-right: 38px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .right .enroll-now-form .section-title {
+    font-size: 24px !important;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .section-title {
+    margin-bottom: 12px;
+    font-size: 34px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .brief-info {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card {
+    padding: 28px 22px;
+    border-radius: 20px;
+    height: 300px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper {
+    border-radius: 16px;
+    padding: 8px 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    gap: 10px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper img {
+    border-radius: 10px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper .blog-category {
+    border-radius: 16px;
+    padding: 1.5px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration {
+    padding: 0 0 24px;
+    color: #575757;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-time {
+    display: flex;
+    font-family: "HelveticaNowDisplay";
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: inherit;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-time img {
+    margin-right: 8px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-time span {
+    letter-spacing: 1.4px;
+    font-size: inherit;
+    letter-spacing: 1.6px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .dot-blog {
+    width: 5px;
+    height: 5px;
+    background-color: #575757;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-date {
+    display: flex;
+    font-family: "HelveticaNowDisplay";
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: inherit;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-date img {
+    margin-right: 8px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-date span {
+    letter-spacing: 1.4px;
+    font-size: inherit;
+    letter-spacing: 1.6px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .author-name {
+    font-size: 16px;
+    color: #575757;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .author-name a {
+    color: #151419;
+    font-size: inherit;
+    text-underline-offset: 6px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .author-name a:first-child {
+    padding-left: 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .author-name .dot {
+    width: 5px;
+    height: 5px;
+    background-color: #575757;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 12px;
+  }
+  .blog-details .blog-detail-banner .blogContent p,
+  .blog-details .blog-detail-banner .blogContent ul,
+  .blog-details .blog-detail-banner .blogContent li,
+  .blog-details .blog-detail-banner .blogContent a,
+  .blog-details .blog-detail-banner .blogContent strong {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .blog-details .right .sticky-container {
+    top: 110px;
+  }
+  .blog-details .right #ez-toc-container {
+    margin-bottom: 0;
+  }
+  .blog-details .listen-to-blog {
+    padding: 16px 0;
+  }
+  .blog-details .listen-to-blog .title {
+    font-size: 18px;
+    color: #151419;
+  }
+  .blog-details .content-area .blogContent {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .blog-details .content-area .blogContent p,
+  .blog-details .content-area .blogContent ul,
+  .blog-details .content-area .blogContent li {
+    font-size: 18px;
+  }
+  .blog-details .content-area .blogContent a,
+  .blog-details .content-area .blogContent strong {
+    font-size: inherit;
+    color: inherit;
+  }
+  .blog-details .content-area .blogContent h1 strong,
+  .blog-details .content-area .blogContent h2 strong,
+  .blog-details .content-area .blogContent h3 strong,
+  .blog-details .content-area .blogContent h4 strong,
+  .blog-details .content-area .blogContent h5 strong,
+  .blog-details .content-area .blogContent h6 strong {
+    font-weight: normal;
+  }
+  .blog-details .content-area .blogContent h2 {
+    font-size: 32px;
+  }
+  .blog-details .content-area .blogContent h3 {
+    font-size: 28px;
+  }
+  .blog-details .content-area .blogContent h4 {
+    font-size: 24px;
+  }
+  .blog-details .content-area .blogContent h5 {
+    font-size: 20px;
+  }
+  .blog-details .content-area .blogContent blockquote {
+    padding: 32px 22px;
+    font-size: 24px;
+    border-radius: 16px;
+    width: 100%;
+    margin: 70px 0;
+  }
+  .blog-details .content-area .blogContent blockquote::after {
+    content: "";
+    width: 77px;
+    height: 52px;
+    right: 35px;
+    top: -40px;
+  }
+  .blog-details .content-area .bandLayout {
+    background: #EFEFD0;
+    padding: 56px 32px;
+    border-radius: 20px;
+    margin: 40px 0px;
+  }
+  .blog-details .content-area .bandLayout .text {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .blog-details .content-area .bandLayout .know-more,
+  .blog-details .content-area .bandLayout .know-more:hover {
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+  .blog-details .content-area .bandLayout .doodle {
+    top: -20px;
+    left: 69%;
+    z-index: -1;
+    width: 161%;
+  }
+  .blog-details .content-area .author-wrapper .author {
+    display: flex;
+    margin-right: 56px;
+  }
+  .blog-details .content-area .author-wrapper .author .author-img-wrap {
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 18px;
+  }
+  .blog-details .content-area .author-wrapper .author .author-img-wrap .author-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .blog-details .content-area .author-wrapper .author .author-img-wrap .linkedin {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+  .blog-details .content-area .author-wrapper .author .author-name {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .blog-details .content-area .author-wrapper .author .designation {
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    color: #151419;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .blog-details .content-area .tags ul {
+    margin: 0;
+    padding: 0;
+  }
+  .blog-details .content-area .tags .tagName {
+    display: inline-block;
+    background: #F7F6F6;
+    border-radius: 42px;
+    border: 1px solid rgba(21, 20, 25, 0.1);
+    padding: 8px 16px;
+    margin: 10px 16px 10px 0;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #575757;
+  }
+  .blog-details .top-online-course {
+    overflow: hidden;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-section .view-all-btn {
+    font-size: 16px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .institute-name {
+    margin-left: -12px;
+    font-size: 12px;
+    line-height: 1rem;
+    margin-top: -14px;
+    left: 12px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .top-ranked {
+    font-size: 12px;
+    line-height: 1rem;
+    padding: 2px 6px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll {
+    padding: 2px 6px;
+    gap: 4px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll .enroll-text {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll img {
+    width: 12px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-img img {
+    height: 270px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper {
+    padding-top: 20px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating .rating-number {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating img {
+    max-width: 12px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .course-name {
+    font-size: 18px;
+    line-height: 1.575rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .dot {
+    width: 4px;
+    height: 4px;
+    margin: 0 8px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration span {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration img {
+    width: 12px;
+    margin-right: 4px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing span {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing img {
+    width: 12px;
+    margin-right: 4px;
+  }
+  .blog-details .read-blog-section .section-title {
+    font-size: 40px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .section-top .view-button {
+    font-size: 16px;
+    color: #151419;
+    font-family: "HelveticaNowDisplay";
+    line-height: 1.4;
+    padding: 12px 32px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-img img {
+    height: 202px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-wrapper .blog-deatil .blog-name {
+    font-size: 16px;
+    font-family: "Queens";
+    line-height: 1.4;
+    font-weight: 500;
+    color: #151419;
+    margin-right: 20px;
+    min-height: 45px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-course-enroll .blog-top-ranked {
+    border-radius: 16px;
+    padding: 2px 6px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-course-enroll .blog-course-ranked {
+    background: #BDCD36;
+    border-radius: 16px;
+    padding: 2px 6px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration {
+    padding: 13px 0px 10px 0px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .dot-blog {
+    margin: 0 12px;
+    width: 4px;
+    height: 4px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-date {
+    font-family: "HelveticaNowDisplay";
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-date img {
+    margin-right: 8px;
+    width: 10px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-date span {
+    letter-spacing: 1.2px;
+    font-weight: bold;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-time {
+    font-family: "HelveticaNowDisplay";
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-time img {
+    margin-right: 8px;
+    width: 14px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-time span {
+    letter-spacing: 1.2px;
+    font-weight: bold;
+  }
+  .blog-details .formBlock .terms-condition label {
+    font-size: 10px !important;
+  }
+  .blog-details .testimonial {
+    padding-top: 80px;
+  }
+  .blog-details .testimonial .testimonial-section .slick-slide {
+    padding: 32px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap {
+    gap: 32px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .testimonial-img {
+    width: auto;
+    max-width: 400px;
+    height: 340px;
+    min-height: 340px !important;
+    max-height: 340px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap {
+    padding: 0 !important;
+    gap: 16px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .testimonial-desc {
+    max-width: 740px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .category-wrapper {
+    border-radius: 16px;
+    padding: 8px 0;
+    font-size: 14px;
+    gap: 10px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .category-wrapper img {
+    border-radius: 10px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .category-wrapper .blog-category {
+    border-radius: 16px;
+    padding: 5px 12px;
+    font-size: 16px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .name-wrapper .name {
+    font-size: 24px !important;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .course {
+    font-size: 16px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .bullet {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .rating {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2px 8px;
+    border-radius: 16px;
+    gap: 4px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .rating .rating-number {
+    font-size: 16px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .rating img {
+    max-width: 14px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .location {
+    font-size: 16px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .testimonial-desc {
+    font-size: 20px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap.video-testi .video-img {
+    min-height: unset !important;
+    max-height: 340px;
+  }
+  .blog-details .testimonial.section-mb {
+    margin-bottom: 80px;
+  }
+  .programLeadForm label {
+    font-size: 14px;
+  }
+  .programLeadForm input,
+  .programLeadForm textarea {
+    font-size: 14px;
+  }
+  .programLeadForm .form-group {
+    margin-bottom: 14px;
+  }
+  .programLeadForm .select2-container {
+    font-size: 14px;
+  }
+  .programLeadForm .otp-verification-block .otp-field input {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+  }
+}
+@media (max-width: 1280px) {
+  .blog-details .right #sticky-toc-wrapper {
+    max-height: 480px;
+  }
+}
+@media (max-width: 1200px) {
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-wrapper .read-blog-course-enroll .blog-top-ranked {
+    padding: 2px 6px;
+  }
+}
+@media (max-width: 992px) {
+  .blog-details .right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .blog-details .right .suggested_article .article .details .title .post-thumb {
+    height: 60px;
+  }
+  .blog-details .blog-detail-banner {
+    margin-bottom: 10px;
+  }
+  .blog-details .blog-detail-banner .doodle {
+    z-index: 0;
+    top: 37%;
+  }
+  .blog-details .blog-detail-banner .doodle path {
+    stroke-width: 80px;
+  }
+  .blog-details .blog-detail-banner .container {
+    position: relative;
+    z-index: 1;
+  }
+  .blog-details .blog-detail-banner .breadcrumb .bcrumb-title {
+    font-size: inherit;
+    line-height: inherit;
+    color: #575757;
+  }
+  .blog-details .blog-detail-banner .breadcrumb .active {
+    font-size: inherit;
+    line-height: inherit;
+    color: #151419;
+    display: block;
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    overflow: hidden;
+    /* Hides overflowing text */
+    text-overflow: ellipsis;
+    /* Adds "..." when text overflows */
+    max-width: 20ch;
+    /* Limits width (roughly 3 words) */
+  }
+  .blog-details .blog-detail-banner .breadcrumb .separator {
+    line-height: inherit;
+    padding: 0 10px 1px;
+  }
+  .blog-details .blog-detail-banner .breadcrumb .separator img {
+    width: 6px;
+    height: auto;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper {
+    position: relative;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .star2 {
+    position: absolute;
+    top: -30px;
+    right: 10.417vw;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-title {
+    position: relative;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper {
+    border-radius: 20px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .section-title {
+    margin-bottom: 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .brief-info {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .brief-info .blog-read-more {
+    font-size: inherit;
+    padding-left: 14px;
+    font-weight: bold;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card {
+    padding: 28px 22px;
+    border-radius: 20px;
+    height: 380px;
+    margin-bottom: 20px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 16px;
+    padding: 8px 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #151419;
+    gap: 10px;
+    position: relative;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper img {
+    border-radius: 10px;
+  }
+  .main-wrapper {
+    padding: 0;
+    display: unset;
+  }
+  .programLeadForm {
+    background: #fff;
+    border: 1px solid rgba(21, 20, 25, 0.2);
+    border-radius: 20px;
+    padding: 24px;
+  }
+  .course-overview-form {
+    padding-bottom: 20px;
+  }
+  .blog-details .blog-detail-banner {
+    margin-bottom: 10px;
+  }
+  .blog-details .blog-detail-banner .doodle {
+    z-index: 0;
+    top: 37%;
+  }
+  .blog-details .blog-detail-banner .doodle path {
+    stroke-width: 80px;
+  }
+  .blog-details .blog-detail-banner .container {
+    position: relative;
+    z-index: 1;
+  }
+  .blog-details .blog-detail-banner .breadcrumb .bcrumb-title {
+    font-size: inherit;
+    line-height: inherit;
+    color: #575757;
+  }
+  .blog-details .blog-detail-banner .breadcrumb .active {
+    font-size: inherit;
+    line-height: inherit;
+    color: #151419;
+    display: block;
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    overflow: hidden;
+    /* Hides overflowing text */
+    text-overflow: ellipsis;
+    /* Adds "..." when text overflows */
+    max-width: 20ch;
+    /* Limits width (roughly 3 words) */
+  }
+  .blog-details .blog-detail-banner .breadcrumb .separator {
+    line-height: inherit;
+    padding: 0 10px 1px;
+  }
+  .blog-details .blog-detail-banner .breadcrumb .separator img {
+    width: 6px;
+    height: auto;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper {
+    position: relative;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .star2 {
+    position: absolute;
+    top: -30px;
+    right: 10.417vw;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-title {
+    position: relative;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper {
+    border-radius: 20px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .section-title {
+    margin-bottom: 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .brief-info {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .brief-info .blog-read-more {
+    font-size: inherit;
+    padding-left: 14px;
+    font-weight: bold;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card {
+    padding: 28px 22px;
+    border-radius: 20px;
+    height: 380px;
+    margin-bottom: 20px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 16px;
+    padding: 8px 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #151419;
+    gap: 10px;
+    position: relative;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper img {
+    border-radius: 10px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper .blog-category {
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1.5px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #151419;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration {
+    display: flex;
+    align-items: center;
+    padding: 0 0 24px;
+    color: #575757;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-time {
+    display: flex;
+    font-family: "HelveticaNowDisplay";
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: inherit;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-time img {
+    margin-right: 8px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-time span {
+    letter-spacing: 1.4px;
+    font-size: inherit;
+    letter-spacing: 1.6px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .dot-blog {
+    width: 5px;
+    height: 5px;
+    background-color: #575757;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-date {
+    display: flex;
+    font-family: "HelveticaNowDisplay";
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: inherit;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-date img {
+    margin-right: 8px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-date span {
+    letter-spacing: 1.4px;
+    font-size: inherit;
+    letter-spacing: 1.6px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .author-name {
+    font-size: 20px;
+    color: #575757;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .author-name a {
+    color: #151419;
+    font-size: inherit;
+    text-underline-offset: 6px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .author-name a:first-child {
+    padding-left: 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .author-name .dot {
+    width: 5px;
+    height: 5px;
+    background-color: #575757;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 12px;
+  }
+  .blog-details .listen-to-blog {
+    padding: 16px 0;
+  }
+  .blog-details .listen-to-blog .title {
+    font-size: 20px;
+    color: #151419;
+  }
+  .blog-details .listen-to-blog .audio-player {
+    display: flex;
+    align-items: center;
+    background: none;
+    color: #000;
+    padding: 10px;
+    border-radius: 50px;
+    max-width: 400px;
+    font-family: Arial, sans-serif;
+  }
+  .blog-details .listen-to-blog .play-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-right: 0;
+  }
+  .blog-details .listen-to-blog .progress-bar {
+    flex: 1;
+    height: 5px;
+    margin: 0 10px;
+    background: gray;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+  }
+  .blog-details .listen-to-blog .progress {
+    height: 100%;
+    width: 0%;
+    background: #575757;
+    border-radius: 5px;
+  }
+  .blog-details .listen-to-blog .time {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .blog-details .listen-to-blog .controls {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  .blog-details .listen-to-blog .controls button {
+    padding: 0;
+    background: none;
+    border: none;
+    color: #575757;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0;
+  }
+  .blog-details .content-area #ez-toc-container {
+    display: block;
+  }
+  .blog-details .content-area .blogContent {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .blog-details .content-area .blogContent p,
+  .blog-details .content-area .blogContent ul,
+  .blog-details .content-area .blogContent li,
+  .blog-details .content-area .blogContent a,
+  .blog-details .content-area .blogContent strong {
+    font-size: inherit;
+    color: inherit;
+  }
+  .blog-details .content-area .blogContent h1 strong,
+  .blog-details .content-area .blogContent h2 strong,
+  .blog-details .content-area .blogContent h3 strong,
+  .blog-details .content-area .blogContent h4 strong,
+  .blog-details .content-area .blogContent h5 strong,
+  .blog-details .content-area .blogContent h6 strong {
+    font-weight: normal;
+  }
+  .blog-details .content-area .blogContent blockquote {
+    padding: 20px;
+    font-size: 32px;
+    border-radius: 16px;
+    width: 100%;
+    margin: 70px 0;
+  }
+  .blog-details .content-area .blogContent blockquote::after {
+    content: "";
+    width: 96px;
+    height: 64px;
+    background-size: 94px;
+    right: 35px;
+    top: -50px;
+  }
+  .blog-details .content-area .bandLayout {
+    background: #EFEFD0;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 80px 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .blog-details .content-area .bandLayout .text {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  .blog-details .content-area .bandLayout .know-more,
+  .blog-details .content-area .bandLayout .know-more:hover {
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .blog-details .content-area .bandLayout .doodle {
+    top: 19%;
+    left: 67%;
+    z-index: -1;
+  }
+  .blog-details .content-area .bandLayout .doodle path {
+    stroke-width: 86px;
+  }
+  .blog-details .content-area .author-wrapper .author {
+    margin-right: 40px;
+  }
+  .blog-details .content-area .author-wrapper .author .author-img-wrap {
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 18px;
+  }
+  .blog-details .content-area .author-wrapper .author .author-img-wrap .author-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  .blog-details .content-area .author-wrapper .author .author-img-wrap .linkedin {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+  .blog-details .content-area .author-wrapper .author .author-name {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .blog-details .content-area .author-wrapper .author .designation {
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    color: #151419;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .blog-details .content-area .tags ul {
+    margin: 0;
+    padding: 0;
+  }
+  .blog-details .content-area .tags .tagName {
+    display: inline-block;
+    background: #F7F6F6;
+    border-radius: 42px;
+    border: 1px solid rgba(21, 20, 25, 0.1);
+    padding: 8px 16px;
+    margin: 10px 16px 10px 0;
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #575757;
+  }
+  .blog-details .top-online-course {
+    margin-bottom: unset;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-section .view-all-btn {
+    font-size: 16px;
+    padding: 14px 32px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-section .section-title {
+    margin-bottom: 10px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .slick-dotted.slick-slider {
+    margin-bottom: 33px;
+    padding-bottom: 18px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .slick-list {
+    overflow: visible;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item {
+    padding: 12px;
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .institute-name {
+    margin-left: -12px;
+    font-size: 16px;
+    line-height: 1.4rem;
+    margin-top: -14px;
+    left: 10px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-img img {
+    height: 290px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll {
+    width: 94%;
+    padding: 6px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .top-ranked {
+    font-size: 12px !important;
+    line-height: 1.4rem;
+    padding: 4px 10px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll {
+    padding: 4px 10px;
+    gap: 4px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll .enroll-text {
+    font-size: 12px !important;
+    line-height: 1.4rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll img {
+    width: 16px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper {
+    padding-top: 28px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil {
+    min-height: 120px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating .rating-number {
+    font-size: 14px;
+    line-height: 1rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating img {
+    max-width: 16px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .course-name {
+    font-size: 24px;
+    line-height: 2rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 16px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration span {
+    font-size: 16px;
+    line-height: 1.4rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration img {
+    width: 24px;
+    margin-right: 4px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing span {
+    font-size: 16px;
+    line-height: 1.4rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing img {
+    width: 24px;
+    margin-right: 4px;
+  }
+  .blog-details .read-blog-section .section-title {
+    font-size: 40px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-wrapper .blog-deatil .blog-name {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-right: 20px;
+    min-height: 100px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-date span {
+    font-family: "HelveticaNowDisplay";
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-time span {
+    font-family: "HelveticaNowDisplay";
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-date img {
+    width: 12px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .section-top .view-button {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #151419;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-img img {
+    width: 100%;
+    height: 192px;
+  }
+  .blog-details .testimonial {
+    padding-top: 30px;
+  }
+  .blog-details .testimonial .testimonial-section .slick-slide {
+    padding: 20px;
+    width: 100%;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap {
+    gap: 32px;
+    flex-direction: column;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .testimonial-img {
+    width: 768px;
+    max-width: unset;
+    height: unset;
+    min-height: unset !important;
+    max-height: unset;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap {
+    padding: 0 !important;
+    gap: 16px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .testimonial-desc {
+    max-width: 740px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .category-wrapper {
+    border-radius: 16px;
+    padding: 8px 0;
+    font-size: 14px;
+    gap: 10px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .category-wrapper img {
+    border-radius: 10px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .category-wrapper .blog-category {
+    border-radius: 16px;
+    padding: 5px 12px;
+    font-size: 18px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .name-wrapper .name {
+    font-size: 32px !important;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .course {
+    font-size: 20px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .bullet {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .rating {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2px 8px;
+    border-radius: 16px;
+    gap: 4px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .rating .rating-number {
+    font-size: 16px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .rating img {
+    max-width: 14px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .location {
+    font-size: 20px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .testimonial-desc {
+    font-size: 24px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap.video-testi .video-img {
+    min-height: unset !important;
+    max-height: 340px;
+  }
+  .blog-details .testimonial.section-mb {
+    margin-bottom: 80px;
+  }
+  .wp-block-table {
+    overflow-x: auto;
+    margin-bottom: 30px;
+  }
+  div#ez-toc-container {
+    width: 100%;
+  }
+  .programLeadForm .title-section .section-title {
+    text-align: center;
+  }
+  .programLeadForm .title-section .student-enroll .enroll-text {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .programLeadForm .title-section .student-enroll img {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .blog-details .content-area {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  footer .footer-container .footer-get-in-touch .get-in-touch .right {
+    display: none;
+  }
+  .blog-details .content-area .blogContent h3 {
+    font-size: 22px;
+  }
+  .blog-details .content-area .blogContent h4 {
+    font-size: 20px;
+  }
+  .main-wrapper {
+    padding: 0 20px;
+  }
+  .blog-details .content-area .blogContent h2 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .blog-details .blog-detail-banner .doodle {
+    z-index: 0;
+    top: 41%;
+    width: 180%;
+    left: 34%;
+  }
+  .blog-details .blog-detail-banner .doodle path {
+    stroke-width: 48px;
+  }
+  .blog-details .blog-detail-banner .container {
+    position: relative;
+    z-index: 1;
+  }
+  .blog-details .blog-detail-banner .main-wrapper {
+    padding: 0;
+  }
+  .blog-details .blog-detail-banner .breadcrumb .active {
+    font-size: inherit;
+    line-height: inherit;
+    color: #151419;
+  }
+  .blog-details .blog-detail-banner .breadcrumb .separator img {
+    width: 6px;
+    height: auto;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper {
+    position: relative;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details {
+    margin-bottom: 0;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .star2 {
+    position: absolute;
+    width: 22px;
+    top: -30px;
+    right: 10.417vw;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-title {
+    position: relative;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper {
+    border-radius: 20px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .section-title {
+    margin-bottom: 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .brief-info {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card {
+    padding: 24px 22px;
+    border-radius: 20px;
+    height: 300px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 16px;
+    padding: 0px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #151419;
+    gap: 10px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper img {
+    border-radius: 10px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card .category-wrapper .blog-category {
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1.5px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #151419;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration {
+    display: flex;
+    align-items: center;
+    padding: 0 0 24px;
+    color: #575757;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-time {
+    display: flex;
+    font-family: "HelveticaNowDisplay";
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: inherit;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-time img {
+    margin-right: 8px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-time span {
+    letter-spacing: 1.4px;
+    font-size: inherit;
+    letter-spacing: 1.2px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .dot-blog {
+    width: 5px;
+    height: 5px;
+    background-color: #575757;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-date {
+    display: flex;
+    font-family: "HelveticaNowDisplay";
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: inherit;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-date img {
+    margin-right: 8px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-duration .blog-date span {
+    letter-spacing: 1.4px;
+    font-size: inherit;
+    letter-spacing: 1.2px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .author-name {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #575757;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .author-name a {
+    color: #151419;
+    font-size: inherit;
+    text-underline-offset: 6px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .author-name a:first-child {
+    padding-left: 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .author-name .dot {
+    width: 5px;
+    height: 5px;
+    background-color: #575757;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 12px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-autor-social-block {
+    flex-direction: column;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-autor-social-block .share-block {
+    gap: 10px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-autor-social-block .share-block .share-text {
+    font-size: 20px;
+    padding-bottom: 0;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-autor-social-block .share-block .jssocials-shares {
+    display: flex;
+    gap: 14px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .blog-autor-social-block .share-block .jssocials-shares i.jssocials-share-logo {
+    color: #231F20;
+    background: #F7F6F6;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    padding: 0;
+  }
+  .blog-details .listen-to-blog {
+    padding: 16px 0;
+  }
+  .blog-details .listen-to-blog .title {
+    font-size: 24px;
+    color: #151419;
+  }
+  .blog-details .listen-to-blog .audio-player {
+    display: flex;
+    align-items: center;
+    background: none;
+    color: #000;
+    padding: 10px;
+    border-radius: 50px;
+    max-width: 400px;
+    font-family: Arial, sans-serif;
+  }
+  .blog-details .listen-to-blog .play-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-right: 0;
+  }
+  .blog-details .listen-to-blog .progress-bar {
+    flex: 1;
+    height: 5px;
+    margin: 0 10px;
+    background: gray;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+  }
+  .blog-details .listen-to-blog .progress {
+    height: 100%;
+    width: 0%;
+    background: #575757;
+    border-radius: 5px;
+  }
+  .blog-details .listen-to-blog .time {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .blog-details .listen-to-blog .controls {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  .blog-details .listen-to-blog .controls button {
+    padding: 0;
+    background: none;
+    border: none;
+    color: #575757;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  .blog-details .content-area .blogContent {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+  }
+  .blog-details .content-area .blogContent p,
+  .blog-details .content-area .blogContent ul,
+  .blog-details .content-area .blogContent li,
+  .blog-details .content-area .blogContent a,
+  .blog-details .content-area .blogContent strong {
+    font-size: inherit;
+    color: inherit;
+  }
+  .blog-details .content-area .blogContent h1 strong,
+  .blog-details .content-area .blogContent h2 strong,
+  .blog-details .content-area .blogContent h3 strong,
+  .blog-details .content-area .blogContent h4 strong,
+  .blog-details .content-area .blogContent h5 strong,
+  .blog-details .content-area .blogContent h6 strong {
+    font-weight: normal;
+  }
+  .blog-details .content-area .blogContent blockquote {
+    padding: 16px 20px;
+    font-size: 24px;
+    border-radius: 16px;
+    width: 100%;
+    margin: 70px 0;
+  }
+  .blog-details .content-area .blogContent blockquote::after {
+    content: "";
+    width: 63px;
+    height: 43px;
+    background-size: 63px;
+    right: 35px;
+    top: -33px;
+  }
+  .blog-details .content-area .bandLayout {
+    background: #EFEFD0;
+    padding: 16px;
+    border-radius: 20px;
+    margin: 40px 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .blog-details .content-area .bandLayout .text {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .blog-details .content-area .bandLayout .know-more {
+    padding: 10px 20px;
+  }
+  .blog-details .content-area .bandLayout .know-more,
+  .blog-details .content-area .bandLayout .know-more:hover {
+    font-size: 14px;
+  }
+  .blog-details .content-area .bandLayout .doodle {
+    top: 52%;
+    left: 105%;
+    z-index: -1;
+    width: 230%;
+  }
+  .blog-details .content-area .author-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .blog-details .content-area .author-wrapper .author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;
+    max-width: 100%;
+    border: 1px solid rgba(21, 20, 25, 0.1);
+    border-radius: 10px;
+  }
+  .blog-details .content-area .author-wrapper .author .author-img-wrap {
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 18px;
+  }
+  .blog-details .content-area .author-wrapper .author .author-img-wrap .author-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  .blog-details .content-area .author-wrapper .author .author-img-wrap .linkedin {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+  .blog-details .content-area .author-wrapper .author .author-name {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .blog-details .content-area .author-wrapper .author .designation {
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    color: #151419;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .blog-details .content-area .author-wrapper .author .author-bio {
+    width: auto;
+  }
+  .blog-details .content-area .author-wrapper .author .author-desc {
+    width: 90%;
+    margin-top: 15px;
+  }
+  .blog-details .content-area .author-wrapper .author .author-desc .author-description {
+    text-align: justify;
+  }
+  .blog-details .content-area .author-wrapper .author .author-desc .blogs-wrritten {
+    justify-content: center;
+  }
+  .blog-details .content-area .author-wrapper .author .author-desc .blogs-wrritten .left {
+    align-items: center;
+  }
+  .blog-details .content-area .author-wrapper .author .author-desc .blogs-wrritten .left .text,
+  .blog-details .content-area .author-wrapper .author .author-desc .blogs-wrritten .right .text {
+    text-align: center;
+  }
+  .blog-details .content-area .tags ul {
+    margin: 0;
+    padding: 0;
+  }
+  .blog-details .content-area .tags .tagName {
+    display: inline-block;
+    background: #F7F6F6;
+    border-radius: 42px;
+    border: 1px solid rgba(21, 20, 25, 0.1);
+    padding: 8px 16px;
+    margin: 8px 16px 8px 0;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #575757;
+  }
+  .blog-details .top-online-course {
+    margin-top: 30px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-section .view-all-btn {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .slick-dotted.slick-slider {
+    margin-bottom: 40px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .slick-list {
+    overflow: visible;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .institute-name {
+    margin-left: -12px;
+    font-size: 14px;
+    line-height: 1.4rem;
+    margin-top: -14px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item {
+    padding: 12px;
+    margin-left: 0;
+    margin-right: 16px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll {
+    width: 94%;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .top-ranked {
+    font-size: 2.917vw;
+    line-height: 1.4rem;
+    padding: 4px 10px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll {
+    padding: 4px 10px;
+    gap: 4px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll .enroll-text {
+    font-size: 2.917vw;
+    line-height: 1.4rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll img {
+    width: 16px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper {
+    padding-top: 28px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil {
+    min-height: 90px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating .rating-number {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating img {
+    max-width: 9px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .course-name {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+    line-height: 2rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 16px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration span {
+    font-size: 16px;
+    line-height: 1.4rem;
+    margin-top: 0;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration img {
+    width: 18px;
+    margin-right: 4px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing span {
+    font-size: 16px;
+    line-height: 1.4rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing img {
+    width: 18px;
+    margin-right: 4px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item:last-child {
+    margin-right: 0;
+  }
+  .blog-details .read-blog-section .section-title {
+    font-size: 6.666vw;
+  }
+  .blog-details .read-blog-section .blog-wrapper .section-top .view-button {
+    display: none;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-date img {
+    width: 12px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-course-enroll .blog-top-ranked {
+    font-size: 2.5vw;
+    line-height: 1.4;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-wrapper .blog-deatil .blog-name {
+    font-size: 20px;
+    min-height: 83px;
+  }
+  .blog-details .testimonial {
+    padding-top: 30px;
+  }
+  .blog-details .testimonial .testimonial-section .slick-slide {
+    padding: 20px;
+    width: 100%;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap {
+    gap: 16px;
+    flex-direction: column;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .testimonial-img {
+    width: 100%;
+    max-width: unset;
+    height: unset;
+    min-height: 300px !important;
+    max-height: unset;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap {
+    padding: 0 !important;
+    gap: 16px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .testimonial-desc {
+    max-width: 740px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .category-wrapper {
+    border-radius: 16px;
+    padding: 0;
+    font-size: 14px;
+    gap: 10px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .category-wrapper img {
+    border-radius: 10px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .category-wrapper .blog-category {
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 16px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .name-wrapper .name {
+    font-size: 24px !important;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .course {
+    font-size: 16px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .bullet {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .rating {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2px 8px;
+    border-radius: 16px;
+    gap: 4px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .rating .rating-number {
+    font-size: 16px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .rating img {
+    max-width: 14px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .name-course .location {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .testimonial-desc {
+    font-size: 20px;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap.video-testi .video-img {
+    min-height: unset !important;
+    max-height: 340px;
+  }
+  .blog-details .testimonial.section-mb {
+    margin-bottom: 40px;
+  }
+  .blog-details .content-area .blogContent ol {
+    padding-left: 34px;
+    font-size: 18px;
+  }
+  .blog-details .content-area .blogContent ul {
+    font-size: 18px;
+  }
+  .blog-details .content-area .blogContent li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .blog-details .content-area .blogContent li strong {
+    font-weight: 700;
+  }
+  .blog-details .content-area .blogContent li .wp-block-heading {
+    font-weight: 500;
+  }
+  .blog-details .content-area .blogContent a {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+}
+@media (max-width: 390px) {
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-section .view-all-btn {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-section .section-title {
+    margin-bottom: 16px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .slick-dotted.slick-slider {
+    margin-bottom: 40px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .slick-list {
+    overflow: visible;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .institute-name {
+    margin-left: -12px;
+    font-size: 14px !important;
+    line-height: 1.4rem;
+    margin-top: -14px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item {
+    padding: 10px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .top-ranked {
+    font-size: 12px !important;
+    line-height: 1.4rem;
+    padding: 4px 8px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll {
+    padding: 4px 8px;
+    gap: 4px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll .enroll-text {
+    font-size: 12px !important;
+    line-height: 1.4rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll img {
+    width: 14px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating .rating-number {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating img {
+    max-width: 9px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .course-name {
+    font-size: 20px;
+    line-height: 2rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 10px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration span {
+    font-size: 14px;
+    line-height: 1rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration img {
+    width: 24px;
+    margin-right: 4px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing span {
+    font-size: 14px;
+    line-height: 1rem;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing img {
+    width: 24px;
+    margin-right: 4px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item:last-child {
+    margin-right: 0;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-course-enroll .blog-top-ranked {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-date img {
+    width: 10px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-date span {
+    font-size: 12px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .blog-duration .blog-time span {
+    font-family: 12px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .top-read-blog-slider .blog-item .read-blog-wrapper .blog-deatil .blog-name {
+    min-height: 65px;
+    font-size: 16px;
+  }
+  .blog-details .content-area .blogContent ol {
+    padding-left: 32px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .blog-details .content-area .bandLayout .text {
+    font-size: 28px;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .brief-info {
+    font-size: 16px;
+  }
+  .blog-details .content-area .blogContent h2 strong,
+  .blog-details .content-area .blogContent h3 strong,
+  .blog-details .content-area .blogContent h4 strong,
+  .blog-details .content-area .blogContent h5 strong {
+    font-size: inherit;
+  }
+  .blog-details .content-area .blogContent p,
+  .blog-details .content-area .blogContent ul,
+  .blog-details .content-area .blogContent li,
+  .blog-details .content-area .blogContent a,
+  .blog-details .content-area .blogContent strong {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .blog-details .content-area .blogContent blockquote {
+    margin: 40px 0;
+    padding: 24px 16px;
+  }
+  .blog-details .content-area .bandLayout {
+    padding: 24px;
+    margin: 40px 0;
+  }
+  .blog-details .testimonial .testimonial-section .testi-wrap .content-wrap .testimonial-desc,
+  .blog-details .content-area .tags .tagName {
+    font-size: 16px;
+  }
+  .blog-details .testimonial .testimonial-section .slick-slide {
+    font-size: 24px;
+  }
+  .blog-details .read-blog-section .blog-wrapper .section-top .view-button {
+    font-size: 14px;
+  }
+  .blog-details .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil {
+    min-height: unset;
+  }
+  .blog-details .blog-detail-banner .blogd-banner-wrapper .card {
+    height: 290px;
+  }
+  div#ez-toc-container ul li,
+  div#ez-toc-container ul li a {
+    margin-bottom: 0px;
+  }
+  .programLeadForm .form-group {
+    margin-bottom: 0.6rem;
+  }
+  .programLeadForm input,
+  .programLeadForm textarea,
+  .programLeadForm select {
+    padding: 10px 10px;
+  }
+  .blog-details .right #ez-toc-container {
+    padding: 20px 24px;
+  }
+  .blog-details .right .suggested_article .suggested-title {
+    font-size: 22px !important;
+  }
+  .blog-details .right .suggested_article .article .details .title {
+    padding: 12px 0;
+  }
+  .blog-details .right .suggested_article .article .details .title .post-title {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=blog-detail.css.map */

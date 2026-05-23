@@ -1,0 +1,367 @@
+.advance-learing-section {
+  padding-top: 21px;
+}
+.advance-learing-section .advance-learning-title {
+  position: relative;
+}
+.advance-learing-section .advance-learning-title .circle-word {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  padding: 12px 6px;
+}
+.advance-learing-section .advance-learning-title .circle-word::before {
+  content: "";
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  width: 108%;
+  height: 115%;
+  background: url('../images/advance-circle.png') no-repeat center center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+}
+.advance-learing-section .advance-learning-title p {
+  font-size: 20px !important;
+  margin-bottom: 24px;
+}
+.advance-learing-section .vertical-tabs {
+  display: flex;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  /* Left Side: Tabs */
+}
+.advance-learing-section .vertical-tabs .tabs-menu {
+  width: 30%;
+  margin-right: -15px;
+}
+.advance-learing-section .vertical-tabs .tab-title {
+  font-size: 22px;
+  color: #222;
+}
+.advance-learing-section .vertical-tabs .tab-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.advance-learing-section .vertical-tabs .left-tab-btn {
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  color: #222;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.advance-learing-section .vertical-tabs .advance-tab-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 120px 22px 40px;
+  cursor: pointer;
+  border-radius: 20px 0px 0px 20px;
+}
+.advance-learing-section .vertical-tabs .advance-tab-btn p {
+  width: 317px;
+}
+.advance-learing-section .vertical-tabs .advance-tab-btn .vertical-tab-title {
+  font-family: "HelveticaNowDisplay";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #151419;
+  margin-bottom: 4px;
+}
+.advance-learing-section .vertical-tabs .advance-tab-btn .vertical-tab-subtitle {
+  font-family: "HelveticaNowDisplay";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #575757;
+}
+.advance-learing-section .vertical-tabs .vertical-tab-subtitle {
+  display: none;
+}
+.advance-learing-section .vertical-tabs .active .vertical-tab-subtitle {
+  display: block;
+}
+.advance-learing-section .vertical-tabs .advance-tab-btn.active {
+  background-color: #F6E6C5;
+}
+.advance-learing-section .vertical-tabs .advance-tab-btn.active .vertical-tab-title {
+  font-weight: 700;
+}
+.advance-learing-section {
+  /* Right Side: Tab Content */
+}
+.advance-learing-section .tabs-content {
+  width: 73%;
+  padding: 20px;
+  position: relative;
+  background-color: #F6E6C5;
+  border-radius: 20px;
+}
+.advance-learing-section .tabs-content .tab-pane {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+.advance-learing-section .tabs-content .tab-pane img {
+  border-radius: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.advance-learing-section .tabs-content .tab-pane.active {
+  opacity: 1;
+  position: relative;
+}
+.advance-learing-section .accordion {
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.advance-learing-section .accordion-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F7F6F6;
+}
+.advance-learing-section .accordion-btn .acc-icon {
+  align-self: center;
+  background-color: #fff;
+  padding: 8px;
+  border: 0.83px solid rgba(21, 20, 25, 0.2);
+  border-radius: 33px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.advance-learing-section .accordion-btn a:hover {
+  color: #151419;
+}
+.advance-learing-section .accordion:first-child .accordion-btn {
+  font-weight: bold;
+}
+.advance-learing-section .accordion-btn.active {
+  background: #f6e6c5;
+  font-weight: bold;
+}
+.advance-learing-section .accordion-panel {
+  display: none;
+  padding: 10px;
+  background-color: #f6e6c5;
+}
+.advance-learing-section .accordion:first-child .accordion-panel {
+  display: block;
+  background: #f6e6c5;
+}
+
+@media (max-width: 1599.98px) {
+  .advance-learning-system .advance-learning-title {
+    position: relative;
+  }
+  .advance-learning-system .advance-learning-title .section-title {
+    color: #151419;
+    text-transform: capitalize;
+  }
+  .advance-learning-system .advance-learning-title img {
+    display: block;
+    width: 145px;
+    position: absolute;
+    top: -14px;
+    left: 54px;
+  }
+  .advance-learning-system .advance-learning-title p {
+    font-size: 18px !important;
+  }
+  .advance-learning-system .tabs-content .tab-pane img {
+    height: 320px;
+    -o-object-fit: unset;
+       object-fit: unset;
+  }
+  .advance-learning-system .vertical-tabs .advance-tab-btn {
+    padding: 20px 69px 20px 20px;
+  }
+  .advance-learning-system .vertical-tabs .advance-tab-btn .vertical-tab-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #151419;
+    margin-bottom: 5px;
+  }
+  .advance-learning-system .vertical-tabs .advance-tab-btn .vertical-tab-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #575757;
+    margin-bottom: 4px;
+    width: auto;
+  }
+  .advance-learning-system .advance-tab-btn.active {
+    background-color: #F6E6C5;
+  }
+  .advance-learning-system .advance-tab-btn.active .vertical-tab-title {
+    font-weight: 700;
+  }
+  .advance-learning-system .tabs-content {
+    width: 73%;
+    padding: 16px;
+    position: relative;
+    background-color: #f6e6c5;
+    border-radius: 20px;
+    height: 352px;
+  }
+}
+@media (max-width: 992px) {
+  .advance-learning-system .advance-learning-title {
+    position: relative;
+  }
+  .advance-learning-system .advance-learning-title .section-title {
+    color: #151419;
+    text-transform: capitalize;
+  }
+  .advance-learning-system .advance-learning-title img {
+    display: block;
+    width: clamp(105px, 29.167vw, 140px);
+    position: absolute;
+    top: -12px;
+    left: clamp(40px, 11.25vw, 54px);
+  }
+  .advance-learning-system .advance-learning-title p {
+    font-family: "HelveticaNowDisplay";
+    font-size: 18px;
+    line-height: 1.4;
+    color: #575757;
+  }
+  .advance-learning-system .accordion-container .accordion {
+    margin-bottom: 12px;
+  }
+  .advance-learning-system .accordion-container .accordion .accordion-btn.active {
+    background: #F6E6C5 !important;
+    border-radius: 20px;
+  }
+  .advance-learning-system .accordion-container .accordion .accordion-btn.active p {
+    font-weight: 700;
+  }
+  .advance-learning-system .accordion-container .accordion .accordion-btn {
+    border-radius: 12px;
+    background-color: #F7F6F6;
+    padding: 20px 20px 20px 20px;
+  }
+  .advance-learning-system .accordion-container .accordion .accordion-btn p {
+    font-family: "HelveticaNowDisplay";
+    font-size: 20px;
+    font-weight: 500;
+    color: #151419;
+    line-height: 1.4;
+  }
+  .advance-learning-system .accordion-container .accordion .active .acc-icon {
+    background-color: #F7F6F6;
+  }
+  .advance-learning-system .accordion-container .accordion .active .acc-icon img {
+    transform: rotate(180deg);
+  }
+  .advance-learning-system .accordion-container .accordion .accordion-panel {
+    margin-top: -20px;
+    padding: 0px 20px 20px 20px;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .advance-learning-system .accordion-container .accordion .accordion-panel p {
+    width: 70%;
+    font-size: 20px;
+    font-family: "HelveticaNowDisplay";
+    font-weight: 400;
+    color: #575757;
+  }
+  .advance-learning-system .accordion-container .accordion .accordion:first-child .accordion-panel {
+    display: block;
+    background: #F6E6C5;
+  }
+}
+@media (max-width: 575.98px) {
+  .advance-learning-system .advance-learning-title .section-title {
+    color: #151419;
+    text-transform: inherit;
+  }
+  .advance-learning-system .advance-learning-title .circle-word {
+    padding: 6px 6px;
+  }
+  .advance-learning-system .advance-learning-title p {
+    font-family: "HelveticaNowDisplay";
+    font-size: 18px;
+    line-height: 1.4;
+    color: #575757;
+  }
+  .advance-learning-system .accordion-container .accordion {
+    margin-bottom: 12px;
+  }
+  .advance-learning-system .accordion-container .accordion .accordion-btn.active {
+    background: #f6e6c5 !important;
+    border-radius: 20px;
+  }
+  .advance-learning-system .accordion-container .accordion .accordion-btn.active p {
+    font-weight: 700;
+  }
+  .advance-learning-system .accordion-container .accordion .accordion-btn {
+    border-radius: 12px;
+    background-color: #F7F6F6;
+    padding: 16px 20px 16px 20px;
+  }
+  .advance-learning-system .accordion-container .accordion .accordion-btn p {
+    font-family: "HelveticaNowDisplay";
+    font-size: 20px;
+    font-weight: 500;
+    color: #151419;
+    line-height: 1.4;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .advance-learning-system .accordion-container .accordion .active .acc-icon {
+    background-color: #F7F6F6;
+  }
+  .advance-learning-system .accordion-container .accordion .active .acc-icon img {
+    transform: rotate(180deg);
+  }
+  .advance-learning-system .accordion-container .accordion .accordion-panel {
+    margin-top: -20px;
+    padding: 0px 20px 20px 20px;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .advance-learning-system .accordion-container .accordion .accordion-panel p {
+    width: 90%;
+    font-size: 18px;
+    font-family: "HelveticaNowDisplay";
+    font-weight: 400;
+    color: #575757;
+  }
+  .advance-learning-system .accordion-container .accordion .accordion-panel img {
+    border-radius: 16px;
+  }
+  .advance-learning-system .accordion-container .accordion .accordion:first-child .accordion-panel {
+    display: block;
+    background: #f6e6c5;
+  }
+}
+@media (max-width: 415px) {
+  .advance-learning-system .accordion-container .accordion .active .acc-icon {
+    background-color: #F7F6F6;
+  }
+  .advance-learning-system .accordion-container .accordion .active .acc-icon img {
+    transform: rotate(180deg);
+  }
+}
+@media (max-width: 390px) {
+  .advance-learning-system .accordion-container .accordion .active .acc-icon {
+    background-color: #F7F6F6;
+  }
+  .advance-learning-system .accordion-container .accordion .active .acc-icon img {
+    transform: rotate(180deg);
+  }
+}/*# sourceMappingURL=advance-learning-system.css.map */

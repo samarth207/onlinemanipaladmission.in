@@ -1,0 +1,3375 @@
+.institution-banner.MAHE {
+  background-image: linear-gradient(311.61deg, rgba(169, 216, 255, 0) 28.95%, #A9D8FF 116.31%);
+}
+
+.institution-banner.SMU {
+  background-image: linear-gradient(311.61deg, rgba(190, 255, 254, 0) 28.95%, #BEFFFE 116.31%);
+}
+
+.institution-banner.MUJ {
+  background-image: linear-gradient(311.61deg, rgba(204, 193, 255, 0) 28.95%, #CCC1FF 116.31%);
+}
+
+.institution-banner {
+  position: relative;
+  z-index: 1;
+}
+.institution-banner .SMU,
+.institution-banner .MUJ {
+  height: 1040px;
+}
+.institution-banner .SMU .univercity-img,
+.institution-banner .MUJ .univercity-img {
+  position: absolute;
+  width: 100%;
+  bottom: -3%;
+}
+.institution-banner .MUJ {
+  height: 1010px;
+}
+.institution-banner .MAHE .banner-details {
+  padding-bottom: 50px;
+}
+.institution-banner .institution-banner-sec svg.doodle {
+  top: 0;
+  left: 0;
+  transform: unset;
+  z-index: -1;
+}
+.institution-banner .institution-banner-sec button {
+  z-index: 2;
+  position: relative;
+}
+.institution-banner .institution-banner-sec .white-button {
+  z-index: 2;
+  position: relative;
+  background-color: #fff !important;
+  border: 1px solid rgba(87, 87, 87, 0.6) !important;
+  color: #000;
+  cursor: pointer;
+}
+.institution-banner .institution-banner-sec .ml-20 {
+  margin-left: 20px;
+}
+.institution-banner .institution-banner-sec .banner-star {
+  position: absolute;
+  right: 10%;
+  height: auto;
+  width: 30px;
+}
+.institution-banner .institution-banner-sec .bredcrumb {
+  padding-bottom: 54px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.institution-banner .institution-banner-sec .bredcrumb .bredcrumb-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #151419;
+}
+.institution-banner .institution-banner-sec .bredcrumb .bredcrumb-home {
+  color: #575757;
+  font-size: 18px;
+  font-weight: 400;
+}
+.institution-banner .institution-banner-sec .bredcrumb img {
+  width: 6px;
+}
+.institution-banner .institution-banner-sec .logos {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 32px;
+}
+.institution-banner .institution-banner-sec .logos span.staging-line {
+  border: 1px solid #151419;
+  height: 32px;
+  opacity: 10%;
+}
+.institution-banner .institution-banner-sec .logos .mahe {
+  background: #A9D8FF;
+}
+.institution-banner .institution-banner-sec .logos .mahe span {
+  color: #0458A1;
+}
+.institution-banner .institution-banner-sec .logos .smu {
+  background: #BEFFFE;
+}
+.institution-banner .institution-banner-sec .logos .smu span {
+  color: #117673;
+}
+.institution-banner .institution-banner-sec .logos .muj {
+  background: #CCC1FF;
+}
+.institution-banner .institution-banner-sec .logos .muj span {
+  color: #3B4096;
+}
+.institution-banner .institution-banner-sec .logos .ranking-logos {
+  display: flex;
+  gap: 24px;
+}
+.institution-banner .institution-banner-sec .logos .ranking-logos .nacc-logo {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  border-radius: 20px;
+  padding: 6px 16px;
+}
+.institution-banner .institution-banner-sec .logos .ranking-logos .nacc-logo img {
+  height: 14px;
+  width: auto;
+}
+.institution-banner .institution-banner-sec .logos .ranking-logos .nacc-logo span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.institution-banner .institution-banner-sec .logos .ranking-logos .eminence-logo {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  border-radius: 20px;
+  padding: 6px 16px;
+}
+.institution-banner .institution-banner-sec .logos .ranking-logos .eminence-logo img {
+  height: 26px;
+  width: auto;
+}
+.institution-banner .institution-banner-sec .logos .ranking-logos .eminence-logo span {
+  font-size: 18px;
+  color: #0458A1;
+  font-weight: 500;
+}
+.institution-banner .institution-banner-sec .logos .ranking-logos .mahe img {
+  height: 14px;
+  width: auto;
+}
+.institution-banner .institution-banner-sec .banner-details {
+  width: 100%;
+}
+.institution-banner .institution-banner-sec .banner-details .moreless-button {
+  display: none;
+}
+.institution-banner .institution-banner-sec .banner-details .section-title {
+  padding-bottom: 10px;
+}
+.institution-banner .institution-banner-sec .banner-details .description {
+  padding-bottom: 32px;
+}
+.institution-banner .institution-banner-sec .banner-details .description p {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #575757;
+}
+.institution-banner .institution-banner-sec .banner-details .banner-star-second {
+  position: absolute;
+  right: 0%;
+  height: auto;
+  width: 23px;
+  left: 19.5%;
+  top: 55%;
+}
+
+.top-online-course .slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-section .section-title {
+  margin-bottom: 4px;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-section .view-all-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-section .view-all-btn {
+  font-size: 20px;
+  color: #151419;
+  border: 2px solid rgba(21, 20, 25, 0.1);
+  border-radius: 50px;
+  padding: 14px 16px;
+  font-weight: 700;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-section .orange-btn {
+  color: #fff;
+  border: 1px solid transparent;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-section .primaryBtn.orange-btn:hover {
+  border: 1px solid transparent;
+  transform: none;
+  color: #fff;
+}
+.top-online-course .top-online-course-section .wrapper-course a:hover {
+  color: unset;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .slick-list {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .slick-track {
+  display: flex !important;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item {
+  padding: 16px;
+  border: 2px solid rgba(21, 20, 25, 0.1);
+  border-radius: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background: #F7F6F6;
+  position: relative;
+  height: inherit;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -50px;
+  z-index: 1;
+  position: absolute;
+  padding: 6px;
+  width: 92%;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .top-ranked {
+  background: #FDD900;
+  border-radius: 16px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.313rem;
+  font-weight: 700;
+  color: #151419;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(21, 20, 25, 0.6);
+  border-radius: 16px;
+  padding: 6px 12px;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll .enroll-text {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1rem;
+  color: #fff;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .course-img:hover .student-enroll {
+  background: rgba(21, 20, 25, 0.8);
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-img img {
+  border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid rgba(21, 20, 25, 0.1);
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .institute-name {
+  margin-left: -16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 16px;
+  border-radius: 0 12px 12px 0;
+  margin-top: -18px;
+  z-index: 1;
+  position: absolute;
+  font-size: 16px;
+  line-height: 1.313;
+  color: #575757;
+  left: 15px;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .muj-bg {
+  background: #CCC1FF;
+  border: 1px solid #ada4d8;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .smu-bg {
+  background: #BEFFFE;
+  border: 1px solid #94d7d6;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .mahe-bg {
+  background: #A9D8FF;
+  border: 1px solid #9ac5e8;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper {
+  padding-top: 28px;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil {
+  display: flex;
+  padding-bottom: 24px;
+  justify-content: space-between;
+  min-height: 92px;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .course-name {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #151419;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 6px 12px;
+  border-radius: 18px;
+  gap: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid rgba(21, 20, 25, 0.1);
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating .rating-number {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #151419;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating img {
+  max-width: 14px;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .duration {
+  display: flex;
+  align-items: center;
+  color: #151419;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .duration span {
+  font-size: 14px;
+  line-height: 1.25;
+  margin-top: 2px;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .duration img {
+  width: 20px;
+  margin-right: 8px;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #151419;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 16px;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .pricing {
+  display: flex;
+  align-items: center;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .pricing img {
+  width: 20px;
+  margin-right: 8px;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .duration-pricing .pricing span {
+  font-size: 14px;
+  line-height: 1.25;
+  color: #151419;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-muj .shortName,
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-smu .shortName,
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-mahe .shortName {
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  background: #434343;
+  color: #fff !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px 0 12px 12px;
+  padding: 4px 16px;
+  font-size: inherit;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-muj:hover {
+  border: 2px solid #CCC1FF;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-muj:hover .shortName {
+  background: #CCC1FF;
+  border: 1px solid #6254A4;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-muj:hover .student-enroll {
+  background: rgba(21, 20, 25, 0.8);
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-smu:hover {
+  border: 2px solid #94d7d6;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-smu:hover .shortName {
+  background: #BEFFFE;
+  border: 1px solid #27BDBB;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-smu:hover .student-enroll {
+  background: rgba(21, 20, 25, 0.8);
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-mahe:hover {
+  border: 2px solid #A9D8FF;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-mahe:hover .shortName {
+  background: #A9D8FF;
+  border: 1px solid #2F7EBF;
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-mahe:hover .student-enroll {
+  background: rgba(21, 20, 25, 0.8);
+}
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-muj:hover .shortName,
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-smu:hover .shortName,
+.top-online-course .top-online-course-section .wrapper-course .top-course-slider .border-mahe:hover .shortName {
+  color: #575757 !important;
+}
+.top-online-course .find-right-course {
+  display: flex;
+  padding-top: 2.292vw;
+  gap: 16px;
+  align-items: center;
+}
+.top-online-course .find-right-course .shake {
+  animation: shaking 2.5s infinite;
+}
+@keyframes shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  75% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.top-online-course .find-right-course .left img {
+  width: 80px;
+}
+.top-online-course .find-right-course .right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.top-online-course .find-right-course .right .right-text {
+  font-size: 24px;
+  color: #151419;
+  margin: 0;
+}
+.top-online-course .find-right-course .right .quiz-link {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color: #151419;
+}
+.top-online-course .find-right-course .right .quiz-link .arrow-img {
+  margin: 0 10px;
+}
+.top-online-course .slick-dots {
+  display: none;
+}
+
+/* Message from our leader desktop css start here */
+.institution-message {
+  position: relative;
+}
+.institution-message .more {
+  display: none;
+}
+.institution-message .content .toggleText {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #151419;
+  cursor: pointer;
+}
+.institution-message .star-image {
+  position: absolute;
+  top: -19%;
+  left: 3%;
+}
+.institution-message .messageBlockSlider {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.institution-message .messageBlockSlider .line-items {
+  display: flex;
+  gap: 32px;
+}
+.institution-message .messageBlockSlider .line-items .institution-message-slider-smu {
+  width: unset !important;
+}
+.institution-message .messageBlockSlider .line-items .institution-message-slider-smu .left {
+  flex-basis: 35% !important;
+  height: unset;
+}
+.institution-message .messageBlockSlider .line-items .institution-message-slider-smu .right {
+  flex-basis: 65% !important;
+}
+.institution-message .messageBlockSlider .line-items .messageBlock {
+  display: flex;
+  background-color: #F7F6F6;
+  padding: 20px;
+  gap: 32px;
+  border-radius: 20px;
+  width: calc(50% - 10px);
+  box-sizing: border-box;
+  height: inherit;
+}
+.institution-message .messageBlockSlider .line-items .messageBlock .left {
+  flex: 1;
+  display: flex;
+  border-radius: 16px;
+  align-items: flex-end;
+  background: #E9F6FA;
+}
+.institution-message .messageBlockSlider .line-items .messageBlock .left img {
+  width: auto;
+  border-radius: 16px 16px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.institution-message .messageBlockSlider .line-items .messageBlock .muj-message img {
+  margin: 0 auto;
+}
+.institution-message .messageBlockSlider .line-items .messageBlock .institution-message-smu img {
+  height: 100%;
+  margin: 0 auto;
+}
+.institution-message .messageBlockSlider .line-items .messageBlock .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.institution-message .messageBlockSlider .line-items .messageBlock .right .designation-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.institution-message .messageBlockSlider .line-items .messageBlock .right .hidden {
+  display: none;
+}
+.institution-message .messageBlockSlider .line-items .messageBlock .right .see-more {
+  font-weight: bold;
+  cursor: pointer;
+}
+.institution-message .messageBlockSlider .line-items .messageBlock .right p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #575757;
+  font-weight: 400;
+}
+.institution-message .messageBlockSlider .line-items .messageBlock .right .name {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: "Queens";
+  display: block;
+  color: #151419;
+}
+.institution-message .messageBlockSlider .line-items .messageBlock .right .designation {
+  font-size: 16px;
+  color: #151419;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+}
+
+/* End here */
+/*Leading with result section css start*/
+.degree-at-glance {
+  background: #151419 url('../images/grid-bg.png');
+  overflow: hidden;
+  position: relative;
+  padding: 5.2vw 0 5.2vw;
+}
+.degree-at-glance .slick-dotted.slick-slider {
+  margin-bottom: unset;
+}
+.degree-at-glance .doodle {
+  top: 28%;
+}
+.degree-at-glance .doodle path {
+  filter: brightness(1.9);
+}
+.degree-at-glance .heading-block {
+  position: relative;
+}
+.degree-at-glance .heading-block .section-title {
+  color: #fff;
+  margin-bottom: 32px;
+}
+.degree-at-glance .heading-block .the-impact-img {
+  position: absolute;
+  right: 0;
+  top: -174%;
+  width: 153px;
+}
+.degree-at-glance .degree-row .info-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 44px 170px;
+  align-items: start;
+  position: relative;
+  margin-bottom: 160px;
+}
+.degree-at-glance .degree-row .info-container .flex-item {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.degree-at-glance .degree-row .info-container .flex-item .info-heading {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  line-height: 1.4;
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.degree-at-glance .degree-row .info-container .flex-item .description {
+  color: #fff;
+  font-size: 48px;
+  font-family: "Queens";
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+}
+.degree-at-glance .degree-row .info-container .flex-item .description .small-text {
+  font-size: 24px;
+  font-family: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+.degree-at-glance .degree-row .info-container .flex-item .description .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 16px 12px;
+}
+.degree-at-glance .degree-row .info-container .flex-item:nth-child(6) {
+  grid-column: 2;
+}
+.degree-at-glance .degree-row .info-container .show-popup {
+  position: absolute;
+  right: 0;
+  bottom: 22px;
+}
+.degree-at-glance .degree-row .alumni-title {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.degree-at-glance .degree-row .alumni-title .alumni-circle {
+  position: absolute;
+  right: -12px;
+  top: -17px;
+  width: 167px;
+  height: auto;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card {
+  width: 50%;
+  padding: 24px;
+  border-radius: 16px;
+  display: flex;
+  gap: 24px;
+  background-color: #212025;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 12px;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .left {
+  width: 50%;
+  border-radius: 16px;
+  position: relative;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .left img {
+  border-radius: 16px;
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .left .student-img {
+  border: 0.81px solid #575757;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+  z-index: 0;
+  border-radius: 16px;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  z-index: 1;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .name {
+  font-size: 24px;
+  color: inherit;
+  font-weight: bold;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 12px;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .designation {
+  font-size: 18px;
+  color: #F7F6F6;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 12px;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .experience {
+  font-size: 16px;
+  color: inherit;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  gap: 4px;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .right {
+  width: 50%;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .right .title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .right .line-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 36px;
+  position: relative;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .right .line-item .prog-year {
+  position: relative;
+  width: 75px;
+  border-radius: 24px;
+  background: #9DDAF0;
+  font-size: 20px;
+  font-family: "Queens";
+  color: #000;
+  padding: 12px 14px 8px;
+  text-align: center;
+  margin: 6px 0;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .right .line-item .prog-desc {
+  margin-bottom: 0;
+  color: #F7F6F6;
+  font-size: 18px;
+  align-items: center;
+  display: flex;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .right .line-item::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #F7F6F6;
+  position: absolute;
+  left: 35px;
+  bottom: -44px;
+  z-index: 0;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .right .line-item:last-child::after {
+  display: none;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .right .line-item:last-child {
+  margin-bottom: 0;
+}
+.degree-at-glance .featured-alumni-slider .alumni-card .right .line-item:last-child .prog-year::after {
+  content: none;
+}
+.degree-at-glance .featured-alumni-slider .slick-track {
+  display: flex;
+}
+.degree-at-glance .featured-alumni-slider .slick-track .slick-slide {
+  height: inherit;
+}
+.degree-at-glance .featured-alumni-slider .slick-prev,
+.degree-at-glance .featured-alumni-slider .slick-next {
+  top: unset;
+  width: 49px;
+  height: 48px;
+  transform: none;
+  bottom: -70px;
+  margin-bottom: 0;
+}
+.degree-at-glance .featured-alumni-slider .slick-prev {
+  right: unset;
+  left: calc(50% - 56px);
+}
+.degree-at-glance .featured-alumni-slider .slick-next {
+  right: calc(50% - 56px);
+}
+.degree-at-glance .featured-alumni-slider .slick-prev:before {
+  background: url('../images/icons/prev-arrow-black.svg') no-repeat;
+  width: 49px;
+  height: 48px;
+}
+.degree-at-glance .featured-alumni-slider .slick-next:before {
+  background: url('../images/icons/next-arrow-black.svg') no-repeat;
+  width: 49px;
+  height: 48px;
+}
+.degree-at-glance .featured-alumni-slider .slick-dots li.slick-active button:before {
+  color: white;
+  border-color: #fff;
+  background-color: #fff;
+}
+.degree-at-glance .featured-alumni-slider .slick-list {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.campus-immersions .event-wrapper {
+  max-width: 600px;
+}
+.campus-immersions .event-wrapper .star {
+  bottom: 34px;
+}
+.campus-immersions .event-wrapper .arrow {
+  bottom: 8px;
+  right: -100px;
+}
+.campus-immersions .other-page-block {
+  width: 38%;
+  margin: 8px auto auto;
+  text-align: center;
+}
+.campus-immersions .other-page-block .campus-sldr-desc {
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.explore-other-manipal-institutions {
+  position: relative;
+  z-index: 0;
+}
+.explore-other-manipal-institutions .universities-details {
+  display: flex;
+  gap: 24px;
+}
+.explore-other-manipal-institutions .universities-details .muj-card {
+  background-color: #CCC1FF;
+  z-index: 1;
+  position: relative;
+}
+.explore-other-manipal-institutions .universities-details .muj-card .box-wrap {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+.explore-other-manipal-institutions .universities-details .muj-card svg.doodle {
+  z-index: -1;
+  height: 100%;
+}
+.explore-other-manipal-institutions .universities-details .muj-card .badge::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  border-radius: 10px;
+  width: 164px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  height: 14px;
+  width: 30px;
+  z-index: -1;
+  background-color: #9a1418;
+}
+.explore-other-manipal-institutions .universities-details .muj-card .badge::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 12px;
+  border-radius: 10px;
+  width: 30px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  height: 14px;
+  z-index: -1;
+  background-color: #9a1418;
+}
+.explore-other-manipal-institutions .universities-details .muj-card .badge {
+  background-image: url('../images/vector.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -12px;
+  width: 246px;
+  right: 99px;
+}
+.explore-other-manipal-institutions .universities-details .muj-card .badge p {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #fff;
+  text-align: center;
+  margin-right: 18px;
+  font-family: "Queens";
+}
+.explore-other-manipal-institutions .universities-details .muj-card .badge p span {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "HelveticaNowDisplay";
+}
+.explore-other-manipal-institutions .universities-details .mahe-card {
+  background-color: #A9D8FF;
+  position: relative;
+}
+.explore-other-manipal-institutions .universities-details .mahe-card .box-wrap {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+.explore-other-manipal-institutions .universities-details .mahe-card svg.doodle {
+  height: 90%;
+  left: 42%;
+  top: 45%;
+}
+.explore-other-manipal-institutions .universities-details .mahe-card .badge::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -8px;
+  border-radius: 100%;
+  height: 30px;
+  width: 20px;
+  z-index: -1;
+  background-color: #9a1418;
+}
+.explore-other-manipal-institutions .universities-details .mahe-card .badge::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 16px;
+  border-radius: 100%;
+  height: 30px;
+  width: 20px;
+  z-index: -1;
+  background-color: #9a1418;
+}
+.explore-other-manipal-institutions .universities-details .mahe-card .badge {
+  background-image: url('../images/vector.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -7px;
+  width: 246px;
+  right: 36px;
+}
+.explore-other-manipal-institutions .universities-details .mahe-card .badge p {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #fff;
+  text-align: center;
+  margin-right: 18px;
+  font-family: "Queens";
+}
+.explore-other-manipal-institutions .universities-details .mahe-card .badge p span {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "HelveticaNowDisplay";
+}
+.explore-other-manipal-institutions .universities-details .smu-card {
+  background-color: #BEFFFE;
+  position: relative;
+  z-index: 0;
+}
+.explore-other-manipal-institutions .universities-details .smu-card .box-wrap {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+.explore-other-manipal-institutions .universities-details .smu-card svg.doodle {
+  z-index: -1;
+  height: 100%;
+}
+.explore-other-manipal-institutions .universities-details .institution-card {
+  width: 50%;
+  border-radius: 12px;
+}
+.explore-other-manipal-institutions .universities-details .institution-card .doodle {
+  opacity: 0;
+}
+.explore-other-manipal-institutions .universities-details .institution-card:hover .doodle {
+  animation: draw 3s ease-out forwards;
+  opacity: 1;
+}
+.explore-other-manipal-institutions .universities-details .uni-card {
+  display: flex;
+  padding: 32px 0 0 32px;
+  position: relative;
+  height: 310px;
+}
+.explore-other-manipal-institutions .universities-details .uni-card .section-title {
+  font-size: 40px;
+  width: 50%;
+}
+.explore-other-manipal-institutions .universities-details .uni-card .uni-img {
+  width: 60%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.explore-other-manipal-institutions .universities-details .uni-card .uni-img img {
+  height: 290px;
+  border-radius: 12px;
+}
+
+/*Leading with result section css start*/
+.leading-with-result {
+  position: relative;
+}
+.leading-with-result .doodle {
+  top: 60%;
+  z-index: 0;
+}
+.leading-with-result .doodle path {
+  stroke-width: 68px;
+}
+.leading-with-result .leading-top-section {
+  padding-top: 4%;
+  position: relative;
+}
+.leading-with-result .leading-top-section .leading-sec-title {
+  position: relative;
+}
+.leading-with-result .leading-top-section .leading-sec-title .diffe-img {
+  position: absolute;
+  top: -98px;
+  right: 1%;
+}
+.leading-with-result .leading-top-section .leading-sec-title .circle-word {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  padding: 12px 6px;
+}
+.leading-with-result .leading-top-section .leading-sec-title .circle-word::before {
+  content: "";
+  position: absolute;
+  top: 33%;
+  left: 51%;
+  width: 109%;
+  height: 116%;
+  background: url('../images/leading-result.png') no-repeat center center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+}
+.leading-with-result .leading-top-section .leading-cards {
+  display: flex;
+}
+.leading-with-result .leading-top-section .leading-cards .leading-card-item {
+  display: flex;
+  flex-direction: column;
+  width: 412px;
+  background-color: #F7F6F6;
+  padding: 32px;
+  border-radius: 20px;
+  margin-right: 24px;
+}
+.leading-with-result .leading-top-section .leading-cards .leading-card-item .lead-count {
+  font-family: "Queens";
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #151419;
+}
+.leading-with-result .leading-top-section .leading-cards .leading-card-item .lead-count .counter-subtext {
+  font-size: 44px;
+}
+.leading-with-result .leading-top-section .leading-cards .leading-card-item .lead-title {
+  font-size: 24px;
+  color: #575757;
+}
+
+.learner-snapshot-sec {
+  overflow: hidden;
+}
+.learner-snapshot-sec .learners-title {
+  position: relative;
+}
+.learner-snapshot-sec .learners-title .learners-circle {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  padding: 12px 22px 12px 6px;
+  margin-right: -14px;
+  margin: 0 -6px 0 -6px;
+}
+.learner-snapshot-sec .learners-title .learners-circle::before {
+  content: "";
+  position: absolute;
+  top: 26%;
+  left: 47%;
+  background: url('../images/institution/learners-circle.svg') no-repeat center center;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+  width: 100%;
+  height: 150%;
+  background-size: 100%;
+}
+.learner-snapshot-sec .learner-snapsots {
+  display: flex;
+  gap: 56px;
+}
+.learner-snapshot-sec .learner-snapsots .section-title {
+  padding-bottom: 10px;
+}
+.learner-snapshot-sec .learner-snapsots .slick-track {
+  display: flex !important;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card {
+  background: #F7F6F6;
+  border-radius: 10px;
+  width: 33.33%;
+  height: inherit;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .card-title {
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 20px;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .graph-img {
+  padding-bottom: 72px;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .graph-img img {
+  width: 96%;
+  height: auto;
+  margin: 0 auto;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .result {
+  padding-bottom: 20px;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .result .pink-color {
+  background: #F6B1C6;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .result .sky-blue-color {
+  background: #9DDAF0;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .result .yellow-color {
+  background: #FDD900;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .result .green-color {
+  background: #BDCD36;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .result .blue-color {
+  background: #0045C0;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .result .color-text {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #000;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .result .box-1 {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .result .box-1 .result-years {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding-bottom: 18px;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .result .box-2 {
+  display: flex;
+  padding-left: 12%;
+  gap: 52px;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .result .box-2 .result-years {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card .result .color-box {
+  height: 20px;
+  width: 20px;
+  border-radius: 8px;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card-2 .result .box-1 {
+  gap: 52px;
+}
+.learner-snapshot-sec .learner-snapsots .graph-card-2 .result .box-2 {
+  padding-left: 13%;
+}
+.learner-snapshot-sec .india-map {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 40px;
+}
+.learner-snapshot-sec .india-map .left,
+.learner-snapshot-sec .india-map .right-side {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.learner-snapshot-sec .india-map .left .age-cohort-chart,
+.learner-snapshot-sec .india-map .right-side .age-cohort-chart {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: -40px;
+}
+.learner-snapshot-sec .india-map .left .age-cohort-chart .axis-value,
+.learner-snapshot-sec .india-map .right-side .age-cohort-chart .axis-value {
+  font-size: 14px;
+  fill: #3e3333;
+  font-weight: 600;
+}
+.learner-snapshot-sec .india-map .left .age-cohort-chart .bar-value,
+.learner-snapshot-sec .india-map .right-side .age-cohort-chart .bar-value {
+  font-size: 14px;
+  fill: #3e3333;
+  font-weight: 600;
+}
+.learner-snapshot-sec .india-map .left .age-cohort-chart .percentage-value,
+.learner-snapshot-sec .india-map .right-side .age-cohort-chart .percentage-value {
+  font-size: 14px;
+  font-weight: 600;
+  fill: #836b6b;
+}
+.learner-snapshot-sec .india-map .left .graph-title,
+.learner-snapshot-sec .india-map .right-side .graph-title {
+  font-size: 25px;
+  color: black;
+  font-weight: 400;
+  background: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: unset;
+}
+.learner-snapshot-sec .india-map .sum-left {
+  gap: 65px !important;
+  justify-content: unset !important;
+}
+.learner-snapshot-sec .india-map .left {
+  background: #F7F6F6;
+  border-radius: 10px;
+  border: 0.81px solid rgba(0, 0, 0, 0.1019607843);
+  padding: 22px 47px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.learner-snapshot-sec .india-map .left .india-img {
+  position: relative;
+}
+.learner-snapshot-sec .india-map .left .section-title {
+  font-size: 32px;
+  font-family: "Queens";
+  font-weight: 500;
+  color: #151419;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.learner-snapshot-sec .india-map .left .map {
+  display: flex;
+}
+.learner-snapshot-sec .india-map .left .map svg {
+  height: auto;
+  width: 100%;
+}
+.learner-snapshot-sec .india-map .left .map .note {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 31%;
+  font-size: 20px;
+  font-weight: 500;
+  color: #151419;
+}
+.learner-snapshot-sec .india-map .left .map .note .town-desc {
+  font-size: 14px;
+  color: #575757;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+.learner-snapshot-sec .india-map .left .map .note .town-description {
+  display: inline-block;
+}
+.learner-snapshot-sec .india-map .left .map .fillone {
+  fill: #d9eaf5;
+}
+.learner-snapshot-sec .india-map .left .map .filltwo {
+  fill: #D1EFFB;
+}
+.learner-snapshot-sec .india-map .left .map .fillthree {
+  fill: #B7E2F7;
+}
+.learner-snapshot-sec .india-map .left .map .fillfour {
+  fill: #9BD1F4;
+}
+.learner-snapshot-sec .india-map .left .map .fillfive {
+  fill: #7FC1F0;
+}
+.learner-snapshot-sec .india-map .left .map .fillsix {
+  fill: #62ACEC;
+}
+.learner-snapshot-sec .india-map .left .map .fillseven {
+  fill: #ccc6f1;
+}
+.learner-snapshot-sec .india-map .left .map .filleight {
+  fill: #b19deb;
+}
+.learner-snapshot-sec .india-map .left .map .filleleven {
+  fill: #577fdd;
+}
+.learner-snapshot-sec .india-map .left .map .fillten {
+  fill: #62ACEC !important;
+}
+.learner-snapshot-sec .india-map .left .map .filltweal {
+  fill: #003fc6;
+}
+.learner-snapshot-sec .india-map .left .map .filldefault {
+  fill: #07baf0;
+}
+.learner-snapshot-sec .india-map .left .map path.active {
+  fill: rgb(242, 103, 34);
+  box-shadow: 0px 4px 10px rgba(150, 150, 150, 0.2);
+  /* Softer, lighter shadow */
+  filter: drop-shadow(0px 0px 6px rgba(150, 150, 150, 0.4));
+  /* Reduced intensity */
+}
+.learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+.learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container svg {
+  height: auto;
+  width: 100%;
+}
+.learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container svg .labels .label:hover {
+  fill: #ff5733;
+}
+.learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container .active {
+  fill: #ff5733;
+}
+.learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container .label {
+  fill: #000;
+  cursor: pointer;
+  transition: fill 0.3s;
+  font-size: 18px;
+}
+.learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container .label.highlighted {
+  fill: #ff5733;
+}
+.learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container .india-map path.active {
+  fill: #ff5733;
+  /* Shadow and glowing effect for active state */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  /* Shadow for floating */
+  filter: drop-shadow(0px 0px 15px rgba(255, 87, 51, 0.6));
+  /* Glow effect */
+  transform: scale(1.05);
+  /* Slightly scales up the active state */
+}
+.learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container .label:hover,
+.learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container .active-label {
+  fill: #ff5733;
+  font-weight: bold;
+}
+.learner-snapshot-sec .india-map .right-side {
+  display: flex;
+  justify-content: center;
+  background: #F7F6F6;
+  border-radius: 10px;
+  border: 0.81px solid rgba(0, 0, 0, 0.1019607843);
+  padding: 22px 47px;
+}
+.learner-snapshot-sec .india-map .right-side img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.page-template-institution .faculty-sec {
+  content-visibility: unset;
+}
+
+.learner-snapshot-sec .india-map .sum-stat-two .age-cohort-chart-container {
+  max-width: 50% !important;
+}
+
+.smu-graph-img svg {
+  width: 60%;
+}
+
+/*Start Responsive css */
+@media (min-width: 1920px) {
+  .learner-snapshot-sec .india-map .right-side .age-cohort-chart {
+    margin-top: -40px;
+  }
+}
+@media (max-width: 1919.98px) {
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil {
+    min-height: 102px;
+  }
+  .learner-snapshot-sec .india-map .left .map .note {
+    max-width: 41%;
+  }
+}
+@media (max-width: 1599.98px) {
+  .institution-banner .institution-banner-sec .logos .ranking-logos .nacc-logo span,
+  .institution-banner .institution-banner-sec .logos .ranking-logos .eminence-logo span {
+    font-size: 16px;
+  }
+  .institution-banner {
+    position: relative;
+  }
+  .institution-banner .SMU,
+  .institution-banner .MUJ {
+    height: 820px;
+  }
+  .institution-banner .SMU .univercity-img,
+  .institution-banner .MUJ .univercity-img {
+    position: absolute;
+    width: 100%;
+  }
+  .institution-banner .institution-banner-sec .white-button {
+    padding: 11px 21px;
+  }
+  .institution-banner .institution-banner-sec .banner-star {
+    position: absolute;
+    right: 10%;
+    width: 24px;
+  }
+  .institution-banner .institution-banner-sec .bredcrumb {
+    padding-bottom: 20px;
+    gap: 10px;
+  }
+  .institution-banner .institution-banner-sec .bredcrumb .bredcrumb-title {
+    font-size: 16px;
+  }
+  .institution-banner .institution-banner-sec .bredcrumb .bredcrumb-home {
+    font-size: 16px;
+  }
+  .institution-banner .institution-banner-sec .bredcrumb img {
+    width: 6px;
+  }
+  .institution-banner .institution-banner-sec .logos {
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .institution-banner .institution-banner-sec .logos .nacc-logo {
+    height: unset;
+  }
+  .institution-banner .institution-banner-sec .logos .eminence-logo {
+    height: unset;
+  }
+  .institution-banner .institution-banner-sec .banner-details .section-title {
+    padding-bottom: 10px;
+    font-size: 32px;
+  }
+  .institution-banner .institution-banner-sec .banner-details .description {
+    padding-bottom: 10px;
+  }
+  .institution-banner .institution-banner-sec .banner-details .description p {
+    font-size: 16px;
+  }
+  .institution-banner .institution-banner-sec .banner-details .banner-star-second {
+    position: absolute;
+    right: 0%;
+    width: 18px;
+    top: 60%;
+    z-index: 2;
+  }
+  .top-online-course {
+    overflow: hidden;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-section .view-all-btn {
+    font-size: 14px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .institute-name {
+    margin-left: -12px;
+    font-size: 12px;
+    line-height: 1rem;
+    margin-top: -14px;
+    left: 12px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .top-ranked {
+    font-size: 12px;
+    line-height: 1rem;
+    padding: 2px 6px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll {
+    padding: 2px 6px;
+    gap: 4px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll .enroll-text {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll img {
+    width: 12px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper {
+    padding-top: 20px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating .rating-number {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating img {
+    max-width: 12px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .course-name {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .dot {
+    width: 4px;
+    height: 4px;
+    margin: 0 8px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration span {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration img {
+    width: 12px;
+    margin-right: 4px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing span {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing img {
+    width: 12px;
+    margin-right: 4px;
+  }
+  .top-online-course .find-right-course {
+    align-items: center;
+  }
+  .top-online-course .find-right-course .left img {
+    width: 70px;
+  }
+  .top-online-course .find-right-course .right {
+    gap: 8px;
+  }
+  .top-online-course .find-right-course .right .right-text {
+    font-size: 20px;
+    color: #151419;
+    margin: 0;
+  }
+  .top-online-course .find-right-course .right .quiz-link {
+    font-size: 14px;
+  }
+  .top-online-course .find-right-course .right .quiz-link .arrow-img {
+    margin: 0 10px;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock {
+    gap: 16px;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .left img {
+    height: 265px;
+    width: auto;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock {
+    /*.muj-message {
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    .institution-message-smu {
+      img {
+        height: 100%;
+        margin: 0 auto;
+      }
+    }*/
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .right p {
+    font-size: 16px;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .right .name {
+    font-size: 20px;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .right .designation {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
+  .degree-at-glance {
+    padding: 5.6vw 0 7vw;
+  }
+  .degree-at-glance .heading-block .section-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .degree-at-glance .heading-block .the-impact-img {
+    width: 110px;
+  }
+  .degree-at-glance .degree-row .info-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 40px 100px;
+    align-items: start;
+    margin-bottom: 112px;
+  }
+  .degree-at-glance .degree-row .info-container .flex-item .info-heading {
+    font-size: 14px;
+  }
+  .degree-at-glance .degree-row .info-container .flex-item .info-heading img {
+    width: 15px;
+    height: auto;
+  }
+  .degree-at-glance .degree-row .info-container .flex-item .description {
+    font-size: 40px;
+  }
+  .degree-at-glance .degree-row .info-container .flex-item:nth-child(6) {
+    grid-column: unset;
+  }
+  .degree-at-glance .degree-row .alumni-title .alumni-circle {
+    right: -11px;
+    top: -11px;
+    width: 114px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card {
+    width: 50%;
+    padding: 16px;
+    border-radius: 16px;
+    gap: 16px;
+    background-color: #212025;
+    margin: 0 10px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left {
+    width: 50%;
+    border-radius: 16px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left img {
+    border-radius: 16px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-img {
+    width: 100%;
+    height: auto;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay {
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .name {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .designation {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .experience {
+    font-size: 14px;
+    gap: 4px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .experience .star {
+    width: 11px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right {
+    width: 50%;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .title {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item {
+    gap: 11px;
+    margin-bottom: 18px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item .prog-year {
+    width: 52px;
+    border-radius: 16px;
+    font-size: 16px;
+    padding: 8px 7px 4px;
+    margin: 6px 0;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item .prog-year::after {
+    content: "";
+    width: 1px;
+    height: 24px;
+    left: 50%;
+    bottom: -27px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item .prog-desc {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #F7F6F6;
+    position: absolute;
+    left: 25px;
+    bottom: -40px;
+    z-index: 0;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item:last-child {
+    margin-bottom: 0;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item:last-child .prog-year::after {
+    content: none;
+  }
+  .degree-at-glance .alumni-title {
+    margin-bottom: 24px;
+  }
+  .explore-other-manipal-institutions {
+    position: relative;
+  }
+  .explore-other-manipal-institutions .universities-details {
+    display: flex;
+    gap: 12px;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge::before {
+    content: " ";
+    position: absolute;
+    top: -1px;
+    /* left: 74%; */
+    left: -10px;
+    border-radius: 10px;
+    width: 30px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    height: 14px;
+    z-index: -1;
+    background-color: #9a1418;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge::after {
+    content: " ";
+    position: absolute;
+    top: -1px;
+    /* left: 74%; */
+    right: -10px;
+    border-radius: 10px;
+    width: 164px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    height: 14px;
+    width: 30px;
+    z-index: -1;
+    background-color: #9a1418;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge {
+    background-size: 100%;
+    width: 170px;
+    right: 50px;
+    top: -12px;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-left: 16px;
+    margin-top: 2px;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge p span {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge::after {
+    right: -8px;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge {
+    background-size: 100%;
+    width: 170px;
+    right: 50px;
+    top: -6px;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-left: 16px;
+    margin-top: 2px;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge p span {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .explore-other-manipal-institutions .universities-details .uni-card {
+    display: flex;
+    padding: 24px 0 0 24px;
+    height: 230px;
+  }
+  .explore-other-manipal-institutions .universities-details .uni-card .section-title {
+    font-size: 24px;
+    width: 40%;
+  }
+  .explore-other-manipal-institutions .universities-details .uni-card .uni-img img {
+    height: 210px;
+  }
+  .page-template-institution .campus-immersions .event-wrapper .star {
+    left: -57px;
+  }
+  .page-template-institution .campus-immersions .event-wrapper .arrow {
+    bottom: -8px;
+    right: -70px;
+  }
+  .page-template-institution .campus-immersions .other-page-block {
+    width: 54%;
+    margin: 8px auto auto;
+    text-align: center;
+  }
+  .page-template-institution .campus-immersions .other-page-block .campus-sldr-desc {
+    font-size: 18px;
+  }
+  .leading-with-result .leading-top-section .leading-cards .leading-card-item .lead-count {
+    font-size: 48px;
+  }
+  .leading-with-result .leading-top-section .leading-cards .leading-card-item .lead-title {
+    font-size: 18px;
+    margin-bottom: opx;
+  }
+  .learner-snapshot-sec .learners-title {
+    position: relative;
+  }
+  .learner-snapshot-sec .learners-title .learners-circle {
+    padding: 12px 16px 12px 6px;
+    margin-right: -8px;
+  }
+  .learner-snapshot-sec .learners-title circle::before {
+    content: "";
+    position: absolute;
+    top: 32%;
+    left: 51%;
+    width: 104%;
+    height: 147%;
+  }
+  .learner-snapshot-sec .learner-snapsots {
+    gap: 40px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .card-title {
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .graph-img {
+    padding-bottom: 72px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .graph-img img {
+    width: 92%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .result .color-text {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .result .box-1 {
+    gap: 16px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .result .box-1 .result-years {
+    gap: 4px;
+    padding-bottom: 18px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .result .box-2 {
+    padding-left: 11%;
+    gap: 18px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .result .box-2 .result-years {
+    gap: 4px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .result .color-box {
+    height: 20px;
+    width: 20px;
+    border-radius: 8px;
+  }
+  .page-template-institution .faculty-sec {
+    content-visibility: unset;
+  }
+}
+@media (max-width: 1366px) {
+  .institution-banner .institution-banner-sec .banner-details .banner-star-second {
+    position: absolute;
+    right: 0%;
+    width: 18px;
+    left: 19.5%;
+    top: 60%;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge {
+    right: 54px;
+    top: -12px;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge p {
+    font-size: 14px;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge {
+    right: 54px;
+    top: -6px;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1280px) {
+  .institution-banner .institution-banner-sec .banner-details .banner-star-second {
+    position: absolute;
+    right: 0%;
+    width: 18px;
+    left: 17%;
+    top: 61%;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge {
+    right: 44px;
+    top: -12px;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge p {
+    font-size: 14px;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge {
+    right: 44px;
+    top: -6px;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200px) {
+  .institution-banner .institution-banner-sec .banner-details .banner-star-second {
+    position: absolute;
+    right: 0%;
+    width: 18px;
+    left: 18%;
+    top: 60%;
+  }
+  .degree-at-glance .degree-row .info-container {
+    gap: 40px 40px;
+  }
+}
+@media (max-width: 992px) {
+  .page-template-institution .faculty-sec {
+    content-visibility: unset;
+  }
+  .page-template-institution .faculty-sec .slick-list {
+    padding: 0 23% 0px !important;
+  }
+  .institution-banner {
+    position: relative;
+    overflow: hidden;
+  }
+  .institution-banner .MUJ,
+  .institution-banner .SMU {
+    height: 1000px;
+  }
+  .institution-banner .institution-banner-sec svg.doodle {
+    top: 40%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: -1;
+  }
+  .institution-banner .institution-banner-sec svg.doodle path {
+    stroke-width: 48px;
+  }
+  .institution-banner .institution-banner-sec .univercity-img {
+    width: 100%;
+  }
+  .institution-banner .institution-banner-sec .white-button.ml-20 {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .institution-banner .institution-banner-sec .banner-star {
+    position: absolute;
+    right: 10%;
+    width: 24px;
+    top: 26%;
+  }
+  .institution-banner .institution-banner-sec .bredcrumb {
+    padding-bottom: 20px;
+    gap: 10px;
+  }
+  .institution-banner .institution-banner-sec .bredcrumb .bredcrumb-title {
+    font-size: 18px;
+  }
+  .institution-banner .institution-banner-sec .bredcrumb .bredcrumb-home {
+    font-size: 18px;
+  }
+  .institution-banner .institution-banner-sec .bredcrumb img {
+    width: 6px;
+  }
+  .institution-banner .institution-banner-sec .logos {
+    gap: 16px;
+    padding-bottom: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .institution-banner .institution-banner-sec .logos span.staging-line.first {
+    display: none;
+  }
+  .institution-banner .institution-banner-sec .logos .nacc-logo {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .institution-banner .institution-banner-sec .logos .nacc-logo img {
+    height: 28px;
+    width: auto;
+  }
+  .institution-banner .institution-banner-sec .logos .nacc-logo span {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .institution-banner .institution-banner-sec .logos .eminence-logo {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .institution-banner .institution-banner-sec .logos .eminence-logo img {
+    height: 26px;
+    width: auto;
+  }
+  .institution-banner .institution-banner-sec .logos .eminence-logo span {
+    font-size: 20px;
+    color: #151419;
+    font-weight: 500;
+  }
+  .institution-banner .institution-banner-sec .banner-details {
+    width: 100%;
+  }
+  .institution-banner .institution-banner-sec .banner-details .desktop-des {
+    display: block;
+  }
+  .institution-banner .institution-banner-sec .banner-details .mobile-des {
+    display: none;
+  }
+  .institution-banner .institution-banner-sec .banner-details .section-title {
+    padding-bottom: 6px;
+    font-size: 40px;
+  }
+  .institution-banner .institution-banner-sec .banner-details .description {
+    padding-bottom: 10px;
+  }
+  .institution-banner .institution-banner-sec .banner-details .description p {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  .institution-banner .institution-banner-sec .banner-details .banner-star-second {
+    position: absolute;
+    right: 0%;
+    width: 18px;
+    left: 38%;
+    top: 61%;
+  }
+  .top-online-course .top-online-course-section .wrapper-course {
+    margin-bottom: 12px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-section .view-all-btn {
+    font-size: 16px;
+    padding: 14px 32px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-section .section-title {
+    margin-bottom: 10px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .view-all-btn {
+    font-size: 16px;
+    color: #151419;
+    border: 2px solid rgba(21, 20, 25, 0.1);
+    border-radius: 50px;
+    padding: 14px 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .primaryBtn.orange-btn {
+    margin-bottom: 10px;
+    color: #fff;
+    border: 1px solid transparent;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .primaryBtn.orange-btn:hover {
+    border: 1px solid transparent;
+    transform: none;
+    color: #fff;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .slick-dotted.slick-slider {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider {
+    margin-bottom: 40px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .slick-list {
+    overflow: visible;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item {
+    padding: 12px;
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .institute-name {
+    margin-left: -12px;
+    font-size: 16px;
+    line-height: 1.4rem;
+    margin-top: -14px;
+    left: 10px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll {
+    width: 94%;
+    padding: 6px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .top-ranked {
+    font-size: 12px !important;
+    line-height: 1.4rem;
+    padding: 4px 10px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll {
+    padding: 4px 10px;
+    gap: 4px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll .enroll-text {
+    font-size: 12px !important;
+    line-height: 1.4rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll img {
+    width: 16px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper {
+    padding-top: 28px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil {
+    min-height: 75px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating .rating-number {
+    font-size: 14px;
+    line-height: 1rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating img {
+    max-width: 16px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .course-name {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 16px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration span {
+    font-size: 16px;
+    line-height: 1.4rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration img {
+    width: 24px;
+    margin-right: 4px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing span {
+    font-size: 16px;
+    line-height: 1.4rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing img {
+    width: 24px;
+    margin-right: 4px;
+  }
+  .top-online-course .find-right-course {
+    align-items: center;
+    padding-top: 60px;
+  }
+  .top-online-course .find-right-course .left img {
+    width: 70px;
+  }
+  .top-online-course .find-right-course .right {
+    gap: 6px;
+  }
+  .top-online-course .find-right-course .right .right-text {
+    font-size: 24px;
+    color: #151419;
+    margin: 0;
+  }
+  .top-online-course .find-right-course .right .quiz-link {
+    font-size: 18px;
+  }
+  .top-online-course .find-right-course .right .quiz-link .arrow-img {
+    margin: 0 10px;
+    padding-top: 4px;
+  }
+  .institution-message {
+    overflow: hidden;
+    position: unset;
+  }
+  .institution-message .messageBlockSlider .slick-dotted.slick-slider {
+    margin-bottom: 2px;
+  }
+  .institution-message .messageBlockSlider .slick-dots {
+    padding-top: 24px;
+  }
+  .institution-message .messageBlockSlider .line-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 24px;
+    gap: unset;
+  }
+  .institution-message .messageBlockSlider .line-items .slick-list {
+    overflow: visible;
+  }
+  .institution-message .messageBlockSlider .line-items .slick-track {
+    display: flex !important;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-right: 24px;
+    padding: 24px;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .left {
+    flex: unset;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .left img {
+    margin: 0 auto;
+    height: 205px;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .right .designation-sec {
+    gap: 4px;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .right p {
+    font-size: 20px;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .right .name {
+    font-size: 24px;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .right .designation {
+    font-size: 16px;
+    letter-spacing: 1.6px;
+  }
+  .degree-at-glance {
+    padding: 56px 0 56px;
+  }
+  .degree-at-glance .doodle {
+    top: 26%;
+    position: absolute;
+    left: 83%;
+    width: 200%;
+  }
+  .degree-at-glance .degree-row .info-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 40px 65px;
+    align-items: start;
+    margin-bottom: 152px;
+  }
+  .degree-at-glance .degree-row .info-container .show-popup {
+    position: absolute;
+    right: unset;
+    bottom: -80px;
+    left: 0;
+  }
+  .degree-at-glance .featured-alumni-slider .slick-list {
+    padding: 0 4.167vw;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card {
+    width: 50%;
+    padding: 16px;
+    border-radius: 16px;
+    gap: 16px;
+    background-color: #212025;
+    margin: 0 10px;
+    flex-direction: column;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left {
+    width: 100%;
+    border-radius: 16px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left img {
+    border-radius: 16px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-img {
+    width: 100%;
+    height: auto;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay {
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .name {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .designation {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .experience {
+    font-size: 16px;
+    gap: 4px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .experience .star {
+    width: 14px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right {
+    width: 100%;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .title {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item {
+    gap: 11px;
+    margin-bottom: 18px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item .prog-year {
+    width: 75px;
+    border-radius: 24px;
+    font-size: 20px;
+    padding: 12px 14px 8px;
+    margin: 6px 0;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item .prog-year::after {
+    content: "";
+    width: 1px;
+    height: 24px;
+    left: 50%;
+    bottom: -27px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item .prog-desc {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item:last-child {
+    margin-bottom: 0;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item:last-child .prog-year::after {
+    content: none;
+  }
+  .explore-other-manipal-institutions {
+    position: relative;
+  }
+  .explore-other-manipal-institutions .universities-details {
+    display: flex;
+    gap: 24px;
+    flex-direction: column-reverse;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge {
+    background-size: 100%;
+    width: 170px;
+    right: 50px;
+    top: -10px;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-left: 16px;
+    margin-top: 2px;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge p span {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge {
+    background-size: 100%;
+    width: 170px;
+    right: 50px;
+    top: -10px;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-left: 16px;
+    margin-top: 2px;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge p span {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .explore-other-manipal-institutions .universities-details .institution-card {
+    width: 100%;
+  }
+  .explore-other-manipal-institutions .universities-details .uni-card {
+    display: flex;
+    padding: 24px 0 0 24px;
+  }
+  .explore-other-manipal-institutions .universities-details .uni-card .section-title {
+    font-size: 32px;
+    width: 50%;
+  }
+  .explore-other-manipal-institutions .universities-details .uni-card .uni-img img {
+    height: 210px;
+  }
+  .page-template-institution .campus-immersions .event-wrapper .star {
+    left: 20px;
+    bottom: -18px;
+  }
+  .page-template-institution .campus-immersions .event-wrapper .arrow {
+    bottom: -42px;
+    right: 2px;
+  }
+  .page-template-institution .campus-immersions .other-page-block {
+    margin: 12px auto auto;
+    width: 86%;
+  }
+  .page-template-institution .campus-immersions .other-page-block .campus-sldr-desc {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .leading-with-result .doodle {
+    top: 44%;
+    position: absolute;
+    z-index: 0;
+  }
+  .leading-with-result .doodle path {
+    stroke-width: 44px;
+  }
+  .leading-with-result .leading-top-section {
+    padding-top: 10%;
+  }
+  .leading-with-result .leading-top-section .leading-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+  }
+  .leading-with-result .leading-top-section .leading-cards .leading-card-item {
+    width: 48%;
+    margin-right: 0px;
+    padding: 16px;
+  }
+  .leading-with-result .leading-top-section .leading-cards .leading-card-item .lead-count {
+    font-family: "Queens";
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #151419;
+  }
+  .leading-with-result .leading-top-section .leading-cards .leading-card-item .lead-count .counter-subtext {
+    font-size: 6.4vw;
+  }
+  .leading-with-result .leading-top-section .leading-cards .leading-card-item .lead-title {
+    font-family: "HelveticaNowDisplay";
+    font-size: 24px;
+    line-height: 1.4;
+    color: #575757;
+    font-weight: 400;
+  }
+  .leading-with-result .leading-top-section .leading-sec-title .diffe-img {
+    position: absolute;
+    top: -132px;
+    right: 1%;
+    width: 25%;
+  }
+  .learner-snapshot-sec .india-map {
+    flex-direction: column;
+    gap: 32px !important;
+  }
+  .learner-snapshot-sec .india-map .right-side {
+    padding: unset;
+    gap: 40px;
+  }
+  .learner-snapshot-sec .india-map .left,
+  .learner-snapshot-sec .india-map .right-side {
+    flex: 1;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .learner-snapshot-sec .india-map .left {
+    border-radius: 8px;
+    border: 0.43px solid rgba(0, 0, 0, 0.1019607843);
+    padding: 16px;
+  }
+  .learner-snapshot-sec .india-map .left .section-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  .learner-snapshot-sec .india-map .left .map {
+    display: flex;
+  }
+  .learner-snapshot-sec .india-map .left .map svg {
+    height: auto;
+    width: 100%;
+  }
+  .learner-snapshot-sec .india-map .left .map .note {
+    font-size: 16px;
+    max-width: 26%;
+  }
+  .learner-snapshot-sec .india-map .left .map .note .town-desc {
+    font-size: 12px;
+  }
+  .learner-snapshot-sec .india-map .left .map .note .town-description {
+    display: inline-block;
+  }
+  .learner-snapshot-sec .india-map .left .map path.active {
+    fill: rgb(242, 103, 34);
+    box-shadow: 0px 4px 10px rgba(150, 150, 150, 0.2);
+    /* Softer, lighter shadow */
+    filter: drop-shadow(0px 0px 6px rgba(150, 150, 150, 0.4));
+    /* Reduced intensity */
+  }
+  .learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container svg {
+    height: auto;
+    width: 100%;
+  }
+  .learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container svg .labels .label:hover {
+    fill: #ff5733;
+  }
+  .learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container .active {
+    fill: #ff5733;
+  }
+  .learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container .label {
+    fill: #000;
+    cursor: pointer;
+    transition: fill 0.3s;
+    font-size: 18px;
+  }
+  .learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container .label.highlighted {
+    fill: #ff5733;
+  }
+  .learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container .india-map path.active {
+    fill: #ff5733;
+    /* Shadow and glowing effect for active state */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    /* Shadow for floating */
+    filter: drop-shadow(0px 0px 15px rgba(255, 87, 51, 0.6));
+    /* Glow effect */
+    transform: scale(1.05);
+    /* Slightly scales up the active state */
+  }
+  .learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container .label:hover,
+  .learner-snapshot-sec .india-map .left .map .percentage-bar .gradient-bar-container .active-label {
+    fill: #ff5733;
+    font-weight: bold;
+  }
+  .learner-snapshot-sec .india-map .muj-stat-one,
+  .learner-snapshot-sec .india-map .muj-stat-two {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    justify-content: unset;
+    background: #F7F6F6;
+    border-radius: 10px;
+    border: 0.81px solid rgba(0, 0, 0, 0.1019607843);
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow: auto;
+    padding-bottom: 16px;
+    scroll-behavior: smooth;
+  }
+  .learner-snapshot-sec .india-map .muj-stat-one img,
+  .learner-snapshot-sec .india-map .muj-stat-two img {
+    max-width: unset;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .learner-snapshot-sec .india-map .muj-stat-one .age-cohort-chart-container,
+  .learner-snapshot-sec .india-map .muj-stat-two .age-cohort-chart-container {
+    max-width: 200%;
+  }
+  .learner-snapshot-sec .india-map .muj-stat-one .age-cohort-chart,
+  .learner-snapshot-sec .india-map .muj-stat-two .age-cohort-chart {
+    min-width: 200% !important;
+    height: auto;
+    display: block;
+    margin: 5px 0;
+  }
+  .learner-snapshot-sec .india-map .muj-stat-one .age-cohort-chart .axis-value,
+  .learner-snapshot-sec .india-map .muj-stat-two .age-cohort-chart .axis-value {
+    font-size: 14px;
+    fill: #3e3333;
+    font-weight: 600;
+  }
+  .learner-snapshot-sec .india-map .muj-stat-one .age-cohort-chart .bar-value,
+  .learner-snapshot-sec .india-map .muj-stat-two .age-cohort-chart .bar-value {
+    font-size: 14px;
+    fill: #3e3333;
+    font-weight: 600;
+  }
+  .learner-snapshot-sec .india-map .muj-stat-one .age-cohort-chart .percentage-value,
+  .learner-snapshot-sec .india-map .muj-stat-two .age-cohort-chart .percentage-value {
+    font-size: 14px;
+    font-weight: 600;
+    fill: #836b6b;
+  }
+  .learner-snapshot-sec .india-map .muj-stat-one .graph-title,
+  .learner-snapshot-sec .india-map .muj-stat-two .graph-title {
+    font-size: 25px;
+    color: black;
+    font-weight: 400;
+    background: white;
+    width: 200%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: unset;
+  }
+  .learner-snapshot-sec .india-map .muj-stat-two {
+    gap: unset;
+  }
+  .learner-snapshot-sec .learner-snapsots {
+    flex-direction: column;
+    gap: 0;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card {
+    margin-right: 24px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .graph-img {
+    padding-bottom: 56px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .result {
+    min-height: 104px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .result .color-text {
+    font-size: 16px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .result .box-1 {
+    gap: 30px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .result .box-2 {
+    padding-left: 11%;
+    gap: 119px;
+  }
+  .smu-graph-img .graph-title {
+    background: unset !important;
+  }
+  .learner-snapshot-sec .india-map .sum-stat-two .age-cohort-chart-container {
+    max-width: 50% !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .institution-banner .institution-banner-sec .logos .ranking-logos .nacc-logo {
+    align-items: baseline;
+  }
+  .institution-banner .SMU,
+  .institution-banner .MUJ {
+    height: 590px;
+  }
+  .institution-banner .SMU .univercity-img,
+  .institution-banner .MUJ .univercity-img {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+  }
+  .institution-banner .institution-banner-sec svg.doodle {
+    position: absolute;
+    z-index: -1;
+  }
+  .institution-banner .institution-banner-sec svg.doodle path {
+    stroke-width: 48px;
+  }
+  .institution-banner .institution-banner-sec .univercity-img {
+    width: 100%;
+  }
+  .institution-banner .institution-banner-sec .banner-star {
+    position: absolute;
+    right: 10%;
+    width: 24px;
+    top: 70%;
+  }
+  .institution-banner .institution-banner-sec .bredcrumb {
+    padding-bottom: 26px;
+    gap: 10px;
+  }
+  .institution-banner .institution-banner-sec .bredcrumb .bredcrumb-title {
+    font-size: 3.75vw;
+  }
+  .institution-banner .institution-banner-sec .bredcrumb .bredcrumb-home {
+    font-size: 3.75vw;
+  }
+  .institution-banner .institution-banner-sec .bredcrumb img {
+    width: 6px;
+  }
+  .institution-banner .institution-banner-sec .logos {
+    gap: 10px;
+    padding-bottom: 12px;
+  }
+  .institution-banner .institution-banner-sec .logos .ranking-logos {
+    gap: 12px;
+  }
+  .institution-banner .institution-banner-sec .logos .ranking-logos .nacc-logo {
+    gap: 6px;
+    padding: 4px 12px;
+  }
+  .institution-banner .institution-banner-sec .logos .ranking-logos .nacc-logo img {
+    height: 14px;
+    width: auto;
+  }
+  .institution-banner .institution-banner-sec .logos .ranking-logos .nacc-logo span {
+    font-size: 14px;
+  }
+  .institution-banner .institution-banner-sec .logos .ranking-logos .eminence-logo {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding-top: 6px;
+    padding: 4px 12px;
+  }
+  .institution-banner .institution-banner-sec .logos .ranking-logos .eminence-logo img {
+    height: 26px;
+    width: auto;
+  }
+  .institution-banner .institution-banner-sec .logos .ranking-logos .eminence-logo span {
+    font-size: 14px;
+  }
+  .institution-banner .institution-banner-sec .logos .ranking-logos .mahe img {
+    height: 12px;
+    width: auto;
+  }
+  .institution-banner .institution-banner-sec .banner-details {
+    width: 100%;
+  }
+  .institution-banner .institution-banner-sec .banner-details .desktop-des {
+    display: none;
+  }
+  .institution-banner .institution-banner-sec .banner-details .mobile-des {
+    display: block;
+  }
+  .institution-banner .institution-banner-sec .banner-details .section-title {
+    padding-bottom: 4px;
+    font-size: 6.667vw;
+  }
+  .institution-banner .institution-banner-sec .banner-details .description {
+    font-size: 16px;
+    padding-bottom: 6px;
+  }
+  .institution-banner .institution-banner-sec .banner-details .description p {
+    font-size: 3.75vw;
+    padding-bottom: 0;
+  }
+  .institution-banner .institution-banner-sec .banner-details .description span {
+    font-size: 3.75vw;
+    font-weight: 500;
+    color: #151419;
+    cursor: pointer;
+  }
+  .institution-banner .institution-banner-sec .banner-details .description span span {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .institution-banner .institution-banner-sec .banner-details .moreless-button {
+    margin-top: -7.417vw;
+    margin-left: 26.667vw;
+    font-size: 3.75vw;
+    font-weight: 500;
+    color: #151419;
+    cursor: pointer;
+    display: block;
+    padding-bottom: 14px;
+  }
+  .institution-banner .institution-banner-sec .banner-details .hidden-text {
+    display: none;
+  }
+  .institution-banner .institution-banner-sec .banner-details .banner-star-second {
+    position: absolute;
+    right: 0%;
+    width: 18px;
+    left: 28%;
+    top: 60%;
+    display: none;
+  }
+  .institution-banner .institution-banner-sec .banner-details .show-popup {
+    font-size: 16px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course {
+    margin-bottom: 12px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-section .section-title {
+    margin-bottom: 24px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-section .view-all-btn {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .view-all-btn {
+    font-size: 16px;
+    color: #151419;
+    border: 2px solid rgba(21, 20, 25, 0.1);
+    border-radius: 50px;
+    padding: 14px 32px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    display: inline-block;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .slick-dotted.slick-slider {
+    margin-bottom: 24px !important;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .slick-list {
+    overflow: visible;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .institute-name {
+    margin-left: -12px;
+    font-size: 14px;
+    line-height: 1.4rem;
+    margin-top: -14px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item {
+    padding: 12px;
+    margin-left: 0;
+    margin-right: 16px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll {
+    width: 94%;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .top-ranked {
+    font-size: 2.917vw;
+    line-height: 1.4rem;
+    padding: 4px 10px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll {
+    padding: 4px 10px;
+    gap: 4px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll .enroll-text {
+    font-size: 2.917vw;
+    line-height: 1.4rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll img {
+    width: 16px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper {
+    padding-top: 28px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil {
+    min-height: 125px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating .rating-number {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating img {
+    max-width: 9px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .course-name {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 16px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration span {
+    font-size: 16px;
+    line-height: 1.4rem;
+    margin-top: 0;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration img {
+    width: 18px;
+    margin-right: 4px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing span {
+    font-size: 16px;
+    line-height: 1.4rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing img {
+    width: 18px;
+    margin-right: 4px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item:last-child {
+    margin-right: 0;
+  }
+  .top-online-course .find-right-course {
+    padding-top: 20px;
+  }
+  .top-online-course .find-right-course .left img {
+    width: 52px;
+  }
+  .top-online-course .find-right-course .right {
+    gap: 2px;
+  }
+  .top-online-course .find-right-course .right .quiz-link {
+    font-size: 18px;
+  }
+  .top-online-course .find-right-course .right .quiz-link .arrow-img {
+    padding-top: 0;
+  }
+  .institution-message {
+    position: relative;
+    z-index: 1;
+  }
+  .institution-message .smu-section-title {
+    font-size: 5.667vw !important;
+  }
+  .institution-message .messageBlockSlider .line-items {
+    margin-right: 16px;
+  }
+  .institution-message .messageBlockSlider .line-items .slick-list {
+    overflow: visible;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock {
+    margin-right: 16px;
+    padding: 20px;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .left {
+    flex: unset;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .left img {
+    height: 205px;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .right p {
+    font-size: 18px;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .right .name {
+    font-size: 5vw;
+  }
+  .institution-message .messageBlockSlider .line-items .messageBlock .right .designation {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
+  .degree-at-glance {
+    padding: 56px 0 48px;
+  }
+  .degree-at-glance .heading-block .section-title {
+    font-size: 32px;
+  }
+  .degree-at-glance .heading-block .the-impact-img {
+    width: 25vw;
+  }
+  .degree-at-glance .degree-row .info-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 40px 0;
+    align-items: start;
+    margin-bottom: 80px;
+  }
+  .degree-at-glance .degree-row .info-container .show-popup {
+    display: none;
+  }
+  .degree-at-glance .degree-row .info-container .flex-item .info-heading {
+    margin-bottom: 12px;
+  }
+  .degree-at-glance .degree-row .info-container .flex-item .description {
+    font-size: 40px;
+  }
+  .degree-at-glance .degree-row .section-title {
+    margin-bottom: 24px;
+  }
+  .degree-at-glance .degree-row .alumni-title {
+    margin-bottom: 24px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card {
+    width: 50%;
+    padding: 16px;
+    border-radius: 16px;
+    gap: 16px;
+    background-color: #212025;
+    margin: 0 10px;
+    flex-direction: column;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left {
+    width: 100%;
+    border-radius: 16px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left img {
+    border-radius: 16px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-img {
+    width: 100%;
+    height: auto;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay {
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .name {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .designation {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .experience {
+    font-size: 16px;
+    gap: 4px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .left .student-info-overlay .student-info .experience .star {
+    width: 14px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right {
+    width: 100%;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item {
+    gap: 11px;
+    margin-bottom: 18px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item .prog-year {
+    width: 64px;
+    min-width: 64px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 9px 6px;
+    margin: 6px 0;
+    max-height: 44px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item .prog-year::after {
+    content: "";
+    width: 1px;
+    height: 50px;
+    left: 50%;
+    bottom: -48px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item .prog-desc {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item::after {
+    left: 31px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item:last-child {
+    margin-bottom: 0;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .line-item:last-child .prog-year::after {
+    content: none;
+  }
+  .explore-other-manipal-institutions {
+    position: relative;
+  }
+  .explore-other-manipal-institutions .universities-details {
+    display: flex;
+    gap: 24px;
+    flex-direction: column-reverse;
+  }
+  .explore-other-manipal-institutions .universities-details .doodle {
+    animation: draw 2s ease-out forwards;
+    opacity: 1 !important;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge {
+    background-size: 100%;
+    width: 39vw;
+    right: 34px;
+    top: -2.5vw;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge p {
+    font-size: 3.333vw;
+    line-height: 1;
+    margin-left: 16px;
+    margin-top: 4px;
+  }
+  .explore-other-manipal-institutions .universities-details .muj-card .badge p span {
+    font-size: 2.6vw;
+    line-height: 1.4;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge {
+    background-size: 100%;
+    width: 39vw;
+    right: 17px;
+    top: -6px;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge p {
+    font-size: 3.333vw;
+    line-height: 1;
+    margin-left: 16px;
+    margin-top: 4px;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge p span {
+    font-size: 2.6vw;
+    line-height: 1.4;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card .badge::before {
+    left: -8px;
+  }
+  .explore-other-manipal-institutions .universities-details .institution-card {
+    width: 100%;
+  }
+  .explore-other-manipal-institutions .universities-details .mahe-card svg.doodle {
+    height: 100%;
+    left: 42%;
+    top: 52%;
+    width: 85%;
+  }
+  .explore-other-manipal-institutions .universities-details .uni-card {
+    display: flex;
+    padding: 16px 0 0 16px;
+    height: 39.583vw;
+  }
+  .explore-other-manipal-institutions .universities-details .uni-card .section-title {
+    font-size: 5vw !important;
+    width: 50%;
+  }
+  .explore-other-manipal-institutions .universities-details .uni-card .uni-img img {
+    height: 130%;
+    width: 400px;
+  }
+  .page-template-institution .campus-immersions .event-wrapper .section-title {
+    margin-bottom: 8px;
+  }
+  .page-template-institution .campus-immersions .event-wrapper .star {
+    left: 20px;
+    bottom: -28px;
+  }
+  .page-template-institution .campus-immersions .event-wrapper .arrow {
+    bottom: -50px;
+    right: 2px;
+  }
+  .page-template-institution .campus-immersions .other-page-block {
+    margin: 28px auto auto;
+    width: 100%;
+  }
+  .page-template-institution .campus-immersions .other-page-block .campus-sldr-desc {
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+  .leading-with-result .doodle {
+    top: 42%;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    left: 50%;
+  }
+  .leading-with-result .doodle path {
+    stroke-width: 44px;
+  }
+  .leading-with-result .leading-top-section .leading-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+  }
+  .leading-with-result .leading-top-section .leading-cards .leading-card-item {
+    width: 46%;
+    margin-right: 0px;
+    padding: 16px;
+  }
+  .leading-with-result .leading-top-section .leading-cards .leading-card-item .lead-count {
+    font-family: "Queens";
+    font-size: 8.5vw;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #151419;
+  }
+  .leading-with-result .leading-top-section .leading-cards .leading-card-item .lead-count .counter-subtext {
+    font-size: 6.2vw;
+  }
+  .leading-with-result .leading-top-section .leading-cards .leading-card-item .lead-title {
+    font-family: "HelveticaNowDisplay";
+    font-size: 4.2vw;
+    line-height: 1.4;
+    color: #575757;
+    font-weight: 400;
+  }
+  .leading-with-result .leading-top-section .leading-sec-title .diffe-img {
+    position: absolute;
+    top: -74px;
+    right: 1%;
+    width: 27%;
+  }
+  .learner-snapshot-sec .learners-circle {
+    padding: 12px 8px 12px 6px;
+    margin-right: 0px;
+  }
+  .learner-snapshot-sec .learner-snapsots {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card {
+    width: 100%;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .card-title {
+    font-size: 24px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .graph-img {
+    padding-bottom: 40px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .gender-card {
+    min-height: 90px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .result .color-text {
+    font-size: 2.917vw;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .result .box-1 {
+    gap: 7.5vw;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .result .box-2 {
+    padding-left: 11%;
+    gap: 20px;
+  }
+  .learner-snapshot-sec .india-map .left .map .note {
+    max-width: 46%;
+  }
+  .page-template-institution .faculty-sec .slick-list {
+    padding: 0 16% 0px !important;
+  }
+  #downloadForm_popup .formBlock .enroll-now-form .form-details-block .fields {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 390px) {
+  .institution-banner .SMU,
+  .institution-banner .MUJ {
+    height: 550px;
+  }
+  .learner-snapshot-sec .india-map .left .map .note {
+    max-width: 49%;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil {
+    min-height: 100px !important;
+  }
+}
+@media (max-width: 380px) {
+  .top-online-course .top-online-course-section .wrapper-course .top-section .view-all-btn {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-section .section-title {
+    margin-bottom: 16px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .slick-dotted.slick-slider {
+    margin-bottom: 40px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .slick-list {
+    overflow: visible;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .institute-name {
+    margin-left: -12px;
+    font-size: 14px !important;
+    line-height: 1.4rem;
+    margin-top: -14px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item {
+    padding: 10px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .top-ranked {
+    font-size: 12px !important;
+    line-height: 1.4rem;
+    padding: 4px 8px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll {
+    padding: 4px 8px;
+    gap: 4px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll .enroll-text {
+    font-size: 12px !important;
+    line-height: 1.4rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-enroll .student-enroll img {
+    width: 14px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating .rating-number {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .rating img {
+    max-width: 9px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .course-deatil .course-name {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 10px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration span {
+    font-size: 14px;
+    line-height: 1rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .duration img {
+    width: 24px;
+    margin-right: 4px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing span {
+    font-size: 14px;
+    line-height: 1rem;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item .course-wrapper .duration-pricing .pricing img {
+    width: 24px;
+    margin-right: 4px;
+  }
+  .top-online-course .top-online-course-section .wrapper-course .top-course-slider .line-item:last-child {
+    margin-right: 0;
+  }
+  .top-online-course .find-right-course .left img {
+    width: 52px;
+  }
+  .top-online-course .find-right-course .right {
+    gap: 2px;
+  }
+  .top-online-course .find-right-course .right .quiz-link {
+    font-size: 16px;
+  }
+  .top-online-course .find-right-course .right .quiz-link .arrow-img {
+    padding-top: 0;
+  }
+  .top-online-course .find-right-course .right .right-text {
+    font-size: 20px;
+    color: #151419;
+    margin: 0;
+  }
+  .institution-banner .SMU,
+  .institution-banner .MUJ {
+    height: 550px;
+  }
+  .learner-snapshot-sec .india-map .left .map .note {
+    max-width: 53%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .top-online-course .top-online-course-section .wrapper-course .top-section .view-all-btn {
+    font-size: 14px;
+  }
+  .degree-at-glance .featured-alumni-slider .alumni-card .right .title,
+  .page-template-institution .campus-immersions .other-page-block .campus-sldr-desc,
+  .campus-immersions .event-wrapper .event-text {
+    font-size: 16px;
+  }
+  .learner-snapshot-sec .learner-snapsots .graph-card .card-title,
+  .explore-other-manipal-institutions .universities-details .uni-card .section-title {
+    font-size: 24px !important;
+  }
+  footer .footer-container .footer-get-in-touch .get-in-touch.footerv2 .right img {
+    max-width: 350px !important;
+  }
+  .leading-with-result .leading-top-section .leading-cards .leading-card-item .lead-count {
+    font-size: 40px;
+  }
+  .leading-with-result .leading-top-section .leading-cards .leading-card-item {
+    padding: 24px;
+  }
+}/*# sourceMappingURL=institution.css.map */

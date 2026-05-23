@@ -1,0 +1,543 @@
+// Tab Functionality
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.tab-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const parent = this.closest('.tabs');
+      const target = this.getAttribute('data-tab');
+
+      // Only affect tabs inside this group
+      parent.querySelectorAll('.tab-btn').forEach(function (tab) {
+        tab.classList.remove('active');
+      });
+
+      parent.querySelectorAll('.tab-panel').forEach(function (panel) {
+        panel.classList.remove('active');
+      });
+
+      this.classList.add('active');
+      parent.querySelector('#' + target).classList.add('active');
+    });
+  });
+});
+
+// Accordion
+document.addEventListener("DOMContentLoaded", () => {
+  const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+
+      // Toggle current accordion
+      content.classList.toggle("open");
+      header.classList.toggle("open");
+
+      // Update icon
+      const icon = header.querySelector(".accordion-icon");
+      if (icon) {
+        icon.textContent = content.classList.contains("open") ? "-" : "+";
+      }
+
+      // Close all other accordions
+      accordionHeaders.forEach(h => {
+        if (h !== header) {
+          h.nextElementSibling.classList.remove("open");
+          h.classList.remove("open");
+
+          const hIcon = h.querySelector(".accordion-icon");
+          if (hIcon) {
+            hIcon.textContent = "+";
+          }
+        }
+      });
+    });
+  });
+});
+
+jQuery(document).ready(function ($) {
+
+  const width = $(window).width();
+  const baseURL = `${window.location.protocol}//${window.location.host}/`;
+
+  if (width <= 768) {
+    $('.course-detail').hide();
+  }
+
+  $(document).on("click", ".toggle-div", function () {
+    // Toggle course wrapper visibility
+    $(".course-wrapper").toggle();
+
+    // Toggle active class on clicked element
+    $(this).toggleClass("active");
+
+    // Update footer arrow rotation
+    if ($(this).hasClass("active")) {
+      $(".footer-toggle-arrow").removeClass("rotate-img");
+    } else {
+      $(".footer-toggle-arrow").addClass("rotate-img");
+    }
+  });
+
+  // footer doodle image placement
+  const containerWidth = $(".footer-get-in-touch").width();
+  const leftSpace = (width - containerWidth) / 2;
+  $(".footer-get-in-touch .get-in-touch .doodle").css({ "left": "-" + leftSpace + "px", "width": width + "px" });
+
+  // impact doodle image placement
+  const impactContainerWidth = $(".our-impact .container").width();
+  const impactLeftSpace = (width - impactContainerWidth) / 2;
+  $(".impact-animation-row").css({ "left": "-" + impactLeftSpace + "px", "width": width + "px" });
+
+  $(".call-block").hover(
+    function () {
+      let hrefValue = $(".call-btn").attr("data-att");
+
+      if (hrefValue) {
+        $(".call-no-strip").show();
+
+        const valueAfterColon = hrefValue.split(":")[1];
+        const part1 = valueAfterColon.slice(0, 3);
+        const part2 = valueAfterColon.slice(3, 8);
+        const part3 = valueAfterColon.slice(8, 13);
+
+        $(".phone-no").html(`${part1} ${part2} ${part3}`);
+
+        const blackIcon = baseURL + "wp-content/themes/flamingo/assets/images/icons/black-call-icon.png";
+        $(".call-btn img").attr("src", blackIcon).css("width", "38px");
+      }
+    },
+    function () {
+      $(".call-no-strip").hide();
+
+      const greyIcon = baseURL + "wp-content/themes/flamingo/assets/images/icons/grey-call-icon.png";
+      $(".call-btn img")
+        .attr("src", greyIcon)
+        .css("width", "38px")
+        .css("margin-bottom", "0");
+    }
+  );
+
+  // Auto popup code
+  if ($("#auto_popup").length) {
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        const autoPopup = getCookie("autoPopup");
+
+        const allPopupsHidden = $(".popup.hidden").length === $(".popup").length;
+        const formsInView =
+          isInViewport($("#programLeadForm")) || isInViewport($("#footerLeadForm"));
+
+        if (autoPopup !== "enabled" && allPopupsHidden && !formsInView) {
+          $("#overlay").addClass("show");
+          $("#auto_popup").removeClass("hidden");
+          setCookie("autoPopup", "enabled", 1);
+        }
+      }, 20000);
+    });
+  }
+
+  // pagespeed changes
+  $(".placement-section-logo-slider-new").on("init afterChange", function () {
+    const $slides = $(this).find(".slick-slide");
+
+    // Remove all focus handling first
+    $slides.removeAttr("tabindex inert");
+
+    // Apply inert ONLY to aria-hidden slides
+    $slides.filter('[aria-hidden="true"]').attr("inert", "");
+  });
+
+});
+
+// Set Cookie
+const setCookie = (cname, cvalue, exdays) => {
+  const expires = new Date();
+  expires.setTime(expires.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  document.cookie = cname + "=" + cvalue + ";" + "expires=" + expires.toUTCString() + ";path=/";
+}
+// Get Cookie
+const getCookie = (key) => {
+  var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+  return keyValue ? keyValue[2] : null;
+}
+
+// check element in viewport
+const isInViewport = ($element) => {
+  if ($element.length === 0) return false;
+  var rect = $element[0].getBoundingClientRect();
+  return rect.top < $(window).height() && rect.bottom > 0;
+}
+
+//Mobile Courses
+function expandCourses(num) {
+  $('.expand-data-' + num).toggle();
+  const element = $('.footer-accordian-' + num);
+
+  if (element.hasClass('footer-down-arrow')) {
+    element.removeClass('footer-down-arrow').addClass('footer-up-arrow');
+  } else {
+    element.removeClass('footer-up-arrow').addClass('footer-down-arrow');
+  }
+
+}
+
+// Toggle header buttons 
+const toggleBrochureBtn = () => {
+  const form = document.querySelector("#programLeadForm");
+  const secondFoldHide = document.querySelector(".second-fold-hide");
+  const secondFoldShow = document.querySelector(".second-fold-show");
+
+  if (!secondFoldHide || !secondFoldShow) return;
+  const scrollY = window.scrollY;
+  const firstFold = window.innerHeight;
+
+  if (scrollY >= firstFold) {
+    secondFoldShow.classList.remove("hidden");
+    secondFoldHide.classList.add("hidden");
+  } else {
+    secondFoldShow.classList.add("hidden");
+    secondFoldHide.classList.remove("hidden");
+  }
+}
+window.addEventListener("load", toggleBrochureBtn);
+window.addEventListener("scroll", toggleBrochureBtn);
+window.addEventListener("resize", toggleBrochureBtn);
+
+$(document).on("click", ".common-popup", function () {
+  $("header").addClass("header-hidden");
+});
+
+$(document).on("click", ".common-close-popup", function () {
+  $("header").removeClass("header-hidden");
+});
+
+$(document).on("click", function (e) {
+  if (!$(e.target).closest(".popup-container, .common-popup, .common-open-popup").length) {
+    $("header").removeClass("header-hidden");
+  }
+});
+
+// Region Specific popup code end
+
+// Doodle Animation
+const sections = document.querySelectorAll('.doodle-section');
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const svg = entry.target.querySelector('.doodle');
+        const findCoursesvg = entry.target.querySelector('.find-course path');
+        const findCourseMobilesvg = entry.target.querySelector('.mobile path');
+        if (svg) {
+          svg.classList.add('animate');
+        }
+        if (findCoursesvg) {
+          findCoursesvg.classList.add('path-animate');
+        }
+        if (findCourseMobilesvg) {
+          findCourseMobilesvg.classList.add('path-animate');
+        }
+      } else {
+        const svg = entry.target.querySelector('.doodle');
+        const findCoursesvg = entry.target.querySelector('.find-course path');
+        const findCourseMobilesvg = entry.target.querySelector('.mobile path');
+        if (svg) {
+          svg.classList.remove('animate');
+        }
+        if (findCoursesvg) {
+          findCoursesvg.classList.remove('path-animate');
+        }
+        if (findCourseMobilesvg) {
+          findCourseMobilesvg.classList.remove('path-animate');
+        }
+      }
+    });
+  },
+  { threshold: 0.5 } // Trigger only when the section is half visible
+);
+
+// Observe each section
+sections.forEach((section) => observer.observe(section));
+
+// testimonial read more
+if (!$("body").hasClass("single-post")) {
+  $(".full-des").hide();
+}
+$(".testimonial-desc.default.short-des").each(function () {
+  var description = $(this).text();
+  if (description.length > 320) {
+    $(this).html(
+      description.substring(0, 320) +
+      '<span> ...</span><button data-showpopup="readMore_popup" class="show-popup testi-read-more" id="readMoreBtn">Read More</button>'
+    );
+  }
+});
+
+// Handle read more button click
+$(document).on("click", ".testi-read-more", function () {
+  $(".short-des").show();
+  $(".full-des").hide();
+});
+
+jQuery(document).on("click", ".testi-read-more", function () {
+  const sectItem = jQuery(this).closest(".testi-wrap");
+
+  jQuery("#readMore_popup .image-wrapper img").attr(
+    "src",
+    sectItem.find(".img-wrap .testimonial-img").attr("src")
+  );
+
+  jQuery("#readMore_popup .popup-name").html(
+    sectItem.find(".name-course .name").html()
+  );
+
+  jQuery("#readMore_popup .popup-location").html(
+    sectItem.find(".location").html()
+  );
+
+  jQuery("#readMore_popup .popup-coursename").html(
+    sectItem.find(".course").html()
+  );
+
+  jQuery("#readMore_popup .popup-batch").html(
+    sectItem.find(".batch").html()
+  );
+
+  jQuery("#readMore_popup .popup-desc").html(
+    sectItem.find(".content-wrap .testimonial-desc").html()
+  );
+});
+
+const path_name = window.location.pathname;
+if (
+  path_name === "/mahe-online-degree-courses" ||
+  path_name === "/international/mahe-online-degree-courses" ||
+  path_name === "/international/online-degree-courses-v2" ||
+  path_name === "/nepal/online-degree-courses-v2" ||
+  path_name === "/online-mba" ||
+  path_name === "/online-mba-muj" ||
+  path_name === "/online-mca" ||
+  path_name === "/online-mba-mahe-v2" ||
+  path_name === "/muj-mba-program" ||
+  path_name === "/international/online-mba" ||
+  path_name === "/online-ba-english" ||
+  path_name === "/online-ba" ||
+  path_name === "/online-ba-political-science" ||
+  path_name === "/online-ba-sociology" ||
+  path_name === "/online-bcom-smu" ||
+  path_name === "/online-ma-english" ||
+  path_name === "/online-ma" ||
+  path_name === "/online-ma-political-science" ||
+  path_name === "/online-ma-sociology" ||
+  path_name === "/online-mca-smu" ||
+  path_name === "/online-mcom-smu" ||
+  path_name === "/smu-online-degree-courses" ||
+  path_name === "/online-mba-smu" ||
+  path_name === "/online-bachelors-degree-courses" ||
+  path_name === "/online-masters-degrees" ||
+  path_name === "/online-degree-courses-all-manipal-universities" ||
+  path_name === "/online-bba" ||
+  path_name === "/online-bca" ||
+  path_name === "/online-mcom" ||
+  path_name === "/online-bcom" ||
+  path_name === "/online-majmc" ||
+  path_name === "/online-mba-finance-lp" ||
+  path_name === "/online-ma-economics" ||
+  path_name === "/online-mba-analytics-data-science-lp" ||
+  path_name === "/online-mba-information-system-management-lp" ||
+  path_name === "/online-mba-human-resource-management-lp" ||
+  path_name === "/online-mba-project-management-lp" ||
+  path_name === "/online-mba-international-business-lp" ||
+  path_name === "/online-mba-marketing-lp" ||
+  path_name === "/online-mba-operations-management-lp" ||
+  path_name === "/online-mba-supply-chain-management-lp" ||
+  path_name === "/online-bba-marketing-lp" ||
+  path_name === "/online-bba-hrm-lp" ||
+  path_name === "/online-bba-finance-and-accounting-lp" ||
+  path_name === "/online-bba-entrepreneurship-family-business-management-lp" ||
+  path_name === "/online-bba-data-analytics-lp" ||
+  path_name === "/online-bba-retail-ecommerce-lp" ||
+  path_name === "/online-bba-digital-marketing-lp" ||
+  path_name === "/online-bca-cloud-computing-muj-lp" ||
+  path_name === "/online-bca-data-science-and-analytics-lp" ||
+  path_name === "/online-bca-cyber-security-muj-lp" ||
+  path_name === "/online-msc-mathematics" ||
+  path_name === "/online-mba-degrees" ||
+  path_name === "/online-mcom-degrees" ||
+  path_name === "/online-bcom-degrees" ||
+  path_name === "/online-mca-degrees" ||
+  path_name === "/online-ma-degrees" ||
+  path_name === "/online-mba-operations-muj-smu" ||
+  path_name === "/online-mba-operations-muj-smu-mahe" ||
+  path_name === "/online-mba-degree" ||
+  path_name === "/online-mca-degree" ||
+  path_name === "/online-bcom-degree-muj-smu" ||
+  path_name === "/online-degree-courses-all-manipal-universities-v2" ||
+  path_name === "/online-degree-courses-all-manipal-universities" ||
+  path_name === "/online-bba-degrees" ||
+  path_name === "/online-bba-course" ||
+  path_name === "/international/online-mba-smu" ||
+  path_name === "/international/online-mca-smu" ||
+  path_name === "/online-mca-smu" ||
+  path_name === "/international/online-mca" ||
+  path_name === "/international/online-mcom" ||
+  path_name === "/international/online-bba" ||
+  path_name === "/international/online-bca" ||
+  path_name === "/international/online-bcom" ||
+  path_name === "/international/online-bcom-smu" ||
+  path_name === "/international/online-ba" ||
+  path_name === "/online-bachelors-degree" ||
+  path_name === "/international/online-mba-degree"
+) {
+  $("body").addClass("marquee_there");
+
+  const container = document.getElementsByTagName("header");
+  let textElement = "";
+
+  // Define the marquee text based on page
+  if (
+    path_name === "/mahe-online-degree-courses" ||
+    path_name === "/online-mba-mahe-v2" ||
+    path_name === "/international/mahe-online-degree-courses"
+  ) {
+    textElement = `<span class="highlight">
+        Avail a 15% scholarship for all Women and Corporate Employees.
+        <span class="knowMore highlight show-popup" data-showpopup="additional_scholarship_popup"> Know More | Admissions Open!</span>
+      </span>`;
+  } else if (
+    path_name === "/international/online-degree-courses-v2" ||
+    path_name === "/nepal/online-degree-courses-v2"
+  ) {
+    textElement = `<span>
+        <span class="highlight">10% fee</span> concession on upfront payment of full program fee |
+        <span class="highlight">5% fee</span> concession on upfront payment of annual fee
+      </span>`;
+  } else if (
+    path_name === "/online-mba" ||
+    path_name === "/online-mba-muj" ||
+    path_name === "/muj-mba-program" ||
+    path_name === "/international/online-mba" ||
+    path_name === "/international/online-mba-degree"
+  ) {
+    textElement = `<span class="highlight">15% discount on program fee, early bird offer! | Admissions Open!</span>`;
+  } else if (
+    path_name === "/online-ba-english" ||
+    path_name === "/online-ba" ||
+    path_name === "/online-ba-political-science" ||
+    path_name === "/online-ba-sociology" ||
+    path_name === "/online-bcom-smu" ||
+    path_name === "/online-ma-english" ||
+    path_name === "/online-ma" ||
+    path_name === "/online-ma-political-science" ||
+    path_name === "/online-ma-sociology" ||
+    path_name === "/online-mcom-smu" ||
+    path_name === "/smu-online-degree-courses" ||
+    path_name === "/online-bachelors-degree-courses" ||
+    path_name === "/online-masters-degrees" ||
+    path_name === "/online-degree-courses-all-manipal-universities" ||
+    path_name === "/online-bba" ||
+    path_name === "/online-bca" ||
+    path_name === "/online-mcom" ||
+    path_name === "/online-bcom" ||
+    path_name === "/online-majmc" ||
+    path_name === "/online-mba-finance-lp" ||
+    path_name === "/online-ma-economics" ||
+    path_name === "/online-mba-analytics-data-science-lp" ||
+    path_name === "/online-mba-information-system-management-lp" ||
+    path_name === "/online-mba-human-resource-management-lp" ||
+    path_name === "/online-mba-project-management-lp" ||
+    path_name === "/online-mba-international-business-lp" ||
+    path_name === "/online-mba-marketing-lp" ||
+    path_name === "/online-mba-operations-management-lp" ||
+    path_name === "/online-mba-supply-chain-management-lp" ||
+    path_name === "/online-bba-marketing-lp" ||
+    path_name === "/online-bba-hrm-lp" ||
+    path_name === "/online-bba-finance-and-accounting-lp" ||
+    path_name ===
+    "/online-bba-entrepreneurship-family-business-management-lp" ||
+    path_name === "/online-bba-data-analytics-lp" ||
+    path_name === "/online-bba-retail-ecommerce-lp" ||
+    path_name === "/online-bba-digital-marketing-lp" ||
+    path_name === "/online-bca-cloud-computing-muj-lp" ||
+    path_name === "/online-bca-data-science-and-analytics-lp" ||
+    path_name === "/online-bca-cyber-security-muj-lp" ||
+    path_name === "/online-msc-mathematics" ||
+    path_name === "/online-mba-degrees" ||
+    path_name === "/online-mcom-degrees" ||
+    path_name === "/online-bcom-degrees" ||
+    path_name === "/online-mca-degrees" ||
+    path_name === "/online-ma-degrees" ||
+    path_name === "/online-mba-operations-muj-smu" ||
+    path_name === "/online-mba-operations-muj-smu-mahe" ||
+    path_name === "/online-mba-degree" ||
+    path_name === "/online-mca-degree" ||
+    path_name === "/online-bcom-degree-muj-smu" ||
+    path_name === "/online-degree-courses-all-manipal-universities-v2" ||
+    path_name === "/online-degree-courses-all-manipal-universities" ||
+    path_name === "/online-bba-degrees" ||
+    path_name === "/online-bba-course" ||
+    path_name === "/international/online-mcom" ||
+    path_name === "/international/online-bba" ||
+    path_name === "/international/online-bca" ||
+    path_name === "/international/online-bcom" ||
+    path_name === "/international/online-bcom-smu" ||
+    path_name === "/international/online-ba" ||
+    path_name === "/online-bachelors-degree"
+  ) {
+    textElement = `<span class="highlight">Admissions Open!</span>`;
+  } else if (
+    path_name === "/online-mba-smu" ||
+    path_name === "/online-mca-smu" ||
+    path_name === "/international/online-mca"
+  ) {
+    textElement = `<span class="highlight">10% discount on the program fee, early bird offer!  |  Admissions Open!</span>`;
+  } else if (path_name === "/online-mca" || path_name === "/international/online-mba-smu" ||
+    path_name === "/international/online-mca-smu") {
+    textElement = `<span class="highlight">10% discount on program fee, early bird offer! | Admissions Open!</span>`;
+  }
+
+  // Prepare repeated marquee content
+  const space = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+  let repeatedText = "";
+
+  for (let i = 0; i < 10; i++) {
+    repeatedText += `${textElement}${space}|${space}`;
+  }
+
+  // Insert marquee into DOM
+  $(container).prepend(
+    `<div class="notice-text-parent">
+       <div class="notice-text">${repeatedText}</div>
+     </div>`,
+  );
+
+  // Marquee scroll animation
+  let pos = 0;
+  const speed = 1;
+  let isPaused = false;
+
+  function scrollText() {
+    pos -= speed;
+    $(".notice-text").css("transform", `translateX(${pos}px)`);
+
+    if (!isPaused) {
+      requestAnimationFrame(scrollText);
+    }
+  }
+
+  scrollText(); // Start scrolling
+
+  // Pause & resume on hover
+  const parent = $(".notice-text-parent");
+
+  parent.mouseover(() => {
+    isPaused = true;
+  });
+
+  parent.mouseout(() => {
+    isPaused = false;
+    scrollText();
+  });
+}
+
+

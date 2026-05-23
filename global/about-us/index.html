@@ -1,0 +1,2289 @@
+
+<!DOCTYPE html>
+
+<html lang="en-GB">
+<head><meta charset="utf-8"/><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.5",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),this},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||!t.src||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e=window){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();
+</script>
+<meta content="no-referrer-when-downgrade" name="referrer"/>
+<meta content="320" name="MobileOptimized"/>
+<meta content="IE=9" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport"/>
+<link href="https://gmpg.org/xfn/11" rel="profile"/>
+<!-- VWO Async SmartCode -->
+<script id="vwoCode" type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+   window._vwo_code = window._vwo_code || (function() {
+     var account_id = 556532,
+       version = 1.5,
+       settings_tolerance = 2000,
+       library_tolerance = 2500,
+       use_existing_jquery = false,
+       is_spa = 1,
+       hide_element = 'body',
+       hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
+       /* DO NOT EDIT BELOW THIS LINE */
+       f = false,
+       d = document,
+       vwoCodeEl = d.querySelector('#vwoCode'),
+       code = {
+         use_existing_jquery: function() {
+           return use_existing_jquery
+         },
+         library_tolerance: function() {
+           return library_tolerance
+         },
+         hide_element_style: function() {
+           return '{' + hide_element_style + '}'
+         },
+         finish: function() {
+           if (!f) {
+             f = true;
+             var e = d.getElementById('_vis_opt_path_hides');
+             if (e) e.parentNode.removeChild(e)
+           }
+         },
+         finished: function() {
+           return f
+         },
+         load: function(e) {
+           var t = d.createElement('script');
+           t.fetchPriority = 'high';
+           t.src = e;
+           t.type = 'text/javascript';
+           t.innerText;
+           t.onerror = function() {
+             _vwo_code.finish()
+           };
+           d.getElementsByTagName('head')[0].appendChild(t)
+         },
+         getVersion: function() {
+           return version
+         },
+         getMatchedCookies: function(e) {
+           var t = [];
+           if (document.cookie) {
+             t = document.cookie.match(e) || []
+           }
+           return t
+         },
+         getCombinationCookie: function() {
+           var e = code.getMatchedCookies(/(?:^|;)\s?(_vis_opt_exp_\d+_combi=[^;$]*)/gi);
+           e = e.map(function(e) {
+             try {
+               var t = decodeURIComponent(e);
+               if (!/_vis_opt_exp_\d+_combi=(?:\d+,?)+\s*$/.test(t)) {
+                 return ''
+               }
+               return t
+             } catch (e) {
+               return ''
+             }
+           });
+           var i = [];
+           e.forEach(function(e) {
+             var t = e.match(/([\d,]+)/g);
+             t && i.push(t.join('-'))
+           });
+           return i.join('|')
+         },
+         init: function() {
+           if (d.URL.indexOf('__vwo_disable__') > -1) return;
+           window.settings_timer = setTimeout(function() {
+             _vwo_code.finish()
+           }, settings_tolerance);
+           var e = d.createElement('style'),
+             t = hide_element ? hide_element + '{' + hide_element_style + '}' : '',
+             i = d.getElementsByTagName('head')[0];
+           e.setAttribute('id', '_vis_opt_path_hides');
+           vwoCodeEl && e.setAttribute('nonce', vwoCodeEl.nonce);
+           e.setAttribute('type', 'text/css');
+           if (e.styleSheet) e.styleSheet.cssText = t;
+           else e.appendChild(d.createTextNode(t));
+           i.appendChild(e);
+           var n = this.getCombinationCookie();
+           this.load('https://dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&f=' + +is_spa + '&vn=' + version + (n ? '&c=' + n : ''));
+           return settings_timer
+         }
+       };
+     window._vwo_settings_timer = code.init();
+     return code;
+   }());
+});</script>
+<!----- Google Analytics ----->
+<script data-rocket-type="text/javascript" type="text/rocketlazyloadscript">
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N6G2VZZ');
+  </script>
+<!------- Preload Fonts ------>
+<!----- CSS ----->
+<link data-minify="1" href="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/css/style__q_d6ffd3faf0.css" onload="this.media='all'" rel="stylesheet" type="text/css"/>
+<meta content="80A0910CFF625FE76587C8FBC1328BC3" name="msvalidate.01"/>
+<meta content="vrgrDxc1LQ3oXtWOvcRyAbI7i5K9bcpvaBkLYO9YMIo" name="google-site-verification"/>
+<!----- Page Schema ----->
+<!------- FAQ Schema ------>
+<!------- Preload Images ------>
+<link as="image" fetchpriority="high" href="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/banners/about-us-desktop.webp" rel="preload" type="image/webp"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->
+<title>Adept Online Education | International | Online Manipal</title>
+<link data-rocket-prefetch="" href="https://connect.facebook.net" rel="dns-prefetch"/>
+<link data-rocket-prefetch="" href="https://dev.visualwebsiteoptimizer.com" rel="dns-prefetch"/>
+<link as="font" crossorigin="" data-rocket-preload="" href="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/fonts/HelveticaNowDisplay-Regular.woff2" rel="preload"/>
+<link as="font" crossorigin="" data-rocket-preload="" href="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/fonts/Queens-Medium.woff2" rel="preload"/>
+<meta content="Online Manipal offers globally recognized online education programs for students worldwide. Discover our mission and browse our options on our website." name="description">
+<link href="https://www.onlinemanipal.com/global/about-us" rel="canonical"/>
+<meta content="en_GB" property="og:locale">
+<meta content="article" property="og:type">
+<meta content="Adept Online Education | International | Online Manipal" property="og:title">
+<meta content="Online Manipal offers globally recognized online education programs for students worldwide. Discover our mission and browse our options on our website." property="og:description"/>
+<meta content="https://www.onlinemanipal.com/global/about-us" property="og:url"/>
+<meta content="Online Manipal" property="og:site_name"/>
+<meta content="https://www.facebook.com/onlinemanipal" property="article:publisher"/>
+<meta content="2025-04-03T07:21:31+00:00" property="article:modified_time"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<script class="yoast-schema-graph" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.onlinemanipal.com/global/about-us","url":"https://www.onlinemanipal.com/global/about-us","name":"Adept Online Education | International | Online Manipal","isPartOf":{"@id":"https://www.onlinemanipal.com/#website"},"datePublished":"2022-07-06T05:08:16+00:00","dateModified":"2025-04-03T07:21:31+00:00","description":"Online Manipal offers globally recognized online education programs for students worldwide. Discover our mission and browse our options on our website.","inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.onlinemanipal.com/global/about-us"]}],"breadcrumb":{"@id":"https://www.onlinemanipal.com/global/about-us#breadcrumb"}},{"@type":"WebSite","@id":"https://www.onlinemanipal.com/#website","url":"https://www.onlinemanipal.com/","name":"Online Manipal","description":"Online Manipal","publisher":{"@id":"https://www.onlinemanipal.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.onlinemanipal.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-GB"},{"@type":"Organization","@id":"https://www.onlinemanipal.com/#organization","name":"Online Manipal","url":"https://www.onlinemanipal.com/","logo":{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.onlinemanipal.com/#/schema/logo/image/","url":"https://www.onlinemanipal.com/wp-content/uploads/2022/07/MicrosoftTeams-image-9.png","contentUrl":"https://www.onlinemanipal.com/wp-content/uploads/2022/07/MicrosoftTeams-image-9.png","width":1000,"height":1000,"caption":"Online Manipal"},"image":{"@id":"https://www.onlinemanipal.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/onlinemanipal","https://www.instagram.com/onlinemanipal/","https://www.youtube.com/channel/UC6EgEsVbor7Tpz3xARIhLzQ"]},{"@type":"BreadcrumbList","@id":"https://www.onlinemanipal.com/global/about-us#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.onlinemanipal.com/global"},{"@type":"ListItem","position":2,"name":"About Us"}]}]}</script>
+<!-- / Yoast SEO plugin. -->
+<script data-rocket-type="application/javascript" id="pys-version-script" type="text/rocketlazyloadscript">console.log('PixelYourSite Free version 11.2.0.4');</script>
+<link href="../../assets/www.onlinemanipal.com/feed.bin" rel="alternate" title="Online Manipal » Feed" type="application/rss+xml"/>
+<link href="../../assets/www.onlinemanipal.com/comments/feed.bin" rel="alternate" title="Online Manipal » Comments Feed" type="application/rss+xml"/>
+<link href="../../assets/www.onlinemanipal.com/wp-json/oembed/1.0/embed__q_2d7bf14bb7.bin" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
+<link href="../../assets/www.onlinemanipal.com/wp-json/oembed/1.0/embed__q_95b4041a31.bin" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<script id="jquery-core-js-extra">window.addEventListener('DOMContentLoaded', function() {
+var pysFacebookRest = {"restApiUrl":"https://www.onlinemanipal.com/wp-json/pys-facebook/v1/event","debug":""};
+//# sourceURL=jquery-core-js-extra
+});</script>
+<script data-rocket-defer="" defer="" id="jquery-core-js" src="../../assets/www.onlinemanipal.com/wp-includes/js/jquery/jquery.min__q_f43b551b74.js"></script>
+<script data-rocket-defer="" defer="" id="jquery-migrate-js" src="../../assets/www.onlinemanipal.com/wp-includes/js/jquery/jquery-migrate.min__q_558973c0fd.js"></script>
+<link href="https://www.onlinemanipal.com/wp-json/" rel="https://api.w.org/"/><link href="../../assets/www.onlinemanipal.com/wp-json/wp/v2/pages/667915.bin" rel="alternate" title="JSON" type="application/json"/><link href="https://www.onlinemanipal.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml">
+<link href="https://www.onlinemanipal.com/?p=667915" rel="shortlink">
+<!-- Meta Pixel Code -->
+<script type="text/rocketlazyloadscript">
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '865323014656584');
+    fbq('track', 'PageView');
+  </script>
+<noscript><img height="1" src="../../assets/www.facebook.com/tr__q_67b5182271.bin" style="display:none" width="1"/></noscript>
+<!-- End Meta Pixel Code -->
+<link href="../../assets/www.onlinemanipal.com/wp-content/uploads/2025/06/fav-icon.png" rel="icon">
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+<!----- Konverse Chatbot ----->
+<script type="text/rocketlazyloadscript">!function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,"https://agents.engati.ai",{bot_key:"5ba80326179a4df3",welcome_msg:true,branding_key:"default",server:"https://agents.engati.ai",e:"p" });</script>
+<style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><meta content="WP Rocket 3.21.2" data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_preconnect_external_domains wpr_auto_preload_fonts wpr_automatic_lazy_rendering wpr_minify_css wpr_preload_links wpr_desktop" name="generator"/></link></link></link></meta></meta></meta></meta></head>
+<body class="wp-singular page-template page-template-templates page-template-about page-template-templatesabout-php page page-id-667915 wp-theme-flamingo">
+<!----- Google Tag Manager (noscript) ----->
+<noscript><iframe height="0" src="../../assets/www.googletagmanager.com/ns__q_c3df60e356.html" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<div class="countryBar">
+<div class="container countryBar-wrapper">
+<div class="left">
+<span class="ind-txt">Switch to our India site for information specific to Indian students</span>
+<span class="global-txt">Switch to our global site for information specific to non-Indian students</span>
+</div>
+<div class="right">
+<div class="county-code-txt"></div>
+<a class="continue-btn" href="">Continue</a>
+<button aria-label="Close" class="close-button"></button>
+</div>
+</div>
+</div>
+<!------- Desktop Header ------->
+<header class="header">
+<div class="container header-wrapper">
+<a class="logo" href="../index.html">
+<img alt="Online Manipal" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/OM_Logo.svg" decoding="async" fetchpriority="high" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20266%200'%3E%3C/svg%3E" width="266"/><noscript><img alt="Online Manipal" decoding="async" fetchpriority="high" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/OM_Logo.svg" width="266"/></noscript>
+</a>
+<nav class="main-nav">
+<div class="menu">
+<div class="menu-item has-submenu courses">
+<button aria-expanded="false" aria-haspopup="true" class="menu-text no-button">
+<div class="blinkdot-container">
+<div class="background-circle"></div>
+<div class="pulse-effect"></div>
+<div class="solid-dot"></div>
+</div>
+                Courses <span><img alt="Icon" class="arrow" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/chevron-down-arrow.svg" width="14"/></span>
+</button>
+<!-- Mega Menu -->
+<div class="submenu megamenu">
+<div class="tabs">
+<div class="vertical-tabs">
+<div class="tab-group tab-buttons by-degree" id="by-degrees">
+<p class="category">By Degree</p>
+<button class="tab-btn active" data-tab="section1-master">Masters</button>
+<button class="tab-btn" data-tab="section1-bachelor">Bachelors</button>
+<button class="tab-btn" data-tab="section1-certification">Certifications</button>
+<button class="tab-btn" data-tab="section1-allprogram">All Degrees</button>
+</div>
+<div class="tab-group tab-buttons by-institution" id="by-institution">
+<p class="category">By Institution</p>
+<button class="tab-btn" data-tab="section2-mahe">Manipal Academy of Higher Education</button>
+<button class="tab-btn" data-tab="section2-muj">Manipal University Jaipur</button>
+<button class="tab-btn" data-tab="section2-smu">Sikkim Manipal University</button>
+</div>
+</div>
+<div class="content-area tab-content" id="contentArea">
+<!-- master -->
+<div class="tab-panel active" id="section1-master">
+<div class="wrapper">
+<a class="course-card muj" href="../online-mba-manipal-university-jaipur/index.html">
+<div class="course-details">
+<span class="tag">Most Popular</span>
+<p class="uni-name">Manipal University Jaipur</p>
+<p class="title">
+<span class="course-name">
+              Master of Business Administration            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MBA</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-mba-degree-working-professionals-mahe/index.html">
+<div class="course-details">
+<span class="tag">Top Ranked</span>
+<p class="uni-name">Manipal Academy of Higher Education</p>
+<p class="title">
+<span class="course-name">
+              Master of Business Administration            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MBA</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-mba-degree-dual-specialization-smu/index.html">
+<div class="course-details">
+<span class="tag">Trending</span>
+<p class="uni-name">Sikkim Manipal University</p>
+<p class="title">
+<span class="course-name">
+              Master of Business Administration            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MBA</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-mca-degree-muj/index.html">
+<div class="course-details">
+<span class="tag">Most Popular</span>
+<p class="uni-name">Manipal University Jaipur</p>
+<p class="title">
+<span class="course-name">
+              Master of Computer Applications            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MCA</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-mca-degree-working-professionals-mahe/index.html">
+<div class="course-details">
+<p class="uni-name">Manipal Academy of Higher Education</p>
+<p class="title">
+<span class="course-name">
+              Master of Computer Applications            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MCA</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-mca-degree-smu/index.html">
+<div class="course-details">
+<p class="uni-name">Sikkim Manipal University</p>
+<p class="title">
+<span class="course-name">
+              Master of Computer Applications            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MCA</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-msc-data-science/index.html">
+<div class="course-details">
+<p class="uni-name">Manipal Academy of Higher Education</p>
+<p class="title">
+<span class="course-name">
+              Master of Science in Data Science            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MSc</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-msc-business-analytics/index.html">
+<div class="course-details">
+<p class="uni-name">Manipal Academy of Higher Education</p>
+<p class="title">
+<span class="course-name">
+              Master of Science in Business Analytics            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MSc</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-msc-mathematics-muj/index.html">
+<div class="course-details">
+<p class="uni-name">Manipal University Jaipur</p>
+<p class="title">
+<span class="course-name">
+              Master of Science in Mathematics            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MSc</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-ma-economics-degree/index.html">
+<div class="course-details">
+<p class="uni-name">Manipal University Jaipur</p>
+<p class="title">
+<span class="course-name">
+              Master of Arts in Economics            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MA</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-mcom-degree-muj/index.html">
+<div class="course-details">
+<p class="uni-name">Manipal University Jaipur</p>
+<p class="title">
+<span class="course-name">
+              Master of Commerce            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MCom</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-mcom-degree-smu/index.html">
+<div class="course-details">
+<p class="uni-name">Sikkim Manipal University</p>
+<p class="title">
+<span class="course-name">
+              Master of Commerce            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MCom</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-ma-journalism-and-mass-communication/index.html">
+<div class="course-details">
+<p class="uni-name">Manipal University Jaipur</p>
+<p class="title">
+<span class="course-name">
+              Master of Arts in Journalism &amp; Mass Communication            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MA</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-ma-english-degree/index.html">
+<div class="course-details">
+<span class="tag">Most Popular</span>
+<p class="uni-name">Sikkim Manipal University</p>
+<p class="title">
+<span class="course-name">
+              Master of Arts in English            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MA</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-ma-political-science-degree/index.html">
+<div class="course-details">
+<p class="uni-name">Sikkim Manipal University</p>
+<p class="title">
+<span class="course-name">
+              Master of Arts in Political Science            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MA</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-ma-sociology-degree/index.html">
+<div class="course-details">
+<p class="uni-name">Sikkim Manipal University</p>
+<p class="title">
+<span class="course-name">
+              Master of Arts in Sociology            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MA</span>
+</div>
+</a>
+</div>
+</div>
+<!-- bachelor -->
+<div class="tab-panel" id="section1-bachelor">
+<div class="wrapper">
+<a class="course-card mahe" href="../online-bba-honors-mahe/index.html">
+<div class="course-details">
+<span class="tag">Top Ranked</span>
+<p class="uni-name">Manipal Academy of Higher Education</p>
+<p class="title">
+<span class="course-name">
+              Bachelor of Business Administration (Honors)            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36/48 months           </p>
+<span class="short-name">Online BBA</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-bba-degree-muj/index.html">
+<div class="course-details">
+<p class="uni-name">Manipal University Jaipur</p>
+<p class="title">
+<span class="course-name">
+              Bachelor of Business Administration            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months          </p>
+<span class="short-name">Online BBA</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-bca-degree-muj/index.html">
+<div class="course-details">
+<p class="uni-name">Manipal University Jaipur</p>
+<p class="title">
+<span class="course-name">
+              Bachelor of Computer Applications            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months          </p>
+<span class="short-name">Online BCA</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-bcom-professional-mahe/index.html">
+<div class="course-details">
+<span class="tag">ACCA Accredited</span>
+<p class="uni-name">Manipal Academy of Higher Education</p>
+<p class="title">
+<span class="course-name">
+              Bachelor of Commerce (Professional)            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months           </p>
+<span class="short-name">Online BCom</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-bba-degree-smu/index.html">
+<div class="course-details">
+<span class="tag">New</span>
+<p class="uni-name">Sikkim Manipal University</p>
+<p class="title">
+<span class="course-name">
+              Bachelor of Business Administration            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months          </p>
+<span class="short-name">Online BBA</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-bcom-degree-muj/index.html">
+<div class="course-details">
+<p class="uni-name">Manipal University Jaipur</p>
+<p class="title">
+<span class="course-name">
+              Bachelor of Commerce            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months          </p>
+<span class="short-name">Online BCom</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-ba-degree-smu/index.html">
+<div class="course-details">
+<span class="tag">Most Popular</span>
+<p class="uni-name">Sikkim Manipal University</p>
+<p class="title">
+<span class="course-name">
+              Bachelor of Arts            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months          </p>
+<span class="short-name">Online BA</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-bcom-degree-smu/index.html">
+<div class="course-details">
+<p class="uni-name">Sikkim Manipal University</p>
+<p class="title">
+<span class="course-name">
+              Bachelor of Commerce            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months          </p>
+<span class="short-name">Online BCom</span>
+</div>
+</a>
+</div>
+</div>
+<!-- certification -->
+<div class="tab-panel" id="section1-certification">
+<div class="wrapper">
+<a class="course-card mahe" href="../online-pg-certification-business-analytics/index.html">
+<div class="course-details">
+<p class="uni-name">Manipal Academy of Higher Education</p>
+<p class="title">
+<span class="course-name">
+              PGCP in Business Analytics            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            12 months          </p>
+<span class="short-name">Online PGCP</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-pg-certification-logistics-and-scm/index.html">
+<div class="course-details">
+<p class="uni-name">Manipal Academy of Higher Education</p>
+<p class="title">
+<span class="course-name">
+              PGCP in Logistics and Supply Chain Management            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            12 months          </p>
+<span class="short-name">Online PGCP</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-pg-certification-data-science/index.html">
+<div class="course-details">
+<p class="uni-name">Manipal Academy of Higher Education</p>
+<p class="title">
+<span class="course-name">
+              PGCP in Data Science            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            12 months          </p>
+<span class="short-name">Online PGCP</span>
+</div>
+</a>
+</div>
+</div>
+<!-- All Program -->
+<div class="tab-panel" id="section1-allprogram">
+<div class="wrapper">
+<a class="course-card all-program" href="../online-mba-courses/index.html">
+<div class="course-details">
+<span class="tag">Online MBA</span>
+<p class="title">
+<span class="course-name">
+                        Master of Business Administration
+                      </span>
+</p>
+</div>
+<p class="uni-heading">Universities</p>
+<div class="duration-container">
+<div class="uni-wrapper">
+<p class="uni-name mahe">MAHE</p>
+<p class="uni-name muj">MUJ</p>
+<p class="uni-name smu">SMU</p>
+</div>
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+                      2 Years
+                    </p>
+</div>
+</a>
+<a class="course-card all-program" href="../online-mca-courses/index.html">
+<div class="course-details">
+<span class="tag">Online MCA</span>
+<p class="title">
+<span class="course-name">
+                        Master of Computer Application
+                      </span>
+</p>
+</div>
+<p class="uni-heading">Universities</p>
+<div class="duration-container">
+<div class="uni-wrapper">
+<p class="uni-name mahe">MAHE</p>
+<p class="uni-name muj">MUJ</p>
+<p class="uni-name smu">SMU</p>
+</div>
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+                      2 Years
+                    </p>
+</div>
+</a>
+<a class="course-card all-program" href="../online-bba-courses/index.html">
+<div class="course-details">
+<span class="tag">Online BBA</span>
+<p class="title">
+<span class="course-name">
+                        Bachelor of Business Administration
+                      </span>
+</p>
+</div>
+<p class="uni-heading">Universities</p>
+<div class="duration-container">
+<div class="uni-wrapper">
+<p class="uni-name mahe">MAHE</p>
+<p class="uni-name muj">MUJ</p>
+<p class="uni-name smu">SMU</p>
+</div>
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+                      3 Years
+                    </p>
+</div>
+</a>
+<a class="course-card all-program" href="../online-bca-degree-muj/index.html">
+<div class="course-details">
+<span class="tag">Online BCA</span>
+<p class="title">
+<span class="course-name">
+                        Bachelor of Computer Applications
+                      </span>
+</p>
+</div>
+<p class="uni-heading">Universities</p>
+<div class="duration-container">
+<div class="uni-wrapper">
+<p class="uni-name muj">MUJ</p>
+</div>
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+                      3 Years
+                    </p>
+</div>
+</a>
+<a class="course-card all-program" href="../online-bcom-courses/index.html">
+<div class="course-details">
+<span class="tag">Online BCom</span>
+<p class="title">
+<span class="course-name">
+                        Bachelor of Commerce
+                      </span>
+</p>
+</div>
+<p class="uni-heading">Universities</p>
+<div class="duration-container">
+<div class="uni-wrapper">
+<p class="uni-name mahe">MAHE</p>
+<p class="uni-name muj">MUJ</p>
+<p class="uni-name smu">SMU</p>
+</div>
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+                      3 Years
+                    </p>
+</div>
+</a>
+<a class="course-card all-program" href="../online-ba-degree-smu/index.html">
+<div class="course-details">
+<span class="tag">Online BA</span>
+<p class="title">
+<span class="course-name">
+                        Bachelor of Arts
+                      </span>
+</p>
+</div>
+<p class="uni-heading">Universities</p>
+<div class="duration-container">
+<div class="uni-wrapper">
+<p class="uni-name smu">SMU</p>
+</div>
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+                      3 Years
+                    </p>
+</div>
+</a>
+<a class="course-card all-program" href="../online-ma-courses/index.html">
+<div class="course-details">
+<span class="tag">Online MA</span>
+<p class="title">
+<span class="course-name">
+                        Master of Arts
+                      </span>
+</p>
+</div>
+<p class="uni-heading">Universities</p>
+<div class="duration-container">
+<div class="uni-wrapper">
+<p class="uni-name muj">MUJ</p>
+<p class="uni-name smu">SMU</p>
+</div>
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+                      2 Years
+                    </p>
+</div>
+</a>
+<a class="course-card all-program" href="../online-msc-courses/index.html">
+<div class="course-details">
+<span class="tag">Online MSc</span>
+<p class="title">
+<span class="course-name">
+                        Master of Science
+                      </span>
+</p>
+</div>
+<p class="uni-heading">Universities</p>
+<div class="duration-container">
+<div class="uni-wrapper">
+<p class="uni-name mahe">MAHE</p>
+<p class="uni-name muj">MUJ</p>
+</div>
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+                      2 Years
+                    </p>
+</div>
+</a>
+<a class="course-card all-program" href="../online-mcom-courses/index.html">
+<div class="course-details">
+<span class="tag">Online MCom</span>
+<p class="title">
+<span class="course-name">
+                        Master of Commerce
+                      </span>
+</p>
+</div>
+<p class="uni-heading">Universities</p>
+<div class="duration-container">
+<div class="uni-wrapper">
+<p class="uni-name muj">MUJ</p>
+<p class="uni-name smu">SMU</p>
+</div>
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+                      2 Years
+                    </p>
+</div>
+</a>
+</div>
+</div>
+<!-- mahe courses -->
+<div class="tab-panel" id="section2-mahe">
+<div class="wrapper">
+<a class="course-card mahe" href="../online-mba-degree-working-professionals-mahe/index.html">
+<div class="course-details">
+<span class="tag">Top Ranked</span>
+<p class="title">
+<span class="course-name">
+              Master of Business Administration            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MBA</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-bba-honors-mahe/index.html">
+<div class="course-details">
+<span class="tag">Top Ranked</span>
+<p class="title">
+<span class="course-name">
+              Bachelor of Business Administration (Honors)            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36/48 months           </p>
+<span class="short-name">Online BBA</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-mca-degree-working-professionals-mahe/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Master of Computer Applications            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MCA</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-msc-data-science/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Master of Science in Data Science            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MSc</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-msc-business-analytics/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Master of Science in Business Analytics            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MSc</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-bcom-professional-mahe/index.html">
+<div class="course-details">
+<span class="tag">ACCA Accredited</span>
+<p class="title">
+<span class="course-name">
+              Bachelor of Commerce (Professional)            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months           </p>
+<span class="short-name">Online BCom</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-pg-certification-business-analytics/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              PGCP in Business Analytics            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            12 months          </p>
+<span class="short-name">Online PGCP</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-pg-certification-logistics-and-scm/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              PGCP in Logistics and Supply Chain Management            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            12 months          </p>
+<span class="short-name">Online PGCP</span>
+</div>
+</a>
+<a class="course-card mahe" href="../online-pg-certification-data-science/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              PGCP in Data Science            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            12 months          </p>
+<span class="short-name">Online PGCP</span>
+</div>
+</a>
+</div>
+</div>
+<!-- muj courses -->
+<div class="tab-panel" id="section2-muj">
+<div class="wrapper">
+<a class="course-card muj" href="../online-mba-manipal-university-jaipur/index.html">
+<div class="course-details">
+<span class="tag">Most Popular</span>
+<p class="title">
+<span class="course-name">
+              Master of Business Administration            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MBA</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-bba-degree-muj/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Bachelor of Business Administration            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months          </p>
+<span class="short-name">Online BBA</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-bca-degree-muj/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Bachelor of Computer Applications            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months          </p>
+<span class="short-name">Online BCA</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-mca-degree-muj/index.html">
+<div class="course-details">
+<span class="tag">Most Popular</span>
+<p class="title">
+<span class="course-name">
+              Master of Computer Applications            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MCA</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-bcom-degree-muj/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Bachelor of Commerce            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months          </p>
+<span class="short-name">Online BCom</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-msc-mathematics-muj/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Master of Science in Mathematics            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MSc</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-ma-economics-degree/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Master of Arts in Economics            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MA</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-mcom-degree-muj/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Master of Commerce            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MCom</span>
+</div>
+</a>
+<a class="course-card muj" href="../online-ma-journalism-and-mass-communication/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Master of Arts in Journalism &amp; Mass Communication            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MA</span>
+</div>
+</a>
+</div>
+</div>
+<!-- smu courses -->
+<div class="tab-panel" id="section2-smu">
+<div class="wrapper">
+<a class="course-card smu" href="../online-mba-degree-dual-specialization-smu/index.html">
+<div class="course-details">
+<span class="tag">Trending</span>
+<p class="title">
+<span class="course-name">
+              Master of Business Administration            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MBA</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-mca-degree-smu/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Master of Computer Applications            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MCA</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-bba-degree-smu/index.html">
+<div class="course-details">
+<span class="tag">New</span>
+<p class="title">
+<span class="course-name">
+              Bachelor of Business Administration            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months          </p>
+<span class="short-name">Online BBA</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-ba-degree-smu/index.html">
+<div class="course-details">
+<span class="tag">Most Popular</span>
+<p class="title">
+<span class="course-name">
+              Bachelor of Arts            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months          </p>
+<span class="short-name">Online BA</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-bcom-degree-smu/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Bachelor of Commerce            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            36 months          </p>
+<span class="short-name">Online BCom</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-ma-english-degree/index.html">
+<div class="course-details">
+<span class="tag">Most Popular</span>
+<p class="title">
+<span class="course-name">
+              Master of Arts in English            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MA</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-ma-sociology-degree/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Master of Arts in Sociology            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MA</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-ma-political-science-degree/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Master of Arts in Political Science            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MA</span>
+</div>
+</a>
+<a class="course-card smu" href="../online-mcom-degree-smu/index.html">
+<div class="course-details">
+<p class="title">
+<span class="course-name">
+              Master of Commerce            </span>
+</p>
+</div>
+<div class="duration-container">
+<p class="duration">
+<img alt="Course Duration" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3C/svg%3E" width="16"/><noscript><img alt="Course Duration" height="16" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/duration-small.svg" width="16"/></noscript>
+            24 months          </p>
+<span class="short-name">Online MCom</span>
+</div>
+</a>
+</div>
+</div>
+<a class="primaryBtn view-all" href="../all-courses/index.html">View all courses</a>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item has-submenu institution">
+<button aria-expanded="false" aria-haspopup="true" class="menu-text no-button">
+        Institutions
+        <span><img alt="Icon" class="arrow" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/chevron-down-arrow.svg" width="14"/></span>
+</button>
+<div class="submenu">
+<ul>
+<li><a href="../institution/manipal-university-jaipur/index.html">Manipal University Jaipur</a></li>
+<li><a href="../institution/manipal-academy-of-higher-education/index.html">Manipal Academy of Higher Education</a></li>
+<li><a href="../institution/sikkim-manipal-university/index.html">Sikkim Manipal University</a></li>
+</ul>
+</div>
+</div>
+<div class="menu-item"><a class="menu-text om-adv" href="../the-manipal-advantage/index.html">The Manipal Advantage</a></div>
+<div class="menu-item top-enroll">
+<button class="header-btn applynow show-popup small btn-position" data-form="leadForm" data-position="Header Apply Now" data-showpopup="leadForm_popup">Apply Now</button>
+</div>
+<div class="menu-item search-menu"><img alt="search" class="show-popup" data-showpopup="searchFilter_popup" height="70" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/search.svg" width="70"/>
+</div>
+<div class="menu-item has-submenu ham-menu">
+<button aria-controls="quick-links" aria-expanded="false" class="menu-text no-button">
+<img alt="Quick Links" height="70" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/ham-menu.svg" width="70"/>
+</button>
+<div class="submenu">
+<ul>
+<li><a href="index.html">About Us</a></li>
+<li><a href="../../placements/index.html">Placements</a></li>
+<li><a href="/blogs">Blogs</a></li>
+<li><a href="../help-center/index.html">Help Center</a></li>
+<li><a href="../../faq/index.html">FAQs</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav> </div>
+</header>
+<!----- CSS Files ----->
+<link data-minify="1" href="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/css/about__q_29d570946f.css" rel="stylesheet" type="text/css"/>
+<link data-minify="1" href="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/css/swiper-bundle.min__q_d6ffd3faf0.css" rel="stylesheet"/>
+<link data-minify="1" href="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/css/our-impact__q_d6ffd3faf0.css" rel="stylesheet"/>
+<link data-minify="1" href="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/css/admission-process__q_29d570946f.css" rel="stylesheet" type="text/css">
+<main>
+<section class="about-us-banner section-mb doodle-section pageTopSpace">
+<svg class="doodle" fill="none" height="810" viewbox="0 0 1375 810" width="1375" xmlns="http://www.w3.org/2000/svg">
+<path d="M1413 109.956C1375.82 142.046 1027.5 1097.85 681.735 638.234C504.301 402.373 669.72 101.703 744 197C849.775 332.702 729.994 643.796 504.301 603.885C-4 514 60.3578 -56.9046 47 -118" stroke="#BDCD36" stroke-opacity="0.2" stroke-width="95"></path>
+</svg>
+<div class="container">
+<section class="breadcrumb">
+<span class="bcrumb-title"><a class="breadcrumb_title" href="../index.html">Home</a></span><span class="separator"><img alt="breadcrumb arrow" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/breadcrumb-arrow.svg" height="8" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%208'%3E%3C/svg%3E" width="4"/><noscript><img alt="breadcrumb arrow" height="8" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/breadcrumb-arrow.svg" width="4"/></noscript></span><span class="breadcrumb_title">About Us</span>
+</section>
+<div class="banner-wrapper">
+<div class="banner-top">
+<div class="left">
+<h1 class="section-title big">About Online Manipal</h1>
+<p class="banner-text">Online Manipal is the digital home of Manipal Academy of Higher Education (MAHE), Manipal University Jaipur (MUJ), and Sikkim Manipal University (SMU). These three Manipal universities, accredited with NAAC A++ and NAAC A+, offer UGC-entitled online degrees equivalent to on-campus programs.</p>
+<p class="banner-text">Since its inception in 2021, Online Manipal has empowered over 100,000 learners to realize their potential by providing them with accessible, affordable &amp; industry-relevant degrees and new-age certifications in a 100% online mode.</p>
+<button class="banner-btn applynow show-popup btn-position" data-form="leadForm" data-position="Banner Apply Now" data-showpopup="leadForm_popup">Apply Now</button>
+</div>
+<div class="right">
+<img alt="star" class="b-star1" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/star-orange.svg" height="37" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2037%2037'%3E%3C/svg%3E" width="37"/><noscript><img alt="star" class="b-star1" height="37" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/star-orange.svg" width="37"/></noscript>
+<img alt="About us" class="about-us-banner-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/banners/about-us-desktop.webp" height="787" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20860%20787'%3E%3C/svg%3E" width="860"/><noscript><img alt="About us" class="about-us-banner-img" height="787" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/banners/about-us-desktop.webp" width="860"/></noscript>
+<img alt="star" class="b-star2" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/star-orange-2.svg" height="32" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3C/svg%3E" width="32"/><noscript><img alt="star" class="b-star2" height="32" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/star-orange-2.svg" width="32"/></noscript>
+</div>
+</div>
+</div>
+</div> </section>
+<section class="universities-section section-mb">
+<div class="container">
+<h2 class="section-title">Shape Your Future With Our Top-Ranked Universities</h2>
+<div class="universities-details">
+<div class="first-block university-block">
+<div class="box-wrap">
+<a class="university-wrapper first-wrapper" href="../institution/manipal-university-jaipur/index.html">
+<div class="university-desc">
+<p class="title">Manipal University <span>Jaipur</span></p>
+<div class="view-courses">
+<span href="/global/institution/manipal-university-jaipur">View all Courses</span>
+<img alt="right arrow" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/rightarrow.png" height="20" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%3E%3C/svg%3E" width="20"/><noscript><img alt="right arrow" height="20" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/rightarrow.png" width="20"/></noscript>
+</div>
+</div>
+<div class="university-img">
+<img alt="Manipal University Jaipur" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/muj-university.webp" height="583" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20783%20583'%3E%3C/svg%3E" width="783"/><noscript><img alt="Manipal University Jaipur" height="583" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/muj-university.webp" width="783"/></noscript>
+</div>
+</a>
+<svg class="doodle" fill="none" height="536" viewbox="0 0 848 536" width="848" xmlns="http://www.w3.org/2000/svg">
+<path d="M822.201 520.279C711.012 192.439 666.077 124.728 604.802 140.778C543.527 156.827 572.606 268.859 595.091 356.212C612.751 424.825 550.189 464.048 462.389 386.613C330.088 269.931 257.255 85.3633 313.651 57.1028C439.578 -6.00013 492.508 376.403 392.719 404.14C239.037 446.857 67.8902 150.421 -41.6245 -183" stroke="#C2B5FF" stroke-width="96"></path>
+</svg>
+</div>
+</div>
+<div class="second-block">
+<div class="mahe-block university-block">
+<div class="badge">
+<p>Ranks 3rd <span>amongst all universities</span></p>
+</div>
+<div class="box-wrap">
+<a class="university-wrapper" href="../institution/manipal-academy-of-higher-education/index.html">
+<p class="title">Manipal Academy of <span>Higher Education</span></p>
+<div class="view-courses">
+<span href="/global/institution/manipal-university-jaipur">View all Courses</span>
+<img alt="right arrow" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/rightarrow.png" height="20" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%3E%3C/svg%3E" width="20"/><noscript><img alt="right arrow" height="20" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/rightarrow.png" width="20"/></noscript>
+</div>
+<div class="university-img">
+<img alt="Manipal Academy of Higher Education" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/mahe-university.webp" height="583" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20783%20583'%3E%3C/svg%3E" width="783"/><noscript><img alt="Manipal Academy of Higher Education" height="583" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/mahe-university.webp" width="783"/></noscript>
+</div>
+</a>
+<svg class="doodle" fill="none" height="298" viewbox="0 0 744 298" width="744" xmlns="http://www.w3.org/2000/svg">
+<path d="M696 304C676.5 182.667 473 -7 317.5 60.5C216.988 104.131 238.5 206 153 206C44.3434 206 13 38.5 -21 -61" stroke="#94CFFF" stroke-width="96"></path>
+</svg>
+</div>
+</div>
+<div class="smu-block university-block">
+<div class="box-wrap">
+<a class="university-wrapper" href="../institution/sikkim-manipal-university/index.html">
+<p class="title">Sikkim Manipal <span>University</span></p>
+<div class="view-courses">
+<span href="/global/institution/manipal-university-jaipur">View all Courses</span>
+<img alt="right arrow" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/rightarrow.png" height="20" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%3E%3C/svg%3E" width="20"/><noscript><img alt="right arrow" height="20" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/rightarrow.png" width="20"/></noscript>
+</div>
+<div class="university-img">
+<img alt="Sikkim Manipal University" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/smu-university.webp" height="583" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20783%20583'%3E%3C/svg%3E" width="783"/><noscript><img alt="Sikkim Manipal University" height="583" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/smu-university.webp" width="783"/></noscript>
+</div>
+<svg class="doodle" fill="none" height="299" viewbox="0 0 848 299" width="848" xmlns="http://www.w3.org/2000/svg">
+<path d="M853 173.471C748.02 222.453 514.5 418.5 416 128.5C296.427 -223.543 463.822 -270 540 -61.9997C597.5 95.0003 391.183 207.889 260 203C155.053 199.089 36.2194 73.7559 -1.5 -19.4997" stroke="#A3F9F8" stroke-width="96"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div> </section>
+<section class="leagacy-excellence-section section-mb">
+<div class="leagacy-excellence-section container">
+<div class="top-leagacy-section">
+<svg class="doodle animate" fill="none" height="1031" viewbox="0 0 2220 1031" width="2220" xmlns="http://www.w3.org/2000/svg">
+<path d="M2195 44C2085.35 104.508 640.584 1586.66 530.272 697.843C481.677 306.3 848.133 46.2667 912.498 306.3C958.276 491.243 518.46 750.855 381.651 759.634C229.351 769.408 87.3957 597.422 48 482.221" stroke="white" stroke-width="100"></path>
+</svg>
+<div class="top-leagacy-title">
+<h2 class="section-title">Building a legacy of academic excellence</h2>
+<img alt="star-img" class="star-top" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/Star2.png" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="star-img" class="star-top" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/Star2.png"/></noscript>
+<p class="leagacy-subtitle">Dr. T.M.A. Pai laid the foundation of the Manipal Group in 1953 with the establishment of Kasturba Medical College in Manipal, Karnataka. This was just a stepping stone that paved the way for several other leading educational institutions that rewrote the legacy of academic excellence.</p>
+<p class="leagacy-subtitle">The Manipal Group has been benchmark of excellence in higher education shaping the academic landscape with universities like Manipal Academy of Higher Education (MAHE), Manipal University Jaipur (MUJ) &amp; Sikkim Manipal University (SMU). This includes top-ranked institutes such as Manipal Institute of Technology (MIT), Kasturba Medical College (KMC), and T. A. Pai Management Institute (TAPMI). These educational institutions have created and nurtured bright minds who are now driving sustainable real-world impacts across the globe.</p>
+</div>
+<div class="leagacy-img">
+<div class="image-wrapper">
+<div class="image-label">
+<p class="founder-title">Padma Shri Dr. T.M.A. Pai</p>
+<p class="founder-year">1898 - 1979</p>
+<p class="founder-subtitle">Founder - Manipal Group</p>
+<img alt="star-img" class="star1" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/Star1.png" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="star-img" class="star1" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/Star1.png"/></noscript>
+<img alt="star-img" class="star2" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/Star2.png" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="star-img" class="star2" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/Star2.png"/></noscript>
+</div>
+<div class="founder-img">
+<img alt="Dr. T.M.A. Pai" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/dr-pai.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="Dr. T.M.A. Pai" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/dr-pai.webp"/></noscript>
+</div>
+</div>
+</div>
+</div>
+</div> </section>
+<section class="journey-of-excellence-sect section-mb" data-wpr-lazyrender="1">
+<div class="top-Journey-of-excellence">
+<div class="journey-excellence">
+<div class="admission-wrapper container">
+<div>
+<h2 class="section-title">From Start to Now - Our <span class="d-block">journey of excellence</span></h2>
+</div>
+<div class="admission-step-container">
+<div class="item">
+<div class="number">1953</div>
+<div class="content">
+<h3 class="sub-title mb-0">Kasturba Medical College (KMC) came into existence.</h3>
+<!-- <p class="description">Kasturba Medical College (KMC), India’s first private medical college, was established.</p> -->
+</div>
+</div>
+<div class="item">
+<div class="number">1957</div>
+<div class="content">
+<h3 class="sub-title mb-0">Manipal Institute of Technology (MIT) was established.</h3>
+<!-- <p class="description">Manipal Institute of Technology (MIT) and Udupi Law College were founded.</p> -->
+</div>
+</div>
+<div class="item">
+<div class="number">1980</div>
+<div class="content">
+<h3 class="sub-title mb-0">T. A. Pai Management Institute (TAPMI) was launched.</h3>
+<!-- <p class="description">TA Pai Management Institute (TAPMI) was established.</p> -->
+</div>
+</div>
+<div class="item">
+<div class="number">1993</div>
+<div class="content">
+<h3 class="sub-title mb-0">Manipal Academy of Higher Education (MAHE) was granted Deemed University status.</h3>
+<!-- <p class="description">Manipal Academy of Higher Education (MAHE) was granted Deemed University status.</p> -->
+</div>
+</div>
+<div class="item">
+<div class="number">1996</div>
+<div class="content">
+<h3 class="sub-title mb-0">Sikkim Manipal University (SMU) was established in Gangtok.</h3>
+<!-- <p class="description">Sikkim Manipal University was launched in Gangtok.</p> -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="journey-excellence-next">
+<div class="admission-wrapper container">
+<div>
+<h2 class="section-title">From Start to Now - Our <span class="d-block">journey of excellence</span></h2>
+</div>
+<div class="admission-step-container">
+<div class="item">
+<div class="number">2011</div>
+<div class="content">
+<h3 class="sub-title mb-0">Manipal University Jaipur (MUJ) was founded. Dr. Ramdas Pai was awarded the Padma Bhushan.</h3>
+<!-- <p class="description">Manipal University Jaipur was established. Dr. Ramdas Pai was awarded the Padma Bhushan and the Malaysian title ‘Datuk’.</p> -->
+</div>
+</div>
+<div class="item">
+<div class="number">2020</div>
+<div class="content">
+<h3 class="sub-title mb-0">MUJ received NAAC A+ Rating, a first in Rajasthan.</h3>
+<!-- <p class="description">Manipal University Jaipur (MUJ) received NAAC A+ ranking, a first in Rajasthan.</p> -->
+</div>
+</div>
+<div class="item">
+<div class="number">2021</div>
+<div class="content">
+<h3 class="sub-title">MUJ introduced online degree programs through Online Manipal.</h3>
+<!-- <p class="description">MUJ launched UGC-entitled online degree programs though Online Manipal.</p> -->
+</div>
+</div>
+<div class="item">
+<div class="number">2022</div>
+<div class="content">
+<h3 class="sub-title mb-0">MAHE rolled out online degree programs through Online Manipal.</h3>
+<!-- <p class="description">MAHE started online degree programs through Online Manipal.</p> -->
+</div>
+</div>
+<div class="item">
+<div class="number">2023</div>
+<div class="content">
+<h3 class="sub-title mb-0">SMU began offering online degree programs through Online Manipal.</h3>
+<!-- <p class="description">Sikkim Manipal University commenced online degree programs.</p> -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> </section>
+<section class="our-vision-section section-mb" data-wpr-lazyrender="1">
+<div class="our-vision-section">
+<div class="wrapper-course container">
+<h2 class="section-title">The leaders driving our vision forward</h2>
+<div class="tabs-section">
+<div class="all-visions-container">
+<div class="tab-content">
+<div class="tab-panel active" id="section1-tab1">
+<div class="section-row">
+<div class="leaders-card-slider listing-slider">
+<div class="card-item">
+<span class="courses-link">
+<div class="course-img">
+<img alt="President" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/our-vision/dr-n-n-sharma.webp" height="364" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20455%20364'%3E%3C/svg%3E" width="455"/><noscript><img alt="President" height="364" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/our-vision/dr-n-n-sharma.webp" width="455"/></noscript>
+</div>
+<div class="course-wrapper">
+<div class="course-deatil">
+<div class="course-name">Dr. N. N. Sharma</div>
+<p class="designation">President<br/> Manipal University Jaipur (MUJ)</p>
+</div>
+</div>
+</span>
+</div>
+<div class="card-item">
+<span class="courses-link">
+<div class="course-img">
+<img alt="Dr. Mallikarjuna Gadapa" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/institution/dr-mallik.png" height="364" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20455%20364'%3E%3C/svg%3E" width="455"/><noscript><img alt="Dr. Mallikarjuna Gadapa" height="364" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/institution/dr-mallik.png" width="455"/></noscript>
+</div>
+<div class="course-wrapper">
+<div class="course-deatil">
+<div class="course-name">Dr. Mallikarjuna Gadapa</div>
+<p class="designation">Director - Centre for Distance and Online Education<br/> Manipal University Jaipur (MUJ) </p>
+</div>
+</div>
+</span>
+</div>
+<div class="card-item">
+<span class="courses-link">
+<div class="course-img">
+<img alt="vice-chancellor-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/our-vision/Sharath.webp" height="364" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20455%20364'%3E%3C/svg%3E" width="455"/><noscript><img alt="vice-chancellor-img" height="364" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/our-vision/Sharath.webp" width="455"/></noscript>
+</div>
+<div class="course-wrapper">
+<div class="course-deatil">
+<div class="course-name">Dr. Sharath</div>
+<p class="designation">Vice Chancellor<br/> Manipal Academy of Higher Education (MAHE)</p>
+</div>
+</div>
+</span>
+</div>
+<div class="card-item">
+<span class="courses-link">
+<div class="course-img">
+<img alt="Dr Manojkumar Nagasampige" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/institution/Dr-manojkumar.webp" height="364" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20455%20364'%3E%3C/svg%3E" width="455"/><noscript><img alt="Dr Manojkumar Nagasampige" height="364" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/institution/Dr-manojkumar.webp" width="455"/></noscript>
+</div>
+<div class="course-wrapper">
+<div class="course-deatil">
+<div class="course-name">Dr. Manojkumar Nagasampige</div>
+<p class="designation">Director - Directorate of Online Education<br/> Manipal Academy of Higher Education (MAHE)</p>
+</div>
+</div>
+</span>
+</div>
+<div class="card-item">
+<span class="courses-link">
+<div class="course-img">
+<img alt="vice-chancellor-img" class="gk-vc-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/our-vision/gk-prabhu.webp" height="364" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20455%20364'%3E%3C/svg%3E" width="455"/><noscript><img alt="vice-chancellor-img" class="gk-vc-img" height="364" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/our-vision/gk-prabhu.webp" width="455"/></noscript>
+</div>
+<div class="course-wrapper">
+<div class="course-deatil">
+<div class="course-name">Dr GK Prabhu</div>
+<p class="designation">Vice Chancellor<br/> Sikkim Manipal University (SMU)</p>
+</div>
+</div>
+</span>
+</div>
+<div class="card-item">
+<span class="courses-link">
+<div class="course-img">
+<img alt="Prof (Dr) Sourav Dhar" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/institution/dr-sourav.webp" height="364" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20455%20364'%3E%3C/svg%3E" width="455"/><noscript><img alt="Prof (Dr) Sourav Dhar" height="364" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/institution/dr-sourav.webp" width="455"/></noscript>
+</div>
+<div class="course-wrapper">
+<div class="course-deatil">
+<div class="course-name">Dr. Sourav Dhar</div>
+<p class="designation">Director - Centre for Distance and Online Education<br/> Sikkim Manipal University (SMU) </p>
+</div>
+</div>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> </section>
+<section class="our-impact section-mb" data-wpr-lazyrender="1">
+<div class="container">
+<div class="impact-wrapper">
+<div class="impact-row">
+<h2 class="section-title">Our impact</h2>
+<div class="flex-container">
+<div class="flex-item">
+<div class="number">60+</div>
+<p class="description">Countries and 2000+ towns &amp; cities- our students span the globe</p>
+</div>
+<div class="flex-item">
+<div class="number">160k+</div>
+<p class="description">Learners have been empowered through Online Manipal</p>
+</div>
+<div class="flex-item">
+<div class="number">93%</div>
+<p class="description">Of students say their online degree has a positive ROI</p>
+</div>
+<div class="flex-item">
+<div class="number">81%</div>
+<p class="description">Of students find online is better than or equal to on-campus learning</p>
+</div>
+</div>
+</div>
+<div class="impact-animation-row doodle-section">
+<svg class="doodle" fill="none" height="1172" viewbox="0 0 1920 1172" width="1920" xmlns="http://www.w3.org/2000/svg">
+<path d="M1954 -80.0586C1829.45 0.426338 620.628 1922.51 495.322 740.251C440.122 219.441 856.387 -126.44 929.5 219.441C981.5 465.441 481.905 810.764 326.5 822.441C153.5 835.441 -7.74971 606.675 -52.5 453.441" stroke="#2D2B34" stroke-opacity="0.8" stroke-width="96"></path>
+</svg>
+</div>
+<div class="why-student-row">
+<div class="section-title">Why students choose us</div>
+<div class="relative-container">
+<div class="scroller-container">
+<div class="sticky-container swiper why-choose">
+<div class="swiper-wrapper why-choose-slider">
+<div class="swiper-slide flex-item">
+<div class="feature-wrap">
+<img alt="Degree from top ranked Manipal universities" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/top-ranked.svg" decoding="async" fetchpriority="low" height="64" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3C/svg%3E" width="64"/><noscript><img alt="Degree from top ranked Manipal universities" decoding="async" fetchpriority="low" height="64" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/top-ranked.svg" width="64"/></noscript>
+<div class="feature-title">Degree from top ranked Manipal universities</div>
+<div class="feature-description">Graduate with UGC-entitled &amp; AICTE approved online degrees which are at par with on-campus degree programs.</div>
+</div>
+</div>
+<div class="swiper-slide flex-item">
+<div class="feature-wrap">
+<img alt="Exclusive Coursera access" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/coursera.svg" height="64" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3C/svg%3E" width="64"/><noscript><img alt="Exclusive Coursera access" height="64" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/coursera.svg" width="64"/></noscript>
+<div class="feature-title">Exclusive Coursera access</div>
+<div class="feature-description">Access to 10K+ courses and professional certifications from top global universities.</div>
+</div>
+</div>
+<div class="swiper-slide flex-item">
+<div class="feature-wrap">
+<img alt="Scholarships up to 30%" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/scholarship.svg" decoding="async" fetchpriority="low" height="64" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3C/svg%3E" width="64"/><noscript><img alt="Scholarships up to 30%" decoding="async" fetchpriority="low" height="64" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/scholarship.svg" width="64"/></noscript>
+<div class="feature-title">Scholarships up to 30%</div>
+<div class="feature-description">Avail scholarship benefits under merit, defense, Divyaang, alumni, and other categories.</div>
+</div>
+</div>
+<div class="swiper-slide flex-item">
+<div class="feature-wrap">
+<img alt="Easy financing options" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/easy-finance.svg" decoding="async" fetchpriority="low" height="64" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3C/svg%3E" width="64"/><noscript><img alt="Easy financing options" decoding="async" fetchpriority="low" height="64" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/easy-finance.svg" width="64"/></noscript>
+<div class="feature-title">Easy financing options</div>
+<div class="feature-description">Improved affordability with flexible financing and no-cost EMI options.</div>
+</div>
+</div>
+<div class="swiper-slide flex-item">
+<div class="feature-wrap">
+<img alt="Manipal alumni status" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/alumni.svg" height="64" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3C/svg%3E" width="64"/><noscript><img alt="Manipal alumni status" height="64" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/alumni.svg" width="64"/></noscript>
+<div class="feature-title">Manipal alumni status</div>
+<div class="feature-description">Become a part of a 2,00,000+ global Manipal alumni network.</div>
+</div>
+</div>
+<div class="swiper-slide flex-item">
+<div class="feature-wrap">
+<img alt="Weekly webinars with industry leaders" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/webinar.svg" height="64" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3C/svg%3E" width="64"/><noscript><img alt="Weekly webinars with industry leaders" height="64" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/webinar.svg" width="64"/></noscript>
+<div class="feature-title">Weekly webinars with industry leaders</div>
+<div class="feature-description">Stay updated on key industry trends through our weekly webinars by industry experts.</div>
+</div>
+</div>
+<div class="swiper-slide flex-item">
+<div class="feature-wrap">
+<svg fill="none" height="64" viewbox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f6b1c6" height="64" rx="32" width="64"></rect>
+<path d="M29.9844 38.5888L32.1977 36.377C32.3981 36.1767 32.6141 35.9998 32.8442 35.8464C33.8022 35.2093 34.9903 34.9839 36.1314 35.2453L40.2295 36.1892C40.2843 36.2018 40.3454 36.208 40.4033 36.208H41.3581V44.3571L35.8859 38.8848C35.8859 38.8848 32.9399 41.8214 32.8617 41.8809C32.4829 42.1705 32.018 42.3286 31.5374 42.3286C30.9551 42.3286 30.3978 42.0969 29.9877 41.6868C29.5776 41.2766 29.3428 40.7178 29.3428 40.1371C29.3428 39.5548 29.5745 38.9975 29.9846 38.5874L29.9844 38.5888ZM20.2248 34.0338C20.6819 34.0338 21.1186 34.2154 21.4426 34.5379C21.7667 34.8603 21.9467 35.2986 21.9467 35.7557V47.026C21.9467 47.483 21.7651 47.9198 21.4426 48.2438C21.1186 48.5663 20.6819 48.7478 20.2248 48.7478H17.7219C17.2648 48.7478 16.8281 48.5663 16.504 48.2438C16.1816 47.9198 16 47.4831 16 47.026V35.7557C16 35.2986 16.1816 34.8603 16.504 34.5379C16.828 34.2154 17.2648 34.0338 17.7219 34.0338H20.2248ZM44.0192 34.0338H46.5222C46.9793 34.0338 47.416 34.2154 47.74 34.5379C48.064 34.8603 48.2441 35.2986 48.2441 35.7557V47.026C48.2441 47.483 48.0625 47.9198 47.74 48.2438C47.416 48.5663 46.9793 48.7478 46.5222 48.7478H44.0192C43.5622 48.7478 43.1254 48.5663 42.8014 48.2438C42.479 47.9198 42.2974 47.4831 42.2974 47.026V35.7557C42.2974 35.2986 42.479 34.8603 42.8014 34.5379C43.1254 34.2154 43.5621 34.0338 44.0192 34.0338ZM28.5382 46.8209C28.4505 46.9085 28.4004 47.0259 28.4004 47.1496C28.4004 47.2717 28.4505 47.3906 28.5382 47.4767L28.9217 47.8618C29.1565 48.0966 29.2895 48.4143 29.2895 48.7477C29.2895 49.0796 29.1549 49.3989 28.9217 49.6337C28.4333 50.1221 27.6413 50.1221 27.1513 49.6337L24.8534 47.3358C24.5435 47.0243 24.1365 46.8333 23.6966 46.7926C23.5886 46.7911 23.4806 46.7864 23.371 46.7864H22.8874V36.2081H23.8422C23.9001 36.2081 23.9612 36.2019 24.016 36.1893L28.1125 35.2454C29.2537 34.9825 30.4417 35.2094 31.3997 35.8465L29.3225 37.9253C28.7339 38.5122 28.4052 39.309 28.4052 40.1386C28.4052 40.9682 28.7339 41.765 29.3225 42.352C29.9095 42.9389 30.7062 43.2692 31.5374 43.2692C32.223 43.2692 32.8883 43.0423 33.4315 42.6306L36.5292 45.7252C36.764 45.96 36.8955 46.2778 36.8955 46.6112C36.8955 46.943 36.764 47.2608 36.5292 47.4956H36.5261C36.0377 47.984 35.2457 47.984 34.7557 47.4956L32.1025 44.8439C31.9241 44.6639 31.6313 44.6639 31.4529 44.8439L31.4404 44.8564C31.3543 44.9425 31.3058 45.0599 31.3058 45.182C31.3058 45.3041 31.3527 45.4215 31.4404 45.5076L32.7271 46.7927C33.2155 47.2811 33.2155 48.0732 32.7271 48.5616C32.2387 49.0515 31.4435 49.0515 30.9551 48.5616L29.2035 46.81C29.0219 46.6284 28.7308 46.6284 28.5492 46.81L28.5382 46.8209ZM34.1154 41.9857L35.8842 40.2138L39.8711 44.2007C40.3595 44.6891 40.3595 45.4811 39.8711 45.9695V45.971C39.3811 46.4594 38.5875 46.4594 38.0991 45.971L34.1154 41.9857ZM37.545 32.0975C33.7194 34.6193 28.5148 34.1982 25.1475 30.8328C21.2999 26.9852 21.2999 20.735 25.1475 16.8857C28.9982 13.0381 35.2453 13.0381 39.0962 16.8857C42.4616 20.2511 42.8827 25.4543 40.361 29.2816L41.3362 32.4889C41.3863 32.6549 41.3409 32.8349 41.2203 32.957C41.0967 33.0791 40.9151 33.1245 40.7492 33.0744L37.5434 32.0976L37.545 32.0975ZM32.1229 31.2163C36.1834 31.2163 39.4813 27.9197 39.4813 23.8594C39.4813 19.7989 36.1832 16.5026 32.1229 16.5026C28.0626 16.5026 24.766 19.8007 24.766 23.8594C24.766 27.9199 28.0626 31.2163 32.1229 31.2163ZM26.0355 21.8242H28.6606C28.5713 22.4691 28.5228 23.1531 28.5228 23.8591C28.5228 24.5666 28.5698 25.2491 28.6606 25.894H26.0355C25.8226 25.2553 25.7068 24.5697 25.7068 23.8591C25.7068 23.1484 25.8226 22.4628 26.0355 21.8242ZM26.4362 26.8332H28.8218C29.0581 27.9633 29.426 28.937 29.8768 29.6648C29.9378 29.7588 29.9973 29.8496 30.0584 29.9372C28.4915 29.405 27.197 28.2811 26.4378 26.8347L26.4362 26.8332ZM34.191 29.9356C34.252 29.848 34.3131 29.7572 34.3726 29.6633C34.8218 28.937 35.1897 27.9618 35.4276 26.8316H37.8131C37.0524 28.278 35.7594 29.4019 34.191 29.9341L34.191 29.9356ZM30.0571 17.781C29.9961 17.8686 29.9366 17.9594 29.8756 18.0533C29.4263 18.7796 29.0585 19.7533 28.8206 20.8834H26.435C27.1942 19.4371 28.4887 18.3132 30.0556 17.7794L30.0571 17.781ZM38.2126 25.894H35.5907C35.6768 25.2491 35.7253 24.5666 35.7253 23.8591C35.7253 23.1516 35.6784 22.469 35.5907 21.8242H38.2126C38.4255 22.4644 38.5413 23.1484 38.5413 23.8591C38.5413 24.5697 38.4255 25.2553 38.2126 25.894ZM37.8135 20.885H35.4279C35.1916 19.7548 34.8237 18.7812 34.3729 18.0549C34.3134 17.9594 34.2524 17.8686 34.1913 17.7825C35.7598 18.3163 37.0527 19.4386 37.8135 20.8865L37.8135 20.885ZM34.4715 20.885H29.7803C29.99 19.9583 30.2984 19.1584 30.6772 18.5495C31.0936 17.8795 31.571 17.4413 32.1267 17.4413C32.6808 17.4413 33.1598 17.8796 33.5762 18.5495C33.955 19.1584 34.2634 19.9599 34.4731 20.885H34.4715ZM29.6064 21.8242H34.6451C34.7374 22.466 34.7875 23.15 34.7875 23.8591C34.7875 24.5697 34.7374 25.2522 34.6451 25.894H29.6064C29.514 25.2522 29.4639 24.5697 29.4639 23.8591C29.4639 23.15 29.514 22.4644 29.6064 21.8242ZM29.7801 26.8332H34.4714C34.2616 27.7599 33.9532 28.5597 33.5744 29.1686C33.1596 29.8386 32.6806 30.2769 32.125 30.2769C31.5708 30.2769 31.0919 29.8386 30.6755 29.1686C30.2967 28.5597 29.9899 27.7583 29.7785 26.8332H29.7801Z" fill="#151419"></path>
+</svg>
+<div class="feature-title">Campus immersion</div>
+<div class="feature-description">Participate in exclusive in-person meetups at campus with your batchmates and faculty.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</section>
+<section class="news-headlines-sec section-mb" data-wpr-lazyrender="1">
+<div class="news-headlines-sec container">
+<div class="top-news-headline">
+<div class="news-headline-title">
+<h2 class="section-title">Online Manipal in the Headlines </h2>
+</div>
+<div class="news-headline-cards">
+<a class="news-list-item" href="https://www.ptinews.com/press-release/muj-online-s-5th-convocation-celebrating-excellence-in-digital-learning/3359522" target="_blank">
+<img alt="Hindustan Times" class="news-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/PTI.png" height="72px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%2072'%3E%3C/svg%3E" width="242px"/><noscript><img alt="Hindustan Times" class="news-img" height="72px" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/PTI.png" width="242px"/></noscript>
+<p class="news-title">MUJ Online's 5th Convocation: Celebrating Excellence in Digital Learning</p>
+</a>
+<a class="news-list-item" href="https://www.news18.com/agency-feeds/mahe-onlines-2nd-convocation-honouring-and-celebrating-its-graduates-9742882.html" target="_blank">
+<img alt="News 18" class="news-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news18.png" height="72px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%2072'%3E%3C/svg%3E" width="242px"/><noscript><img alt="News 18" class="news-img" height="72px" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news18.png" width="242px"/></noscript>
+<p class="news-title">MAHE Online's 2nd Convocation: Honouring and Celebrating its Graduates</p>
+</a>
+<a class="news-list-item" href="https://www.tribuneindia.com/news/business/manipal-academy-of-higher-education-marks-new-milestone-with-launch-of-online-undergraduate-degrees/" target="_blank">
+<img alt="The Print" class="news-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/Tribune.png" height="72px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%2072'%3E%3C/svg%3E" width="242px"/><noscript><img alt="The Print" class="news-img" height="72px" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/Tribune.png" width="242px"/></noscript>
+<p class="news-title">Manipal Academy of Higher Education Marks New Milestone with Launch of Online Undergraduate Degrees</p>
+</a>
+<a class="news-list-item" href="https://theprint.in/ani-press-releases/launchpad-2025-one-of-a-kind-hybrid-career-fair-for-online-degree-learners-of-online-manipal/2659819/" target="_blank">
+<img alt="The Print" class="news-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news-print.png" height="72px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%2072'%3E%3C/svg%3E" width="242px"/><noscript><img alt="The Print" class="news-img" height="72px" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news-print.png" width="242px"/></noscript>
+<p class="news-title">‘Launchpad 2025’: One-of-a-Kind Hybrid Career Fair for Online Degree Learners of Online Manipal</p>
+</a>
+<a class="news-list-item" href="https://timesofindia.indiatimes.com/city/mangaluru/higher-edu-institutions-expand-online-degree-courses/amp_articleshow/121759794.cms" target="_blank">
+<img alt="Hindustan Times" class="news-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/toi.png" height="72px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%2072'%3E%3C/svg%3E" width="242px"/><noscript><img alt="Hindustan Times" class="news-img" height="72px" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/toi.png" width="242px"/></noscript>
+<p class="news-title"> Higher education institutions expand online degree courses</p>
+</a>
+<a class="news-list-item" href="https://thesamikhsya.com/special/manipal-university-jaipur-launches-new-initiatives-for-online-students" target="_blank">
+<img alt="Hindustan Times" class="news-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/samik.png" height="72px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%2072'%3E%3C/svg%3E" width="242px"/><noscript><img alt="Hindustan Times" class="news-img" height="72px" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/samik.png" width="242px"/></noscript>
+<p class="news-title">Manipal University Jaipur Launches New Initiatives for Online Students</p>
+</a>
+<div class="news-list-item">
+<img alt="Hindustan Times" class="news-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/hindustan-time.png" height="72px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%2072'%3E%3C/svg%3E" width="242px"/><noscript><img alt="Hindustan Times" class="news-img" height="72px" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/hindustan-time.png" width="242px"/></noscript>
+<p class="news-title">Manipal University Jaipur Offers Placement Assistance and Attractive Scholarships for Online MBA Program</p>
+</div>
+<div class="news-list-item">
+<img alt="Republic World" class="news-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news-republic.png" height="72px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%2072'%3E%3C/svg%3E" width="242px"/><noscript><img alt="Republic World" class="news-img" height="72px" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news-republic.png" width="242px"/></noscript>
+<p class="news-title">Online Manipal Introduces 2-Year MCA Program in AI &amp; ML with Advanced Programming Skills</p>
+</div>
+<div class="news-list-item">
+<img alt="Deccan Herald" class="news-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news-deccan-herald.png" height="72px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%2072'%3E%3C/svg%3E" width="242px"/><noscript><img alt="Deccan Herald" class="news-img" height="72px" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news-deccan-herald.png" width="242px"/></noscript>
+<p class="news-title">MAHE holds in-person event for online degree students</p>
+</div>
+<div class="news-list-item">
+<img alt="The Print" class="news-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news-print.png" height="72px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%2072'%3E%3C/svg%3E" width="242px"/><noscript><img alt="The Print" class="news-img" height="72px" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news-print.png" width="242px"/></noscript>
+<p class="news-title">Online Manipal Aligns Online MBA to Meet the Demands of Working Professionals</p>
+</div>
+<div class="news-list-item">
+<img alt="The Tribune" class="news-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news-tribune.png" height="72px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%2072'%3E%3C/svg%3E" width="242px"/><noscript><img alt="The Tribune" class="news-img" height="72px" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news-tribune.png" width="242px"/></noscript>
+<p class="news-title">Achieving Excellence: Rankings and Accreditations of Online Manipal's MBA Programs</p>
+</div>
+<div class="news-list-item">
+<img alt="Business Standard" class="news-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news-bs.png" height="72px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%2072'%3E%3C/svg%3E" width="242px"/><noscript><img alt="Business Standard" class="news-img" height="72px" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/news/news-bs.png" width="242px"/></noscript>
+<p class="news-title">Manipal Academy of Higher Education Launches Online Postgraduate Certificate Program in Entrepreneurship &amp; Innovation</p>
+</div>
+</div>
+</div>
+</div> </section>
+</main>
+<!------ Popup Lead Form ------>
+<div class="overlay" id="overlay"></div>
+<div class="popup hidden" id="leadForm_popup">
+<button class="close-btn" id="closePopup"></button>
+<div class="formBlock">
+<form action="" class="enroll-now-form" id="leadForm" method="POST">
+<div class="form-details-block">
+<h2 class="section-title">Take the Next Step Toward Achieving Your Academic And Career Goals</h2>
+<div class="messageBlock">
+<div class="alert alert-success hidden" id="successMessage"></div>
+<div class="alert alert-danger hidden" id="errorMessage"></div>
+</div>
+<div class="fields">
+<div class="form-group">
+<label for="name">Full name <span class="required">*</span></label>
+<input class="form-control" id="name" name="name" placeholder="Enter your full name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">Email address <span class="required">*</span></label>
+<input class="form-control" id="email" name="email" placeholder="Enter your email" required="" type="email"/>
+</div>
+<div class="form-group mobileBlock">
+<label for="mobile">Mobile number <span class="required">*</span></label>
+<input class="form-control" id="mobile_number" name="mobile_number" placeholder="Enter your mobile number" required="" type="tel"/>
+</div>
+<div class="form-group courseName">
+<label for="course">Course <span class="required">*</span></label>
+<select class="courseName" data-placeholder="Select course*" data-search="true" name="course_name" required="">
+<option value=""></option>
+<option value="MBA">Master of Business Administration</option>
+<option value="BBA">Bachelor of Business Administration</option>
+<option value="BCA">Bachelor of Computer Applications</option>
+<option value="B.Com">Bachelor of Commerce</option>
+<option value="MCA">Master of Computer Applications</option>
+<option value="M.Com">Master of Commerce</option>
+<option value="MA.JMC">Master of Arts in Journalism &amp; Mass Communication</option>
+<option value="MA in Economics">MA in Economics</option>
+<option value="MSc in Mathematics">MSc in Mathematics</option>
+<option value="MSc Data Science">MSc Data Science</option>
+<option value="MSc Business Analytics">MSc Business Analytics</option>
+<option value="PGCP Business Analytics">PGCP Business Analytics</option>
+<option value="PGCP Logistics and Supply Chain">PGCP Logistics and Supply Chain</option>
+<option value="PGCP Data Science">PGCP in Data Science</option>
+<option value="BA">Bachelor of Arts</option>
+<option value="MA in English">MA in English</option>
+<option value="MA in Sociology">MA in Sociology</option>
+<option value="MA in Political Science">MA in Political Science</option>
+</select>
+<span class="error" id="course_nameError"></span>
+</div>
+<div class="form-group institutionName">
+<label for="institution">Institution <span class="required">*</span></label>
+<select class="universityName" data-placeholder="Select institution*" name="institution" required="">
+<option value=""></option>
+<option value="Manipal University Jaipur">Manipal University Jaipur</option>
+<option value="Manipal Academy of Higher Education">Manipal Academy of Higher Education</option>
+<option value="Sikkim Manipal University">Sikkim Manipal University</option>
+</select>
+<span class="error" id="institutionError"></span>
+</div>
+<div class="form-group terms-condition">
+<input id="terms_1" name="terms" type="checkbox"/><label for="terms_1">I authorize Online Manipal and its associates to contact me with updates notifications via email, SMS, WhatsApp, and voice call. This consent will override any registration for DNC / NDNC. <span class="required">*</span></label>
+</div>
+<div class="hidden">
+<input name="leadsquared-Source" type="hidden" value=""/>
+<input name="leadsquared-SourceCampaign" type="hidden" value=""/>
+<input name="leadsquared-SourceContent" type="hidden" value=""/>
+<input name="leadsquared-SourceMedium" type="hidden" value=""/>
+<input name="leadsquared-mx_UTM_Keyword" type="hidden" value=""/>
+<input name="leadsquared-mx_Marketing_Ad_Set" type="hidden" value=""/>
+<input name="leadsquared-Adset_id" type="hidden" value=""/>
+<input name="leadsquared-mx_UTM_Matchtype" type="hidden" value=""/>
+<input name="leadsquared-mx_UTM_Placement" type="hidden" value=""/>
+<input name="leadsquared-mx_UTM_Position" type="hidden" value=""/>
+<input name="leadsquared-mx_Lead_Medium" type="hidden" value=""/>
+<input name="leadsquared-mx_gclid" type="hidden" value=""/>
+<input name="leadsquared-mx_Device" type="hidden" value="Desktop"/>
+<input name="leadsquared-Website" type="hidden" value="https://www.onlinemanipal.com/global/about-us"/>
+<input name="leadsquared-mx_Website_IP_Address" type="hidden" value="135.181.3.246"/>
+<input name="referer_url" type="hidden" value=""/>
+<input name="otp_token" type="hidden" value=""/>
+<input name="sub_token" type="hidden" value=""/>
+<input name="leadsquared-mx_Location" type="hidden" value=""/>
+<input name="userCountry" type="hidden" value=""/>
+<input name="leadsquared-mx_mobile" type="hidden" value=""/>
+<input name="LeadFormName" type="hidden" value="Header Enroll Form"/>
+<input name="honeypot" type="hidden" value=""/>
+</div>
+<div class="form-group">
+<button class="lead-submit" type="submit">Submit</button>
+</div>
+</div>
+</div>
+<div class="otp-verification-block hidden">
+<h5>Verify OTP</h5>
+<div class="otp-info-block">
+<p>Enter the 4 digit OTP received on <span class="otpNumber"></span></p>
+<span class="editLink">Edit</span>
+</div>
+<div class="form-group mb-3" id="otpSection">
+<div class="otp-field">
+<div class="d-flex flex-column otp-wrap">
+<input class="otp-input form-control" id="otp1" maxlength="1" name="otp1" type="number"/>
+</div>
+<div class="d-flex flex-column otp-wrap">
+<input class="otp-input form-control" id="otp2" maxlength="1" name="otp2" type="number"/>
+</div>
+<div class="d-flex flex-column otp-wrap">
+<input class="otp-input form-control" id="otp3" maxlength="1" name="otp3" type="number"/>
+</div>
+<div class="d-flex flex-column otp-wrap">
+<input class="otp-input form-control" id="otp4" maxlength="1" name="otp4" type="number"/>
+</div>
+</div>
+<div class="resendOTPBlock">
+<button class="btn btn-primary w-50 resend-otp" id="resendOtpBtn" type="button">Resend OTP</button>
+<span>00:<span class="countdown">30</span>s</span>
+</div>
+</div>
+<p>Once verified, you will be redirected to the university application portal to complete the application process.</p>
+<div class="form-group">
+<button class="lsq-submit" type="submit">Verify</button>
+</div>
+</div>
+</form>
+</div></div>
+<!---- Mobile bottom widget ----->
+<div class="mobileWidgetBottom" data-wpr-lazyrender="1">
+</div>
+<footer class="mainsite-footer" data-wpr-lazyrender="1">
+<div class="footer-container">
+<div class="footer-get-in-touch container">
+<div class="get-in-touch doodle-section footerv2">
+<svg class="doodle" fill="none" height="832" viewbox="0 0 1920 832" width="1920" xmlns="http://www.w3.org/2000/svg">
+<path d="M-668 152C-639.667 417.167 -288.1 487.78 839.5 -42.6199C2249 -705.62 86.5 655 798.5 703.5C930.267 712.476 1025.5 691.995 1147.5 648.5M1147.5 648.5C1779 601.683 2062.04 -114.691 1608.5 13C1089.5 159.12 1032.5 760.683 1147.5 648.5ZM1147.5 648.5C1368.5 836.021 1885.8 936.98 2289 -42.6199" stroke="#E8E8B7" stroke-width="120"></path>
+</svg>
+<div class="left">
+<h2 class="question-text section-title">Take the next step in your <span>educational journey</span></h2>
+<p class="description">Explore courses tailored to your ambitions and interests!</p>
+<a class="primaryBtn" href="../all-courses/index.html">View All Courses</a> </div>
+<div class="right">
+<img alt="Student Help Center Executive" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/footer/footer-boy.webp" decoding="async" fetchpriority="low" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="Student Help Center Executive" decoding="async" fetchpriority="low" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/footer/footer-boy.webp"/></noscript>
+</div>
+</div>
+<div class="footer-wrapper">
+<div class="university-wrapper">
+<div class="left">
+<div class="university-container">
+<div class="university-details mahe">
+<div class="footer-logo">
+<a href="../institution/manipal-academy-of-higher-education/index.html">
+<img alt="mahe-logo" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/logos/MAHE-logo-footer.webp" height="268" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20250%20268'%3E%3C/svg%3E" width="250"/><noscript><img alt="mahe-logo" height="268" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/logos/MAHE-logo-footer.webp" width="250"/></noscript>
+</a>
+</div>
+<p class="uni-address">Manipal – Karnataka</p>
+</div>
+<div class="university-details MUJ">
+<div class="footer-logo">
+<a href="../institution/manipal-university-jaipur/index.html">
+<img alt="muj-logo" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/logos/MUJ-logo-fooer.webp" height="274" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20250%20274'%3E%3C/svg%3E" width="250"/><noscript><img alt="muj-logo" height="274" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/logos/MUJ-logo-fooer.webp" width="250"/></noscript>
+</a>
+</div>
+<p class="uni-address">Jaipur – Rajasthan</p>
+</div>
+<div class="university-details SMU">
+<div class="footer-logo">
+<a href="../institution/sikkim-manipal-university/index.html">
+<img alt="smu-logo" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/logos/SMU-logo-footer.webp" height="273" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20312%20273'%3E%3C/svg%3E" width="312"/><noscript><img alt="smu-logo" height="273" loading="lazy" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/logos/SMU-logo-footer.webp" width="312"/></noscript>
+</a>
+</div>
+<p class="uni-address">Gangtok – Sikkim</p>
+</div>
+</div>
+<div class="social-media">
+<ul>
+<li>
+<a href="https://www.facebook.com/onlinemanipal" target="_blank"><img alt="facebook" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/facebook.svg" height="48" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%3E%3C/svg%3E" width="48"/><noscript><img alt="facebook" height="48" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/facebook.svg" width="48"/></noscript>
+</a>
+</li>
+<li>
+<a href="https://in.linkedin.com/company/onlinemanipal" target="_blank"><img alt="linkedin" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/linkedin-icon.svg" height="48" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%3E%3C/svg%3E" width="48"/><noscript><img alt="linkedin" height="48" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/linkedin-icon.svg" width="48"/></noscript></a>
+</li>
+<li>
+<a href="https://www.youtube.com/channel/UC6EgEsVbor7Tpz3xARIhLzQ" target="_blank"><img alt="youtube" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/Youtube.svg" height="48" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%3E%3C/svg%3E" width="48"/><noscript><img alt="youtube" height="48" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/Youtube.svg" width="48"/></noscript></a>
+</li>
+<li>
+<a href="https://www.instagram.com/onlinemanipal/" target="_blank"><img alt="instagram" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/Instagram.svg" height="48" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%3E%3C/svg%3E" width="48"/><noscript><img alt="instagram" height="48" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/Instagram.svg" width="48"/></noscript></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="top-wrapper">
+<div class="row-1">
+<div class="company">
+<div class="title-text footer-accordian-22 footer-down-arrow" onclick="expandCourses('22')">Company</div>
+<div class="course-detail expand-data-22">
+<a href="index.html">About Us</a>
+<a href="../the-manipal-advantage/index.html">The Manipal Advantage</a>
+<a href="../help-center/index.html">Help Center</a>
+</div>
+</div>
+<div class="company institutions">
+<div class="title-text footer-accordian-21 footer-down-arrow" onclick="expandCourses('21')">Institutions</div>
+<div class="Institutions-wrapper course-detail expand-data-21">
+<a href="../institution/manipal-academy-of-higher-education/index.html">Manipal Academy of Higher Education</a>
+<a href="../institution/manipal-university-jaipur/index.html">Manipal University Jaipur</a>
+<a href="../institution/sikkim-manipal-university/index.html">Sikkim Manipal University</a>
+</div>
+</div>
+</div>
+<div class="row-2">
+<div class="company">
+<div class="title-text footer-accordian-2 footer-down-arrow" onclick="expandCourses('2')">Online Courses</div>
+<div class="resources-wrapper course-detail expand-data-2">
+<a href="../all-courses/index.html">All Courses</a>
+<a href="../all-courses/online-masters/index.html">Master's Courses</a>
+<a href="../all-courses/online-bachelors/index.html">Bachelor's Courses</a>
+<a href="../all-courses/online-certifications/index.html">Certificate Courses</a>
+<a href="../all-courses/specializations/index.html">Specializations</a>
+</div>
+</div>
+</div>
+<div class="row-3">
+<div class="company">
+<div class="title-text footer-accordian-3 footer-down-arrow" onclick="expandCourses('3')">Online Degrees</div>
+<div class="resources-wrapper course-detail expand-data-3">
+<a href="../online-mba-courses/index.html">MBA Courses</a>
+<a href="../online-mca-courses/index.html">MCA Courses</a>
+<a href="../online-bba-courses/index.html">BBA Courses</a>
+<a href="../online-bca-degree-muj/index.html">BCA Courses</a>
+<a href="../online-bcom-courses/index.html">BCom Courses</a>
+<a href="../online-ba-degree-smu/index.html">BA Courses</a>
+<a href="../online-ma-courses/index.html">MA Courses</a>
+<a href="../online-msc-courses/index.html">MSc Courses</a>
+<a href="../online-mcom-courses/index.html">MCom Courses</a>
+</div>
+</div>
+</div>
+<div class="row-4">
+<div class="company">
+<div class="title-text footer-accordian-4 footer-down-arrow" onclick="expandCourses('4')">Resources</div>
+<div class="resources-wrapper course-detail expand-data-4">
+<a href="/blogs">Blogs</a>
+<a href="../../placements/index.html">Placements</a>
+<a href="../../faq/index.html">FAQs</a>
+<a href="../../learner-testimonial/index.html">Learner Testimonials</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="toggle-arrow-icon">
+<div class="toggle-div">
+<div class="grey-line footer-accordian-1 footer-down-arrow"></div>
+<div class="desktop-up-icon">Show Top Degrees with Specializations</div>
+<img alt="arrow-icon" class="footer-toggle-arrow up-arrow rotate-img" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/small-down-arrow.svg" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="arrow-icon" class="footer-toggle-arrow up-arrow rotate-img" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/small-down-arrow.svg"/></noscript>
+</div>
+</div>
+<div class="course-wrapper">
+<div class="company first-col mba-course">
+<div class="title-text footer-accordian-5 footer-down-arrow" onclick="expandCourses('5')">Online Master of Business Administration</div>
+<div class="mba-programs expand-data-5 course-detail">
+<div class="mba-column">
+<a href="../online-mba-manipal-university-jaipur/index.html">MBA Degree from MUJ</a>
+<a href="../online-mba-manipal-academy-of-higher-education/index.html">MBA Degree for Working Professionals from MAHE</a>
+<a href="../online-mba-sikkim-manipal-university/index.html">MBA Degree with Dual Specializations from SMU</a>
+<a href="../online-mba-analytics-data-science/index.html">MBA in Analytics &amp; Data Science</a>
+<a href="../online-mba-human-resource-management/index.html">MBA in HR Management</a>
+<a href="../online-mba-finance/index.html">MBA in Finance</a>
+</div>
+<div class="mba-column">
+<a href="../online-mba-digital-marketing/index.html">MBA in Digital Marketing</a>
+<a href="../online-mba-business-analytics-mahe/index.html">MBA in Business Analytics</a>
+<a href="../online-mba-marketing/index.html">MBA in Marketing</a>
+<a href="../oonline-mba-healthcare-management-mahe/index.html">MBA in Healthcare Management</a>
+<a href="../online-mba-pharmaceutical-management-mahe/index.html">MBA in Pharmaceutical Management</a>
+<a href="../online-mba-international-business/index.html">MBA in International Business</a>
+</div>
+<div class="mba-column">
+<a href="../online-mba-logistics-supply-chain-management-mahe/index.html">MBA in Logistics &amp; Supply Chain Management</a>
+<a href="../online-mba-it-fintech/index.html">MBA in IT &amp; FinTech</a>
+<a href="../online-mba-banking-financial-services-insurance/index.html">MBA in BFSI</a>
+<a href="../online-mba-operations-management/index.html">MBA in Operations Management</a>
+<a href="../online-mba-supply-chain-management/index.html">MBA in Supply Chain Management</a>
+<a href="../online-mba-retail-management/index.html">MBA in Retail Management</a>
+</div>
+</div>
+</div>
+<div class="company">
+<div class="title-text footer-accordian-6 footer-down-arrow" onclick="expandCourses('6')">Online Master of Computer Application</div>
+<div class="mba-programs expand-data-6 course-detail">
+<div class="mba-column">
+<a href="../online-mca-degree-muj/index.html">MCA Degree from MUJ</a>
+<a href="../online-mca-degree-working-professionals-mahe/index.html">MCA Degree for Working Professionals from MAHE</a>
+<a href="../online-mca-degree-smu/index.html">MCA Degree from SMU</a>
+</div>
+<div class="mba-column">
+<a href="../online-mca-cyber-security-muj/index.html">MCA in Cybersecurity</a>
+<a href="../online-mca-artificial-intelligence-machine-learning-mahe/index.html">MCA in AI &amp; ML</a>
+<a href="../online-mca-full-stack-development-mahe/index.html">MCA in Full Stack Development</a>
+</div>
+<div class="mba-column">
+<a href="../online-mca-artificial-intelligence-muj/index.html">MCA in AI &amp; Data Science</a>
+<a href="../online-mca-cloud-computing-muj/index.html">MCA in Cloud Computing</a>
+</div>
+</div>
+</div>
+<div class="company">
+<div class="title-text footer-accordian-7 footer-down-arrow" onclick="expandCourses('7')">Online Bachelor of Business Administration</div>
+<div class="mba-programs expand-data-7 course-detail">
+<div class="mba-column">
+<a href="../online-bba-degree-muj/index.html">BBA Degree from MUJ</a>
+<a href="../online-bba-entrepreneurship-management-and-family-business/index.html">BBA in Enterpreneurship Management</a>
+<a href="../online-bba-marketing/index.html">BBA in Marketing</a>
+<a href="../online-bba-finance-and-accounting/index.html">BBA in Finance &amp; Accounting</a>
+<a href="../online-bba-data-analytics/index.html">BBA in Data Analytics</a>
+</div>
+<div class="mba-column">
+<a href="../online-bba-retail-and-ecommerce/index.html">BBA in Retail &amp; Ecommerce</a>
+<a href="../online-bba-digital-marketing/index.html">BBA in Digital Marketing</a>
+<a href="../online-bba-honors-mahe/index.html">BBA (Honors) Degree from MAHE</a>
+<a href="../online-bba-honors-healthcare-management-mahe/index.html">BBA (Honors) in Healthcare Management</a>
+<a href="../online-bba-honors-business-analytics-mahe/index.html">BBA (Honors) in Business Analytics</a>
+</div>
+<div class="mba-column">
+<a href="../online-bba-honors-fintech-mahe/index.html">BBA (Honors) in Financial Technology</a>
+<a href="../online-bba-honors-marketing-management-mahe/index.html">BBA (Honors) in Marketing Management</a>
+<a href="../online-bba-honors-hrm-mahe/index.html">BBA (Honors) in Human Resourse Management</a>
+<a href="../online-bba-degree-smu/index.html">BBA Degree from SMU</a>
+</div>
+</div>
+</div>
+<div class="company">
+<div class="title-text footer-accordian-8 footer-down-arrow" onclick="expandCourses('8')">Online Bachelor of Computer Application</div>
+<div class="mba-programs expand-data-8 course-detail">
+<div class="mba-column">
+<a href="../online-bca-degree-muj/index.html">BCA Degree from MUJ</a>
+<a href="../online-bca-data-science-and-analytics/index.html">BCA in Data Science &amp; Analytics</a>
+</div>
+<div class="mba-column">
+<a href="../online-bca-cloud-computing-muj/index.html">BCA in Cloud Computing</a>
+<a href="../online-bca-cyber-security-muj/index.html">BCA in Cybersecurity</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="contact-details container">
+<div class="copy-right-text">© 2026 Online Manipal. ALL RIGHTS RESERVED.</div>
+</div>
+</footer>
+<div class="floating-Widget">
+<div class="whatsup-block">
+<a class="whatsapp-btn" href="https://wa.me/917304000444?text=Hi" target="_blank">
+<span>Chat</span>
+<img alt="Whatsup" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/whatsup-icon.png" height="24" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3C/svg%3E" width="24"/><noscript><img alt="Whatsup" height="24" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/whatsup-icon.png" width="24"/></noscript>
+</a>
+</div></div>
+<!----- Search filter popup ----->
+<div class="popup hidden search-filter" id="searchFilter_popup">
+<div class="search-bar">
+<img alt="search" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/search.svg" width="70"/>
+<button class="close-btn filter-close-btn" id="closePopup"></button>
+<input class="search-input" id="header-search" placeholder="Search here" type="text"/>
+</div>
+<div class="search-container">
+<div class="search-wrapper">
+<div class="tags" id="coursesTag">
+<a class="course-tag" href="../online-mba-courses/index.html">Popular MBA courses</a>
+<a class="course-tag" href="../online-msc-data-science/index.html">Best degree for data science</a>
+<a class="course-tag" href="../online-mba-manipal-university-jaipur/index.html">Masters in Business administration</a>
+<a class="course-tag" href="../online-mca-degree-muj/index.html">Best MCA courses</a>
+</div>
+<div class="popular-courses">
+<div class="section-heading">
+<img alt="popular courses" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/popular-courses.svg" height="48" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%3E%3C/svg%3E" width="48"/><noscript><img alt="popular courses" height="48" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/popular-courses.svg" width="48"/></noscript>
+<h3 class="section-title">Popular Courses</h3>
+</div>
+<ul id="popularCourses">
+</ul>
+</div>
+<div class="popular-courses">
+<div class="section-heading">
+<img alt="Institutions" data-lazy-src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/institutions-img.svg" height="48" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%3E%3C/svg%3E" width="48"/><noscript><img alt="Institutions" height="48" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/institutions-img.svg" width="48"/></noscript>
+<h3 class="section-title">Institutions</h3>
+</div>
+<ul id="institutions">
+</ul>
+</div>
+</div>
+</div></div>
+<div class="overlay" id="overlay "></div>
+<div class="hidden" id="pdfPopup">
+<button class="pdf-btn header-btn second-fold-hide applynow show-popup small btn-position" data-form="leadForm" data-position="Header Apply Now">Apply Now</button>
+<button class="close-btn" id="closePopup"></button>
+<div class="pdf-scroll-area">
+<div class="pdf-viewer">
+<button class="nav-btn prev" id="prevPage"></button>
+<div id="pdfWrapper" style="position: relative; display: inline-block;">
+<canvas id="pdfCanvas"></canvas>
+<div id="pdfAnnotations" style="position:absolute; left:0; top:0;"></div>
+</div>
+<button class="nav-btn next" id="nextPage"></button>
+</div>
+</div>
+</div>
+<span class="university-url" id="university-url"></span>
+<div class="hidden">
+<span class="source-location"></span>
+<span class="source-ip-address">135.181.3.246</span>
+<span class="pageType">International</span>
+<span class="country-code">ae</span>
+</div>
+<!------ CSS Files ------->
+<link href="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/css/select2.min.css" rel="stylesheet" type="text/css">
+<link as="style" data-minify="1" href="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/slick/slick-theme__q_d6ffd3faf0.css" onload="this.rel='stylesheet'" rel="preload"/>
+<noscript>
+<link data-minify="1" href="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/slick/slick-theme__q_d6ffd3faf0.css" rel="stylesheet"/>
+</noscript>
+<link data-minify="1" href="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/slick/slick__q_d6ffd3faf0.css" rel="stylesheet"/>
+<link data-minify="1" href="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/css/lity__q_d6ffd3faf0.css" rel="stylesheet" type="text/css"/>
+<!------ JS Files ------->
+<script data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/js/jquery-3.7.1.min.js" type="text/javascript"></script>
+<script data-minify="1" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/js/first-fold-script-v2__q_d6ffd3faf0.js" type="text/javascript"></script>
+<script data-minify="1" data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/js/jquery.validate__q_d6ffd3faf0.js" type="text/javascript"></script>
+<script data-minify="1" data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min__q_d6ffd3faf0.js" type="text/javascript"></script>
+<script data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/js/select2.min.js" type="text/javascript"></script>
+<script data-minify="1" data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/js/script__q_d6ffd3faf0.js" type="text/javascript"></script>
+<script data-minify="1" data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/js/form__q_d6ffd3faf0.js" type="text/javascript"></script>
+<script data-minify="1" data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/js/header-search__q_d6ffd3faf0.js" type="text/javascript"></script>
+<script data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/slick/slick.min.js" type="text/javascript"></script>
+<script data-minify="1" data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/js/slider__q_d6ffd3faf0.js" type="text/javascript"></script>
+<script data-minify="1" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/js/lity__q_d6ffd3faf0.js" type="text/javascript"></script>
+<script data-minify="1" data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/npm/jquery.cookie@1.4.1/jquery.cookie.min__q_d6ffd3faf0.js" type="text/javascript"></script>
+<script data-minify="1" data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/js/lity__q_d6ffd3faf0.js" type="text/javascript"></script>
+<link data-minify="1" href="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min__q_d6ffd3faf0.css" rel="stylesheet" type="text/css"/>
+<link data-minify="1" href="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox__q_d6ffd3faf0.css" rel="stylesheet"/>
+<script data-minify="1" data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd__q_d6ffd3faf0.js"></script>
+<script data-minify="1" data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/ajax/libs/pdf.js/2.14.305/pdf.min__q_d6ffd3faf0.js"></script>
+<script data-minify="1" data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/ajax/libs/pdf.js/2.14.305/pdf_viewer.min__q_d6ffd3faf0.js"></script>
+<link data-minify="1" href="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/ajax/libs/pdf.js/2.14.305/pdf_viewer.min__q_d6ffd3faf0.css" rel="stylesheet"/>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/flamingo/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<noscript><img alt="" height="1" src="../../assets/www.facebook.com/tr__q_dd80055aa5.bin" style="display: none;" width="1"/></noscript>
+<script id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/payment-verification|/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://www.onlinemanipal.com","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script data-minify="1" data-rocket-defer="" defer="" id="onlinemanipal-navigation-js" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/js/navigation__q_d6ffd3faf0.js"></script>
+<script defer="" id="jquery-bind-first-js" src="../../assets/www.onlinemanipal.com/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min__q_f09661fc04.js"></script>
+<script defer="" id="js-cookie-pys-js" src="../../assets/www.onlinemanipal.com/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min__q_4c715fc6d6.js"></script>
+<script defer="" id="js-tld-js" src="../../assets/www.onlinemanipal.com/wp-content/plugins/pixelyoursite/dist/scripts/tld.min__q_254d632c88.js"></script>
+<script id="pys-js-extra">
+var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"static","ajaxFire":false,"name":"PageView","pixelIds":["374798657217929"],"eventID":"1d92a0cd-3569-465b-918e-6b072c3ba46d","params":{"page_title":"About Us","post_type":"page","post_id":667915,"plugin":"PixelYourSite","user_role":"guest","event_url":"www.onlinemanipal.com/global/about-us"},"e_id":"init_event","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}]}},"dynamicEvents":[],"triggerEvents":[],"triggerEventTypes":[],"facebook":{"pixelIds":["374798657217929"],"advancedMatching":[],"advancedMatchingEnabled":true,"removeMetadata":false,"wooVariableAsSimple":false,"serverApiEnabled":true,"wooCRSendFromServer":false,"send_external_id":null,"enabled_medical":false,"do_not_track_medical_param":["event_url","post_title","page_title","landing_page","content_name","categories","category_name","tags"],"meta_ldu":false},"debug":"","siteUrl":"https://www.onlinemanipal.com","ajaxUrl":"https://www.onlinemanipal.com/wp-admin/admin-ajax.php","ajax_event":"dfe0b5e422","enable_remove_download_url_param":"1","cookie_duration":"7","last_visit_duration":"60","enable_success_send_form":"","ajaxForServerEvent":"1","ajaxForServerStaticEvent":"1","useSendBeacon":"1","send_external_id":"1","external_id_expire":"180","track_cookie_for_subdomains":"1","google_consent_mode":"1","gdpr":{"ajax_enabled":false,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"reddit_disabled_by_api":false,"externalID_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_tiktok_consent_category":"marketing","cookiebot_google_ads_consent_category":"marketing","cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false,"analytics_storage":{"enabled":true,"value":"granted","filter":false},"ad_storage":{"enabled":true,"value":"granted","filter":false},"ad_user_data":{"enabled":true,"value":"granted","filter":false},"ad_personalization":{"enabled":true,"value":"granted","filter":false}},"cookie":{"disabled_all_cookie":false,"disabled_start_session_cookie":false,"disabled_advanced_form_data_cookie":false,"disabled_landing_page_cookie":false,"disabled_first_visit_cookie":false,"disabled_trafficsource_cookie":false,"disabled_utmTerms_cookie":false,"disabled_utmId_cookie":false},"tracking_analytics":{"TrafficLanding":"http://undefined","TrafficUtms":[],"TrafficUtmsId":[]},"GATags":{"ga_datalayer_type":"default","ga_datalayer_name":"dataLayerPYS"},"woo":{"enabled":false},"edd":{"enabled":false},"cache_bypass":"1778266740"};
+//# sourceURL=pys-js-extra
+</script>
+<script data-minify="1" defer="" id="pys-js" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/plugins/pixelyoursite/dist/scripts/public__q_d6ffd3faf0.js"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script async="" data-no-minify="1" src="../../assets/www.onlinemanipal.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></link></link></body>
+</html>
+<!------ JS Files ------>
+<script data-minify="1" data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/js/about__q_29d570946f.js" type="text/javascript"></script>
+<script data-rocket-defer="" defer="" src="../../assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/js/swiper-bundle.min.js" type="text/javascript"></script>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

@@ -1,0 +1,19 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /
+
+# ── Security: block direct access to CMS library files ───────────────────
+<FilesMatch "^(cms-config|cms-db|cms-auth|cms-utils)\.php$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+# ── Serve mirrored HTML without .html extension ───────────────────────────
+# (blog and admin routing is handled by their own sub-directory .htaccess files)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# ── Charset ───────────────────────────────────────────────────────────────
+AddDefaultCharset UTF-8

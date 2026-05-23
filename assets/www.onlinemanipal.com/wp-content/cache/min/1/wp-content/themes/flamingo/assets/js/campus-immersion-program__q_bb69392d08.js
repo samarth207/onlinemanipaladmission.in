@@ -1,0 +1,1 @@
+$(document).on("click",".course-enhance-skills .tablinks, .course-curriculum-sect .tablinks",function(){var $this=$(this);var tabItem=$this.data("tabitem");var $parentContent=$this.parents(".content");$parentContent.find(".tabcontent, .tablinks").removeClass("active");$("#"+tabItem).addClass("active");$this.addClass("active")})
