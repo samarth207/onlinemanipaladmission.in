@@ -755,7 +755,7 @@ function cms_blog_create_sample_post(): int
   </tbody>
 </table>
 <h2>Stay consistent, stay future-ready</h2>
-<p>Bookmark this page and check back regularly. For broader updates on online higher education, you can also refer to <a href="https://www.onlinemanipal.com/blogs" target="_blank" rel="noopener">Online Manipal blogs</a>.</p>
+<p>Bookmark this page and check back regularly. For broader updates on online higher education, you can also refer to <a href="https://www.onlinemanipaladmission.in/blogs" target="_blank" rel="noopener">Online Manipal blogs</a>.</p>
 HTML;
 
     $tocResult = cms_blog_build_toc_and_inject_ids($contentHtml);
@@ -776,13 +776,13 @@ HTML;
         "tags" => ["online education", "career growth", "student guide"],
         "status" => "published",
         "publish_at" => cms_now_utc(),
-        "feature_image_url" => cms_url("/assets/www.onlinemanipal.com/wp-content/uploads/2023/03/blogpage-banner.jpg"),
+        "feature_image_url" => cms_url("/assets/static/wp-content/uploads/2023/03/blogpage-banner.jpg"),
         "feature_image_alt" => "Students exploring online learning opportunities",
         "feature_image_title" => "Online learning journey",
         "author_name" => "Editorial Team",
         "author_bio" => "The Online Manipal editorial team publishes student-first resources to support informed academic decisions.",
         "author_page" => "",
-        "author_image_url" => cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/web-user.png"),
+        "author_image_url" => cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/web-user.png"),
         "lead_headline" => "Talk to our counselors",
         "lead_button_text" => "Apply Now",
         "faq_items" => [

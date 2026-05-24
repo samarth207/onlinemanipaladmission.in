@@ -1,0 +1,11 @@
+Options -Indexes
+# Only admin-ajax.php is publicly accessible in this directory.
+# Block everything else.
+<Files "*.php">
+    Order allow,deny
+    Deny from all
+</Files>
+<Files "admin-ajax.php">
+    Order allow,deny
+    Allow from all
+</Files>

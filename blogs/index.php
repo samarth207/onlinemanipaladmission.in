@@ -61,7 +61,7 @@ function cms_blog_list_cover_image(array $blog): string
     if ($cover !== "") {
         return $cover;
     }
-    return cms_url("/assets/www.onlinemanipal.com/wp-content/uploads/2023/03/blogpage-banner.jpg");
+    return cms_url("/assets/static/wp-content/uploads/2023/03/blogpage-banner.jpg");
 }
 
 function cms_blog_list_author_image(array $blog): string
@@ -70,7 +70,7 @@ function cms_blog_list_author_image(array $blog): string
     if ($img !== "") {
         return $img;
     }
-    return cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/web-user.png");
+    return cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/web-user.png");
 }
 
 $blogs = cms_blog_list_published();
@@ -80,16 +80,16 @@ $pageTitle = "Explore Online Manipal Blogs | Industry Insights & Resources";
 $metaDescription = "Transform your learning journey with curated blog articles on online education, careers, admissions, and industry insights.";
 $canonicalUrl = rtrim((string) cms_cfg("site_url"), "/") . "/blogs";
 
-$styleCss = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/css/style.css");
-$blogCss = cms_url("/assets/www.onlinemanipal.com/wp-content/cache/min/1/wp-content/themes/flamingo/assets/css/blog__q_7e4f073632.css");
+$styleCss = cms_url("/assets/static/wp-content/themes/flamingo/assets/css/style.css");
+$blogCss = cms_url("/assets/static/wp-content/cache/min/1/wp-content/themes/flamingo/assets/css/blog__q_7e4f073632.css");
 $publicCss = cms_url("/cms/assets/public-blog.css");
-$logoUrl = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/OM_Logo.svg");
-$star1 = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/star-orange.svg");
-$star2 = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/star-orange-2.svg");
-$breadcrumbArrow = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/breadcrumb-arrow.svg");
-$dateIcon = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/calendar.svg");
-$timeIcon = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/cal.svg");
-$searchIcon = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/search.svg");
+$logoUrl = cms_url("/assets/static/wp-content/themes/flamingo/assets/images/OM_Logo.svg");
+$star1 = cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/star-orange.svg");
+$star2 = cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/star-orange-2.svg");
+$breadcrumbArrow = cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/breadcrumb-arrow.svg");
+$dateIcon = cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/calendar.svg");
+$timeIcon = cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/cal.svg");
+$searchIcon = cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/search.svg");
 ?>
 <!doctype html>
 <html lang="en">

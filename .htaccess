@@ -2,11 +2,32 @@ Options -Indexes
 RewriteEngine On
 RewriteBase /
 
-# ── Security: block direct access to CMS library files ───────────────────
-<FilesMatch "^(cms-config|cms-db|cms-auth|cms-utils)\.php$">
+# ── Security: block direct access to sensitive PHP config files ───────────
+<FilesMatch "^(cms-config|cms-db|cms-auth|cms-utils|db-config|setup-database)\.php$">
     Order deny,allow
     Deny from all
 </FilesMatch>
+<FilesMatch "^setup-database\.sql$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+# ── Redirect legacy /wp-content/themes/ to local static mirror ───────────
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^wp-content/themes/(.*)$ /assets/static/wp-content/themes/$1 [L,NC]
+
+# ── Redirect legacy /wp-content/uploads/ (non-PDF) to static mirror ──────
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^wp-content/uploads/(.*)$ /assets/static/wp-content/uploads/$1 [L,NC]
+
+# ── Redirect /assets/images/ shorthand to flamingo theme images ──────────
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^assets/images/(.*)$ /assets/static/wp-content/themes/flamingo/assets/images/$1 [L,NC]
+
+# ── wp-json API routing ───────────────────────────────────────────────────
+# Route /wp-json/api/v1/<endpoint>[/] → the index.php in that folder
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^wp-json/api/v1/([a-z0-9_-]+)/?$ wp-json/api/v1/$1/index.php [L]
 
 # ── Serve mirrored HTML without .html extension ───────────────────────────
 # (blog and admin routing is handled by their own sub-directory .htaccess files)

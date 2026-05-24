@@ -39,7 +39,7 @@ function cms_blog_detail_cover(array $blog): string
     if ($url !== "") {
         return $url;
     }
-    return cms_url("/assets/www.onlinemanipal.com/wp-content/uploads/2023/03/blogpage-banner.jpg");
+    return cms_url("/assets/static/wp-content/uploads/2023/03/blogpage-banner.jpg");
 }
 
 function cms_blog_detail_author_image(array $blog): string
@@ -48,7 +48,7 @@ function cms_blog_detail_author_image(array $blog): string
     if ($url !== "") {
         return $url;
     }
-    return cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/web-user.png");
+    return cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/web-user.png");
 }
 
 $slug = cms_slugify(cms_string($_GET["slug"] ?? ""));
@@ -64,7 +64,7 @@ if ($blog) {
 
 if (!$blog || (!$isPublicVisible && !($admin && $isPreview))) {
     http_response_code(404);
-    $styleCss = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/css/style.css");
+    $styleCss = cms_url("/assets/static/wp-content/themes/flamingo/assets/css/style.css");
     $publicCss = cms_url("/cms/assets/public-blog.css");
     ?>
     <!doctype html>
@@ -133,14 +133,14 @@ if (count($faqItems) > 0) {
     }
 }
 
-$styleCss = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/css/style.css");
-$detailCss = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/css/blog-detail.css");
+$styleCss = cms_url("/assets/static/wp-content/themes/flamingo/assets/css/style.css");
+$detailCss = cms_url("/assets/static/wp-content/themes/flamingo/assets/css/blog-detail.css");
 $publicCss = cms_url("/cms/assets/public-blog.css");
-$logoUrl = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/OM_Logo.svg");
-$breadcrumbArrow = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/breadcrumb-arrow.svg");
-$dateIcon = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/calendar.svg");
-$timeIcon = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/cal.svg");
-$star2 = cms_url("/assets/www.onlinemanipal.com/wp-content/themes/flamingo/assets/images/icons/star-orange-2.svg");
+$logoUrl = cms_url("/assets/static/wp-content/themes/flamingo/assets/images/OM_Logo.svg");
+$breadcrumbArrow = cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/breadcrumb-arrow.svg");
+$dateIcon = cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/calendar.svg");
+$timeIcon = cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/cal.svg");
+$star2 = cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/star-orange-2.svg");
 $publishedDate = cms_blog_detail_date((string) ($blog["published_at"] ?: $blog["updated_at"]));
 $updatedDate = cms_blog_detail_date((string) ($blog["last_updated_at"] ?: $blog["updated_at"]));
 $readMinutes = cms_blog_detail_read_minutes((string) ($blog["content_html"] ?? ""));
