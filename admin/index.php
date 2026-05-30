@@ -3,7 +3,11 @@ declare(strict_types=1);
 require_once __DIR__ . "/../cms/bootstrap.php";
 cms_require_admin();
 
-$blogs = cms_blog_list_admin();
+try {
+    $blogs = cms_blog_list_admin();
+} catch (Throwable $e) {
+    $blogs = [];
+}
 $hasPublished = false;
 foreach ($blogs as $blogItem) {
     if (cms_published_status($blogItem) === "published") {

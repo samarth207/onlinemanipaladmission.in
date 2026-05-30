@@ -52,7 +52,11 @@ function cms_blog_detail_author_image(array $blog): string
 }
 
 $slug = cms_slugify(cms_string($_GET["slug"] ?? ""));
-$blog = cms_blog_find_by_slug($slug);
+try {
+    $blog = cms_blog_find_by_slug($slug);
+} catch (Throwable $e) {
+    $blog = null;
+}
 $admin = cms_current_admin();
 $isPreview = isset($_GET["preview"]) && (string) $_GET["preview"] === "1";
 

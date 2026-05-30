@@ -1,4 +1,4 @@
-// Set Cookie
+﻿// Set Cookie
 const setCustomCookie = (key, value) => {
   var expires = new Date();
   expires.setTime(expires.getTime() + 31536000000);
@@ -366,43 +366,8 @@ jQuery(document).ready(function ($) {
     // OVERLAY BUTTON
     // =====================
     function addOverlayLinkForPage(pageNum) {
-      var university_url = $("#university-url").text();
-      if (university_url == "MUJ") {
-        var login_url = "https://login.muj.onlinemanipaladmission.in/";
-      } else if (university_url == "SMU") {
-        var login_url = "https://login.smu.onlinemanipaladmission.in/";
-      } else {
-        var login_url = "https://login.mahe.onlinemanipaladmission.in/";
-      }
       const old = document.getElementById("pdfOverlayBtn");
       if (old) old.remove();
-
-      if (pageNum !== 15) return;
-
-      const link = document.createElement("a");
-      link.id = "pdfOverlayBtn";
-      link.href = login_url;
-      link.target = "_blank";
-      const scale = 1.2;
-
-      const btnX = 6;
-      const btnY = 12;
-      const btnWidth = 173;
-      const btnHeight = 51;
-
-      link.style.left = btnX + "%";
-      link.style.bottom = btnY + "%";
-      link.style.width = btnWidth + "px";
-      link.style.height = btnHeight + "px";
-
-      // TESTING ONLY — show overlay area
-      link.style.background = "transparent";
-
-      link.style.position = "absolute";
-      link.style.zIndex = "999999";
-      console.log("Overlay function fired for page:", pageNum);
-
-      document.getElementById("pdfWrapper").appendChild(link);
     }
 
     // =====================
@@ -458,18 +423,7 @@ jQuery(document).ready(function ($) {
     };
   }
 
-  $(document).on("click", ".pdf-btn", function () {
-    var university_url = $("#university-url").text();
-    if (university_url == "MUJ") {
-      var login_url = "https://login.muj.onlinemanipaladmission.in/";
-    } else if (university_url == "SMU") {
-      var login_url = "https://login.smu.onlinemanipaladmission.in/";
-    } else {
-      var login_url = "https://login.mahe.onlinemanipaladmission.in/";
-    }
-    window.open(login_url, "_blank");
-
-  });
+  $(document).on("click", ".pdf-btn", function () {});
 
 
   setInterval(function () {
@@ -503,27 +457,22 @@ jQuery(document).ready(function ($) {
   // Fetch site details based on program/course name
   const fetchSiteDetails = (courseName) => {
     let siteName = '';
-    let app_login_url = '';
     let universityName = '';
     const MUJcourseList = ["BBA", "MBA", "BCA", "MCA", "B.Com", "M.Com", "MA.JMC", "MA in Economics", "MSc in Mathematics"];
     const MAHEcourseList = ["MSc Data Science", "MSc Business Analytics", "PGCP Business Analytics", "PGCP Logistics and Supply Chain", "Master of Business Administration", "PGCP E&I", "PGD Entrepreneurship and Innovation", "MCA-MAHE", "PGCP Data Science", "BBA-MAHE", "B.Com-MAHE"];
     const SMUcourseList = ["BA", "MA", "MA in English", "MA in Sociology", "MA in Political Science", "MCA-SMU", "MCOM", "BCOM", "MBA-SMU", "BBA-SMU"];
     if (MUJcourseList.includes(courseName)) {
       siteName = 'MUJ';
-      app_login_url = 'https://login.muj.onlinemanipaladmission.in/';
       universityName = 'Manipal University Jaipur';
     } else if (MAHEcourseList.includes(courseName)) {
       siteName = 'MAHE';
-      app_login_url = 'https://login.mahe.onlinemanipaladmission.in/';
       universityName = 'Manipal Academy of Higher Education';
     } else if (SMUcourseList.includes(courseName)) {
       siteName = 'SMU';
-      app_login_url = 'https://login.smu.onlinemanipaladmission.in/';
       universityName = 'Sikkim Manipal University';
     }
     const output = {
       siteName,
-      app_login_url,
       universityName
     }
     return output;
@@ -939,7 +888,6 @@ jQuery(document).ready(function ($) {
         courseName = courseMapping(courseName, institutionName);
         const siteDetails = fetchSiteDetails(courseName);
         const siteName = siteDetails.siteName;
-        const app_login_url = siteDetails.app_login_url;
         const formType = dialCode == "+91" ? 'Domestic Application Form' : 'International Application Form';
         let mx_Category = '';
         if (siteName === "MAHE") { mx_Category = dialCode == "+91" ? "Indian" : "Foreign & NRI"; }
@@ -1521,16 +1469,10 @@ jQuery(document).ready(function ($) {
   const searchString = 'utm_source';
   if (search && search.indexOf(searchString) != -1) {
     localStorage.setItem('utm_parameters', search);
-    passingUTMParameters("mahe.onlinemanipaladmission.in");
-    passingUTMParameters("smu.onlinemanipaladmission.in");
-    passingUTMParameters("muj.onlinemanipaladmission.in");
   } else {
     const utmParam = localStorage.getItem('utm_parameters');
     if (utmParam && utmParam.indexOf(searchString) != -1) {
       localStorage.setItem('utm_parameters', utmParam);
-      passingUTMParameters("mahe.onlinemanipaladmission.in");
-      passingUTMParameters("smu.onlinemanipaladmission.in");
-      passingUTMParameters("muj.onlinemanipaladmission.in");
     }
   }
 

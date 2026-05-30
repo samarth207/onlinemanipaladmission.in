@@ -8,7 +8,7 @@ return [
     "base_path" => "",
     "site_url"  => "https://www.onlinemanipaladmission.in",
     "db" => [
-        "host" => "127.0.0.1",
+        "host" => "localhost",
         "port" => 3306,
         "name" => "u261758575_onlinemanipal",
         "user" => "u261758575_onlinemanipal",

@@ -112,6 +112,7 @@
     if (!window.tinymce || !qs("#contentHtml")) return;
     const uploadUrl = window.CMS_UPLOAD_URL || "/admin/upload-image.php";
     window.tinymce.init({
+      license_key: "gpl",
       selector: "#contentHtml",
       height: 520,
       menubar: "edit view insert format table tools",

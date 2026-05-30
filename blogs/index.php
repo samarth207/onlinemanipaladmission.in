@@ -73,7 +73,11 @@ function cms_blog_list_author_image(array $blog): string
     return cms_url("/assets/static/wp-content/themes/flamingo/assets/images/icons/web-user.png");
 }
 
-$blogs = cms_blog_list_published();
+try {
+    $blogs = cms_blog_list_published();
+} catch (Throwable $e) {
+    $blogs = [];
+}
 $featuredBlog = $blogs[0] ?? null;
 $allCategories = cms_blog_list_all_categories($blogs);
 $pageTitle = "Explore Online Manipal Blogs | Industry Insights & Resources";

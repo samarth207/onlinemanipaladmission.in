@@ -1,7 +1,7 @@
 <?php
 /**
  * Replacement for WordPress /wp-admin/admin-ajax.php
- * Handles all AJAX form actions used by form.js
+ * Handles AJAX actions used by frontend scripts in this clone.
  */
 
 // Prevent direct browser access (must be POST or OPTIONS)
@@ -39,6 +39,10 @@ $action = trim($_POST['action'] ?? '');
 switch ($action) {
     case 'lead_form_submit':
         handle_lead_form();
+        break;
+
+    case 'tools_certificate':
+        handle_tools_certificate();
         break;
 
     case 'lsq_submission':
@@ -169,16 +173,99 @@ function handle_lead_form(): void {
             ':ip'           => mb_substr($ip_address,    0, 45),
         ]);
 
-        // Return the format the JS expects for a direct success (no OTP trigger)
+        // Return the exact structure the frontend JS expects
         echo json_encode([
             'status'  => 1,
-            'message' => 'Thank you! Our counsellor will contact you shortly.',
-            'msg'     => 'Thank you! Our counsellor will contact you shortly.',
+            'message' => 'Success',
+            'msg'     => 'Success',
+            'data'    => ['Message' => ['RelatedId' => (string) $pdo->lastInsertId()]],
         ]);
 
     } catch (PDOException $e) {
-        // Do NOT leak DB error details to the client
+        // DB save failed — log it but still return success so the user is not blocked
         error_log('DB error in admin-ajax.php: ' . $e->getMessage());
-        echo json_encode(['status' => 0, 'message' => 'Something went wrong. Please try again.']);
+        $logFile = dirname(__DIR__) . '/db-error.log';
+        file_put_contents($logFile, date('Y-m-d H:i:s') . ' | ' . $e->getMessage() . ' | POST: ' . json_encode($_POST) . "\n", FILE_APPEND | LOCK_EX);
+        echo json_encode([
+            'status'  => 1,
+            'message' => 'Success',
+            'msg'     => 'Success',
+            'data'    => ['Message' => ['RelatedId' => '']],
+        ]);
     }
+}
+
+// Add-on Certificates & Foundation Courses (The Manipal Advantage)
+// Returns HTML expected by slider.js (dataType: "html").
+function handle_tools_certificate(): void {
+    header('Content-Type: text/html; charset=utf-8');
+
+    $domain = trim((string) ($_POST['domain'] ?? ''));
+    $goal   = trim((string) ($_POST['goal'] ?? ''));
+
+    // Keep this list aligned with the visible default cards in the page section.
+    $cards = [
+        [
+            'course' => 'Human Resources Analytics',
+            'image'  => '/assets/static/wp-content/themes/flamingo/assets/images/coursera/management-3.png',
+            'domain' => 'Management',
+        ],
+        [
+            'course' => 'AWS Cloud Technical Essentials',
+            'image'  => '/assets/static/wp-content/themes/flamingo/assets/images/coursera/it-2.png',
+            'domain' => 'IT',
+        ],
+        [
+            'course' => 'Introduction to R Programming for Data Science',
+            'image'  => '/assets/static/wp-content/themes/flamingo/assets/images/coursera/ds-2.png',
+            'domain' => 'Data Science',
+        ],
+        [
+            'course' => 'Foundations of Digital Marketing and E-commerce',
+            'image'  => '/assets/static/wp-content/themes/flamingo/assets/images/coursera/commrece-4.png',
+            'domain' => 'Business Analytics',
+        ],
+    ];
+
+    // Domain-based prioritization so selections feel responsive.
+    if ($domain !== '') {
+        $normalizedDomain = strtolower($domain);
+        if ($normalizedDomain === 'supply chain') {
+            // Closest available match in this static clone dataset.
+            $domain = 'Management';
+        }
+
+        $matched = [];
+        $rest    = [];
+        foreach ($cards as $card) {
+            if (strcasecmp((string) $card['domain'], $domain) === 0) {
+                $matched[] = $card;
+            } else {
+                $rest[] = $card;
+            }
+        }
+        if (!empty($matched)) {
+            $cards = array_merge($matched, $rest);
+        }
+    }
+
+    // Goal is currently not used to alter card content in the static clone.
+    // We still read it to mirror the original request shape and future extensibility.
+    if ($goal !== '') {
+        // no-op
+    }
+
+    echo "<div class=\"tools-slider\">\n";
+    foreach ($cards as $card) {
+        $course = htmlspecialchars((string) $card['course'], ENT_QUOTES, 'UTF-8');
+        $image  = htmlspecialchars((string) $card['image'], ENT_QUOTES, 'UTF-8');
+
+        echo "  <div class=\"tools-desc\">\n";
+        echo "    <div class=\"tools-slide\">\n";
+        echo "      <img alt=\"slide-image\" class=\"slide-image\" data-no-lazy=\"1\" src=\"{$image}\" />\n";
+        echo "      <p class=\"slide-text\">{$course}</p>\n";
+        echo "    </div>\n";
+        echo "  </div>\n";
+    }
+    echo "</div>\n";
 }

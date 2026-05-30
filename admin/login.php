@@ -9,11 +9,15 @@ if (cms_current_admin()) {
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = cms_string($_POST["email"] ?? "");
     $password = (string) ($_POST["password"] ?? "");
-    if (cms_try_login($email, $password)) {
-        cms_flash_set("success", "Logged in successfully.");
-        cms_redirect("/admin/index.php");
+    try {
+        if (cms_try_login($email, $password)) {
+            cms_flash_set("success", "Logged in successfully.");
+            cms_redirect("/admin/index.php");
+        }
+        cms_flash_set("error", "Invalid email or password.");
+    } catch (Throwable $e) {
+        cms_flash_set("error", "DB error: " . $e->getMessage());
     }
-    cms_flash_set("error", "Invalid email or password.");
     cms_redirect("/admin/login.php");
 }
 
@@ -24,6 +28,11 @@ require __DIR__ . "/../cms/templates/topbar.php";
 ?>
 <main class="login-wrap">
   <section class="card login-card">
+    <?php if (!empty($GLOBALS['cms_db_error'])): ?>
+      <p style="color:red;font-size:0.85rem;word-break:break-all;margin-bottom:1rem;">
+        <strong>DB init error:</strong> <?= htmlspecialchars($GLOBALS['cms_db_error']) ?>
+      </p>
+    <?php endif; ?>
     <h2 style="margin-top:0;">Admin Login</h2>
     <p class="muted">Sign in to manage blogs, SEO fields, and publishing.</p>
     <form method="post" action="<?= cms_h(cms_url("/admin/login.php")) ?>">

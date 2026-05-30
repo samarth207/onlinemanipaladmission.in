@@ -8,4 +8,8 @@ require_once __DIR__ . "/lib/auth.php";
 require_once __DIR__ . "/lib/blog.php";
 
 cms_start_session();
-cms_db_init();
+try {
+    cms_db_init();
+} catch (Throwable $e) {
+    $GLOBALS['cms_db_error'] = $e->getMessage();
+}

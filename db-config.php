@@ -8,7 +8,7 @@
 define('DB_HOST',     'localhost');        // Hostinger MySQL host (usually localhost)
 define('DB_NAME',     'u261758575_onlinemanipal');     // e.g. u123456789_admissions
 define('DB_USER',     'u261758575_onlinemanipal');     // e.g. u123456789_admin
-define('DB_PASS',     'm3@G$HxmAr?C'); // Your MySQL password
+define('DB_PASS',     's8jlXp3*Le'); // Your MySQL password
 define('DB_CHARSET',  'utf8mb4');
 
 /**
