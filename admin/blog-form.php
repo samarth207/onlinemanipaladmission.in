@@ -138,13 +138,9 @@ require __DIR__ . "/../cms/templates/topbar.php";
           </div>
         </div>
         <div class="field section-block">
-          <label for="primaryKeyword">Primary Keyword</label>
-          <input id="primaryKeyword" name="primaryKeyword" value="<?= cms_h((string) $form["primary_keyword"]) ?>" required />
-        </div>
-        <div class="field section-block">
           <label for="contentHtml">Blog Content Editor</label>
           <small>
-            Supports: H2, H3, H4, paragraph, bold, italic, lists, internal/external links, image insert (ALT mandatory), and editable tables.
+            Supports: H2, H3, H4, paragraph, bold, italic, lists, internal/external links, image insert (ALT&nbsp;mandatory), and editable tables with <strong>cell/row/column background colour</strong> — click inside any table cell then use the <em>Cell Properties</em> button (🎨) in the toolbar or right-click → Cell Properties → Advanced → Background Color. To colour an entire row: select all cells in the row, then apply. TOC is auto-generated from H2–H4 headings.
           </small>
           <div class="editor-wrap">
             <textarea id="contentHtml" name="contentHtml"><?= cms_h((string) $form["content_html"]) ?></textarea>
@@ -293,6 +289,35 @@ require __DIR__ . "/../cms/templates/topbar.php";
           <div class="field">
             <label for="tags">Tags (comma-separated)</label>
             <input id="tags" name="tags" value="<?= cms_h((string) $form["tags"]) ?>" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <h3 class="section-title">7) SEO Analytics</h3>
+        <div class="form-grid">
+          <div class="field">
+            <label for="primaryKeyword">Primary Keyword <span style="color:#b42318">*</span></label>
+            <input id="primaryKeyword" name="primaryKeyword" value="<?= cms_h((string) $form["primary_keyword"]) ?>" required placeholder="e.g. online mba degree india" />
+            <small>Used for SEO focus analysis. Make sure this keyword appears in the title, slug, meta description, and content.</small>
+          </div>
+          <div class="field">
+            <label>Focus Keyword density hint</label>
+            <div id="kwDensityHint" class="serp-hint">Fill in Primary Keyword and content to see density hint.</div>
+          </div>
+        </div>
+
+        <!-- Live Google SERP Preview -->
+        <div class="serp-preview-wrap" style="margin-top:1.2rem;">
+          <label style="font-size:0.84rem;font-weight:700;color:#334155;display:block;margin-bottom:0.5rem;">Live Google Search Preview</label>
+          <div class="serp-card">
+            <div class="serp-url" id="serpUrl"></div>
+            <div class="serp-title" id="serpTitle">Blog Title will appear here</div>
+            <div class="serp-desc" id="serpDesc">Meta description will appear here…</div>
+            <div class="serp-chars">
+              Title: <span id="serpTitleLen">0</span>/60 chars &nbsp;|&nbsp;
+              Description: <span id="serpDescLen">0</span>/250 chars
+            </div>
           </div>
         </div>
       </section>

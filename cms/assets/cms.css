@@ -442,3 +442,67 @@ th {
     grid-template-columns: 1fr;
   }
 }
+
+/* ── SERP Preview ─────────────────────────────────────── */
+.serp-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  max-width: 640px;
+  font-family: arial, sans-serif;
+}
+.serp-url {
+  font-size: 0.78rem;
+  color: #202124;
+  margin-bottom: 2px;
+  word-break: break-all;
+}
+.serp-url::before {
+  content: "🌐 ";
+}
+.serp-title {
+  font-size: 1.1rem;
+  color: #1a0dab;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 4px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.serp-title.over {
+  color: #b42318;
+}
+.serp-desc {
+  font-size: 0.84rem;
+  color: #4d5156;
+  line-height: 1.55;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.serp-chars {
+  margin-top: 0.5rem;
+  font-size: 0.74rem;
+  color: #94a3b8;
+}
+.serp-hint {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.82rem;
+  color: #475569;
+  min-height: 52px;
+}
+.serp-hint.good { border-color: #86efac; background: #f0fdf4; color: #15803d; }
+.serp-hint.warn { border-color: #fde047; background: #fefce8; color: #a16207; }
+.serp-hint.bad  { border-color: #fca5a5; background: #fff1f2; color: #be123c; }
+
+/* ── Table styling classes available in editor ─────────── */
+.tbl-striped tbody tr:nth-child(even) td { background-color: #f1f5f9; }
+.tbl-bordered, .tbl-bordered td, .tbl-bordered th { border: 1px solid #cbd5e1 !important; }
+
