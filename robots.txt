@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Block admin, CMS and backend
+Disallow: /admin/
+Disallow: /cms/
+Disallow: /wp-admin/
+Disallow: /wp-json/
+Disallow: /cms-uploads/
+
+# Block sensitive files
+Disallow: /db-config.php
+Disallow: /db-test.php
+Disallow: /setup-database.sql
+
+Sitemap: https://onlinemanipaladmission.in/sitemap.xml
