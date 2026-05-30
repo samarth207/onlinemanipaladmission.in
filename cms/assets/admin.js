@@ -147,6 +147,8 @@
       license_key: "gpl",
       selector: "#contentHtml",
       height: 620,
+      toolbar_sticky: true,
+      toolbar_sticky_offset: 64,   // matches the sticky topbar height
       menubar: "edit view insert format table tools",
       plugins:
         "lists link image table code charmap preview searchreplace visualblocks wordcount autoresize",

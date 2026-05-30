@@ -40,6 +40,9 @@ a:hover {
   background: #0b2545;
   color: #fff;
   border-bottom: 1px solid #14355f;
+  position: sticky;
+  top: 0;
+  z-index: 200;
 }
 
 .topbar-inner {
@@ -226,6 +229,13 @@ th {
 
 .section-block {
   margin-bottom: 1rem;
+}
+
+/* Visual divider between consecutive sections inside a card */
+.card .section-block + .section-block {
+  border-top: 1px solid var(--line);
+  padding-top: 1.5rem;
+  margin-top: 0.25rem;
 }
 
 .error-list {

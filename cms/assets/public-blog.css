@@ -237,6 +237,16 @@
   }
 }
 
+/* ── Category badge: pin it inside the cover image card, not the full banner ── */
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .left .blog-container .card {
+  position: relative;
+}
+.blog-details .blog-detail-banner .blogd-banner-wrapper .blog-banner-details .left .blog-container .card .category-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
 /* ── Lead form: select dropdown matches input styling ── */
 .programLeadForm select {
   width: 100%;
