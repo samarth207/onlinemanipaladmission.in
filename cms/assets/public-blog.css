@@ -236,3 +236,20 @@
     font-size: 26px;
   }
 }
+
+/* ── Lead form: select dropdown matches input styling ── */
+.programLeadForm select {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  color: #111827;
+  appearance: auto;
+}
+.programLeadForm select:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 1px;
+}
+

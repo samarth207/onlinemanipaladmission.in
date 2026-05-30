@@ -9,6 +9,7 @@ $admin = cms_current_admin();
       <?php if ($admin): ?>
         <a href="<?= cms_h(cms_url("/admin/index.php")) ?>" style="color:#dbeafe;">Dashboard</a>
         <a href="<?= cms_h(cms_url("/admin/blog-form.php")) ?>" style="color:#dbeafe;">Add Blog</a>
+        <a href="<?= cms_h(cms_url("/admin/leads.php")) ?>" style="color:#dbeafe;">Leads</a>
         <a href="<?= cms_h(cms_url("/blogs/")) ?>" style="color:#dbeafe;">View Blogs</a>
         <form method="post" action="<?= cms_h(cms_url("/admin/logout.php")) ?>" style="margin:0;">
           <button class="btn ghost" type="submit">Logout</button>

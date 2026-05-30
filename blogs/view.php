@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . "/../cms/bootstrap.php";
+require_once __DIR__ . "/../cms/lib/courses.php";
 
 function cms_blog_detail_date(?string $datetime): string
 {
@@ -243,22 +244,71 @@ foreach (cms_blog_list_published() as $publishedBlog) {
                   <div class="title-section">
                     <h3 class="section-title"><?= cms_h((string) ($blog["lead_form"]["headline"] ?? "Talk to our counselors")) ?></h3>
                   </div>
-                  <form method="post" action="#" onsubmit="return false;">
+                  <div id="leadSuccessMsg" style="display:none;padding:1rem;background:#f0fdf4;border:1px solid #86efac;border-radius:10px;color:#166534;font-size:0.9rem;text-align:center;"></div>
+                  <div id="leadErrorMsg" style="display:none;padding:0.6rem 0.8rem;background:#fff1f2;border:1px solid #fca5a5;border-radius:8px;color:#be123c;font-size:0.85rem;margin-bottom:0.5rem;"></div>
+                  <form id="blogLeadForm" method="post" action="<?= cms_h(cms_url('/blogs/submit-lead.php')) ?>" novalidate>
+                    <input type="hidden" name="lead_form_name" value="<?= cms_h((string) $blog['title']) ?>" />
+                    <input type="hidden" name="source_page" value="<?= cms_h($canonicalUrl) ?>" />
                     <div class="form-group">
-                      <label>Name</label>
-                      <input type="text" name="name" placeholder="Enter your name" />
+                      <label for="lf_name">Full Name <span style="color:#e11d48">*</span></label>
+                      <input id="lf_name" type="text" name="name" placeholder="Enter your full name" required autocomplete="name" />
                     </div>
                     <div class="form-group">
-                      <label>Phone Number</label>
-                      <input type="tel" name="phone" placeholder="Enter phone number" />
+                      <label for="lf_mobile">Contact Number <span style="color:#e11d48">*</span></label>
+                      <input id="lf_mobile" type="tel" name="mobile_number" placeholder="+91 00000 00000" required autocomplete="tel" />
                     </div>
                     <div class="form-group">
-                      <label>Course</label>
-                      <input type="text" name="course" placeholder="Enter interested course" />
+                      <label for="lf_email">Email Address <span style="color:#e11d48">*</span></label>
+                      <input id="lf_email" type="email" name="email" placeholder="you@example.com" required autocomplete="email" />
                     </div>
-                    <button type="submit" class="lead-submit"><?= cms_h((string) ($blog["lead_form"]["button_text"] ?? "Apply Now")) ?></button>
+                    <div class="form-group">
+                      <label for="lf_course">Course Interested In <span style="color:#e11d48">*</span></label>
+                      <select id="lf_course" name="course_name" required>
+                        <option value="">-- Select a Course --</option>
+                        <?php foreach (cms_course_list() as $course): ?>
+                          <option value="<?= cms_h($course) ?>"><?= cms_h($course) ?></option>
+                        <?php endforeach; ?>
+                      </select>
+                    </div>
+                    <button type="submit" class="lead-submit" id="leadSubmitBtn"><?= cms_h((string) ($blog["lead_form"]["button_text"] ?? "Apply Now")) ?></button>
                   </form>
                 </div>
+                <script>
+                (function () {
+                  var form = document.getElementById('blogLeadForm');
+                  var successBox = document.getElementById('leadSuccessMsg');
+                  var errorBox = document.getElementById('leadErrorMsg');
+                  var btn = document.getElementById('leadSubmitBtn');
+                  if (!form) return;
+                  form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    errorBox.style.display = 'none';
+                    btn.disabled = true;
+                    btn.textContent = 'Submitting…';
+                    var data = new FormData(form);
+                    fetch(form.action, { method: 'POST', body: data })
+                      .then(function (r) { return r.json(); })
+                      .then(function (res) {
+                        if (res.status === 1) {
+                          form.style.display = 'none';
+                          successBox.textContent = res.message || 'Thank you! We will be in touch soon.';
+                          successBox.style.display = 'block';
+                        } else {
+                          errorBox.textContent = res.message || 'Something went wrong. Please try again.';
+                          errorBox.style.display = 'block';
+                          btn.disabled = false;
+                          btn.textContent = '<?= addslashes(cms_h((string) ($blog["lead_form"]["button_text"] ?? "Apply Now"))) ?>';
+                        }
+                      })
+                      .catch(function () {
+                        errorBox.textContent = 'Network error. Please check your connection and try again.';
+                        errorBox.style.display = 'block';
+                        btn.disabled = false;
+                        btn.textContent = '<?= addslashes(cms_h((string) ($blog["lead_form"]["button_text"] ?? "Apply Now"))) ?>';
+                      });
+                  });
+                })();
+                </script>
               </div>
             </div>
           </div>

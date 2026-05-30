@@ -6,6 +6,7 @@ require_once __DIR__ . "/lib/util.php";
 require_once __DIR__ . "/lib/db.php";
 require_once __DIR__ . "/lib/auth.php";
 require_once __DIR__ . "/lib/blog.php";
+require_once __DIR__ . "/lib/courses.php";
 
 cms_start_session();
 try {
