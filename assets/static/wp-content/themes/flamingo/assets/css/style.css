@@ -3640,7 +3640,42 @@ body.marquee_there main {
     top: 29vw;
   }
 }
+header .header-mob-wrapper {
+  display: none;
+}
+
+header .mobile-menu {
+  display: none;
+}
+
 @media (max-width: 992px) {
+  header .header-wrapper {
+    display: none !important;
+  }
+
+  header .header-mob-wrapper {
+    display: flex !important;
+  }
+
+  header .mobile-menu.show {
+    display: block !important;
+  }
+
+  header .header-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9988;
+    display: none;
+  }
+
+  header .header-overlay.show {
+    display: block;
+  }
+
   .iti--container {
     z-index: 9999 !important;
   }

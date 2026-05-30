@@ -1,4 +1,6 @@
 Options -Indexes
+DirectoryIndex index.html index.php
+
 RewriteEngine On
 RewriteBase /
 
@@ -12,11 +14,23 @@ RewriteBase /
     Deny from all
 </FilesMatch>
 
+# ── Canonical: /index.html → / (root homepage) ─────────────────────────
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^ / [R=301,L]
+
+# ── Canonical: /dir/index.html → /dir/ ───────────────────────────────────
+RewriteCond %{THE_REQUEST} \s/+(.*/)index\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# ── Canonical: /page.html → /page ────────────────────────────────────────
+RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
 # ── Redirect legacy /wp-content/themes/ to local static mirror ───────────
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^wp-content/themes/(.*)$ /assets/static/wp-content/themes/$1 [L,NC]
 
-# ── Redirect legacy /wp-content/uploads/ (non-PDF) to static mirror ──────
+# ── Redirect legacy /wp-content/uploads/ to static mirror ────────────────
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^wp-content/uploads/(.*)$ /assets/static/wp-content/uploads/$1 [L,NC]
 
@@ -25,16 +39,21 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^assets/images/(.*)$ /assets/static/wp-content/themes/flamingo/assets/images/$1 [L,NC]
 
 # ── wp-json API routing ───────────────────────────────────────────────────
-# Route /wp-json/api/v1/<endpoint>[/] → the index.php in that folder
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^wp-json/api/v1/([a-z0-9_-]+)/?$ wp-json/api/v1/$1/index.php [L]
 
-# ── Serve mirrored HTML without .html extension ───────────────────────────
-# (blog and admin routing is handled by their own sub-directory .htaccess files)
+# ── Serve .html files at clean URLs (no extension) ────────────────────────
+# (blog and admin routing handled by their own .htaccess files)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
+
+# ── Serve .php files at clean URLs (no extension) ────────────────────────
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
 
 # ── Charset ───────────────────────────────────────────────────────────────
 AddDefaultCharset UTF-8
